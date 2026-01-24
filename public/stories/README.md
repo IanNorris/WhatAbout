@@ -117,15 +117,21 @@ This will report any paths that end without:
 ## Development Commands
 
 ```bash
-# Start dev server (stories auto-reload on change)
-npm run dev
+# Start dev server (manually compile .ink first)
+npm run compile-ink  # Compile .ink files to .json
+npm run dev          # Start dev server
+
+# Or use the combined command:
+npm run dev:full     # Auto-compile .ink on changes + start dev server
 
 # Analyze a story for dead ends
-npm run analyze-ink public/stories/story_name.ink
+npm run analyze-ink public/stories/age_verification/main.ink
 
-# Build for production
+# Build for production (compiles .ink automatically)
 npm run build
 ```
+
+**Note:** Compiled .json files are gitignored - they're generated from .ink source files.
 
 ## File Organization
 

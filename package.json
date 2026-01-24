@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run compile-ink && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "compile-ink": "node tools/compile-ink.js",

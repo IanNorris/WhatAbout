@@ -50,8 +50,8 @@ Add to `package.json` scripts if using a specific platform:
 ## Important Notes
 
 ### Before Building
-1. **Compile Ink files**: Run `npm run compile-ink` to ensure all .ink files are compiled to .json
-2. **Check images**: Verify all images are in `public/assets/`
+1. **Compile Ink files**: .ink files are automatically compiled during build
+2. **Check images**: Verify all images are in `public/assets/{story-id}/`
 3. **Test locally**: Run `npm run dev` and test all features
 
 ### After Building
