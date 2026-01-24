@@ -15,11 +15,14 @@ function parseStoriesTxt(content) {
         if (trimmed === '' || trimmed.startsWith('#')) {
             // If we have a complete story, add it
             if (currentStory.id && currentStory.title && currentStory.description && currentStory.file) {
+                // Construct path: /stories/{id}/{file}
+                const inkPath = `/stories/${currentStory.id}/${currentStory.file}`;
+                
                 stories.push({
                     id: currentStory.id,
                     title: currentStory.title,
                     description: currentStory.description,
-                    inkPath: `/stories/${currentStory.file}`,
+                    inkPath: inkPath,
                     release: currentStory.release === 'true' // Parse as boolean
                 });
                 currentStory = {};
@@ -41,11 +44,13 @@ function parseStoriesTxt(content) {
     
     // Don't forget the last story
     if (currentStory.id && currentStory.title && currentStory.description && currentStory.file) {
+        const inkPath = `/stories/${currentStory.id}/${currentStory.file}`;
+        
         stories.push({
             id: currentStory.id,
             title: currentStory.title,
             description: currentStory.description,
-            inkPath: `/stories/${currentStory.file}`,
+            inkPath: inkPath,
             release: currentStory.release === 'true'
         });
     }
@@ -103,6 +108,20 @@ export async function loadStoryList() {
  */
 export async function loadInkStory(inkPath) {
     try {
+        // For .ink files, try to load pre-compiled .json first
+        const jsonPath = inkPath.replace('.ink', '.json');
+        
+        try {
+            const jsonResponse = await fetch(jsonPath);
+            if (jsonResponse.ok) {
+                // Pre-compiled JSON exists, use it
+                return await jsonResponse.json();
+            }
+        } catch (e) {
+            // No pre-compiled version, fall through to compile from source
+        }
+        
+        // Load .ink source
         const response = await fetch(inkPath);
         if (!response.ok) {
             throw new Error(`Failed to load ${inkPath}: ${response.statusText}`);
@@ -111,6 +130,7 @@ export async function loadInkStory(inkPath) {
         const inkSource = await response.text();
         
         // Compile .ink to JSON using inkjs compiler
+        // Note: This only works for single-file stories without INCLUDE
         const { Compiler } = await import('inkjs/compiler/Compiler');
         const compiler = new Compiler(inkSource);
         const compiledStory = compiler.Compile();

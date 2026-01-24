@@ -30,23 +30,24 @@ release: false
 2. Use a blank line to separate stories
 3. Lines starting with `#` are comments (ignored)
 4. Field names must be lowercase
-5. The `file` field should be just the filename (not a path)
+5. The `file` field is relative to `stories/{id}/` folder (e.g., `main.ink` or `story.ink`)
 6. The `release` field controls production visibility:
    - `release: true` - Story appears in both dev and production
    - `release: false` - Story only appears in dev (hidden in production builds)
 
 ### Adding a New Story
-1. Create your `.ink` file in this folder
-2. Create a folder for your story's images: `public/assets/your-story-id/`
-3. Add a new entry to `stories.txt`:
+1. Create your story folder: `public/stories/my-story-id/`
+2. Create your `.ink` file in that folder: `my-story-id/main.ink` (or any name)
+3. Create a folder for your story's images: `public/assets/my-story-id/`
+4. Add a new entry to `stories.txt`:
    ```
-   id: my-new-topic
-   title: My New Topic
+   id: my-story-id
+   title: My Story Title
    description: A fascinating discussion about something important.
-   file: my_new_topic.ink
+   file: main.ink
    release: true
    ```
-4. Save and refresh the app - it will appear automatically!
+5. Save and refresh the app - it will appear automatically!
 
 ### Tips
 - Keep IDs short and URL-friendly (lowercase, hyphens instead of spaces)

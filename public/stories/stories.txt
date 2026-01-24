@@ -8,13 +8,13 @@
 #   id: unique-story-identifier
 #   title: Display Title
 #   description: Brief description shown in the hub
-#   file: filename.ink (in the stories folder)
+#   file: filename.ink (relative to stories/{id}/ folder)
 #   release: true/false (false = dev only, true = include in production)
 
 id: age-verification
 title: Age Verification
 description: Should we verify age online? The pros, cons, and tech reality.
-file: age_verification.ink
+file: main.ink
 release: true
 
 id: demo
