@@ -1,0 +1,61 @@
+{
+    "inkVersion": 21,
+    "root": [
+        [
+            "^Welcome to the thought cloud.",
+            "\n",
+            "^Here we ponder things.",
+            "\n",
+            "ev",
+            "str",
+            "^About the Sky",
+            "/str",
+            "/ev",
+            {
+                "*": ".^.c-0",
+                "flg": 20
+            },
+            "ev",
+            "str",
+            "^About the Ocean",
+            "/str",
+            "/ev",
+            {
+                "*": ".^.c-1",
+                "flg": 20
+            },
+            {
+                "c-0": [
+                    "\n",
+                    "^The sky is vast and blue.",
+                    "\n",
+                    {
+                        "#": "diagram:sky.png"
+                    },
+                    "^Ideally we float in it.",
+                    "\n",
+                    "done",
+                    {
+                        "#f": 5
+                    }
+                ],
+                "c-1": [
+                    "\n",
+                    "^The ocean is deep.",
+                    "\n",
+                    "^Full of mystery.",
+                    "\n",
+                    "done",
+                    {
+                        "#f": 5
+                    }
+                ]
+            }
+        ],
+        "done",
+        {
+            "#f": 1
+        }
+    ],
+    "listDefs": {}
+}
