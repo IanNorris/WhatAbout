@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "compile-ink": "node tools/compile-ink.js",
+    "compile-ink:watch": "node tools/compile-ink.js --watch",
+    "dev:full": "npm run compile-ink:watch & npm run dev"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
