@@ -1,0 +1,21 @@
+# What About - Story List
+# 
+# This file defines which stories appear in the hub.
+# Each story needs 4 fields: id, title, description, and file
+# Use a blank line to separate stories.
+#
+# Format:
+#   id: unique-story-identifier
+#   title: Display Title
+#   description: Brief description shown in the hub
+#   file: filename.ink (in the stories folder)
+
+id: age-verification
+title: Age Verification
+description: Should we verify age online? The pros, cons, and tech reality.
+file: age_verification.ink
+
+id: demo
+title: Demo Story
+description: A sample story
+file: demo.ink

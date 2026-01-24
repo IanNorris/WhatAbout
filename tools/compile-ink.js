@@ -23,7 +23,7 @@ const __dirname = dirname(__filename);
 
 // Path to inklecate compiler (using inkjs-compatible version)
 const INKLECATE_PATH = path.join(__dirname, '..', '..', 'Inky', 'resources', 'app.asar.unpacked', 'main-process', 'ink', 'inkjs-compatible', 'inklecate_win.exe');
-const STORIES_DIR = path.join(__dirname, '..', 'src', 'stories');
+const STORIES_DIR = path.join(__dirname, '..', 'public', 'stories');
 
 // Colors for console output
 const colors = {
