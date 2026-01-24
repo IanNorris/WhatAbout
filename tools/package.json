@@ -1,0 +1,9 @@
+{
+  "name": "whatabout-tools",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Tools for WhatAbout project",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
