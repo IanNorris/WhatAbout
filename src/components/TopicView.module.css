@@ -147,6 +147,37 @@
     box-shadow: 0 4px 10px rgba(123, 163, 255, 0.3);
 }
 
+.chosenButton {
+    background: var(--color-accent);
+    color: #0f1419;
+    border: 2px solid var(--color-accent);
+    font-weight: 600;
+}
+
+.disabledButton {
+    opacity: 0.4;
+    background: rgba(123, 163, 255, 0.1);
+    border-color: rgba(123, 163, 255, 0.2);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.disabledButton:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.choiceTitle {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(123, 163, 255, 0.1);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 4px;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

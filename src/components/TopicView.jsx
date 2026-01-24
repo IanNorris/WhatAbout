@@ -54,14 +54,46 @@ const TopicView = ({ storyContent, onClose, onHome }) => {
                 
                 {pages.map((page, pageIdx) => {
                     const isCurrentPage = pageIdx === pages.length - 1;
+                    const previousPage = pageIdx > 0 ? pages[pageIdx - 1] : null;
+                    const showChoiceTitle = previousPage?.selectedChoiceText;
+                    
                     return (
                         <div
                             key={pageIdx}
                             ref={isCurrentPage ? currentPageRef : null}
                             className={`${styles.pageCard} ${isCurrentPage ? styles.currentPage : styles.historyPage}`}
                         >
-                            {page.map((p, pIdx) => renderParagraph(p, `${pageIdx}-${pIdx}`))}
+                            {showChoiceTitle && (
+                                <div className={styles.choiceTitle}>
+                                    You chose: {previousPage.selectedChoiceText}
+                                </div>
+                            )}
                             
+                            {page.paragraphs.map((p, pIdx) => renderParagraph(p, `${pageIdx}-${pIdx}`))}
+                            
+                            {/* Show choices if they exist on this page */}
+                            {page.choices && page.choices.length > 0 && (
+                                <div className={styles.choicesContainer}>
+                                    {page.choices.map((choiceText, idx) => {
+                                        const isSelected = page.selectedChoiceIndex === idx;
+                                        const isDisabled = page.selectedChoiceIndex !== null && !isSelected;
+                                        
+                                        return (
+                                            <button
+                                                key={idx}
+                                                className={`${styles.choiceButton} ${
+                                                    isSelected ? styles.chosenButton : ''
+                                                } ${isDisabled ? styles.disabledButton : ''}`}
+                                                disabled={isDisabled}
+                                            >
+                                                {choiceText}
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                            )}
+                            
+                            {/* Show live choices on current page */}
                             {isCurrentPage && currentChoices.length > 0 && (
                                 <div className={styles.choicesContainer}>
                                     {currentChoices.map((choice, idx) => (
