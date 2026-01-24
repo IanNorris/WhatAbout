@@ -2,12 +2,13 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Story } from 'inkjs';
 
 const useInkStory = (storyContent) => {
-    const [pages, setPages] = useState([]); // Array of pages, each page is an array of paragraphs
+    const [pages, setPages] = useState([]); // Array of page objects with paragraphs, choices, and selection info
     const [currentChoices, setCurrentChoices] = useState([]);
     const [isEnded, setIsEnded] = useState(false);
     const [globalTags, setGlobalTags] = useState({});
 
     const storyRef = useRef(null);
+    const pendingChoicesRef = useRef(null); // Store choices for the current page before selection
 
     useEffect(() => {
         if (storyContent) {
@@ -40,15 +41,24 @@ const useInkStory = (storyContent) => {
             newParagraphs.push({ text, tags });
         }
 
-        // Add new paragraphs as a new page
+        // Add new paragraphs as a new page with choice metadata
         if (newParagraphs.length > 0) {
-            setPages(prev => [...prev, newParagraphs]);
+            const newPage = {
+                paragraphs: newParagraphs,
+                choices: null,
+                selectedChoiceIndex: null,
+                selectedChoiceText: null
+            };
+            setPages(prev => [...prev, newPage]);
         }
 
         if (s.currentChoices && s.currentChoices.length > 0) {
+            const choiceTexts = s.currentChoices.map(c => c.text);
             setCurrentChoices(s.currentChoices);
+            pendingChoicesRef.current = choiceTexts;
         } else {
             setCurrentChoices([]);
+            pendingChoicesRef.current = null;
             setIsEnded(true); // Or maybe just no choices?
         }
     }, []);
@@ -57,16 +67,31 @@ const useInkStory = (storyContent) => {
         const s = storyRef.current;
         if (!s) return;
 
+        // Store the choice information on the last page before continuing
+        const choiceTexts = pendingChoicesRef.current;
+        const selectedText = currentChoices[index]?.text;
+        
+        if (choiceTexts && selectedText) {
+            setPages(prev => {
+                const updated = [...prev];
+                if (updated.length > 0) {
+                    const lastPage = updated[updated.length - 1];
+                    updated[updated.length - 1] = {
+                        ...lastPage,
+                        choices: choiceTexts,
+                        selectedChoiceIndex: index,
+                        selectedChoiceText: selectedText
+                    };
+                }
+                return updated;
+            });
+        }
+
         s.ChooseChoiceIndex(index);
-        // Clear choices from view (optional, or keep history?)
-        // Usually we want to keep the text history but clear the choices
-
-        // Add the choice text itself to history? "What About" usually has seamless flow.
-        // For now, let's just continue.
-
         setCurrentChoices([]);
+        pendingChoicesRef.current = null;
         continueStory();
-    }, [continueStory]);
+    }, [continueStory, currentChoices]);
 
     const resetStory = useCallback(() => {
         if (storyRef.current) {
