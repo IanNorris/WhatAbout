@@ -19,7 +19,8 @@ function parseStoriesTxt(content) {
                     id: currentStory.id,
                     title: currentStory.title,
                     description: currentStory.description,
-                    inkPath: `/stories/${currentStory.file}`
+                    inkPath: `/stories/${currentStory.file}`,
+                    release: currentStory.release === 'true' // Parse as boolean
                 });
                 currentStory = {};
             }
@@ -44,7 +45,8 @@ function parseStoriesTxt(content) {
             id: currentStory.id,
             title: currentStory.title,
             description: currentStory.description,
-            inkPath: `/stories/${currentStory.file}`
+            inkPath: `/stories/${currentStory.file}`,
+            release: currentStory.release === 'true'
         });
     }
     
@@ -70,7 +72,13 @@ export async function loadStoryList() {
         }
         
         const content = await response.text();
-        cachedStories = parseStoriesTxt(content);
+        const allStories = parseStoriesTxt(content);
+        
+        // Filter based on environment
+        const isProduction = import.meta.env.PROD;
+        cachedStories = isProduction 
+            ? allStories.filter(story => story.release) 
+            : allStories;
         
         return cachedStories;
     } catch (error) {
@@ -81,7 +89,8 @@ export async function loadStoryList() {
                 id: 'age-verification',
                 title: 'Age Verification',
                 description: 'Should we verify age online? The pros, cons, and tech reality.',
-                inkPath: '/stories/age_verification.ink'
+                inkPath: '/stories/age_verification.ink',
+                release: true
             }
         ];
     }

@@ -3,7 +3,7 @@ import useInkStory from '../hooks/useInkStory';
 import OverlayMenu from './OverlayMenu';
 import styles from './TopicView.module.css';
 
-const TopicView = ({ storyContent, onClose, onHome }) => {
+const TopicView = ({ storyContent, storyId, onClose, onHome }) => {
     const { pages, currentChoices, makeChoice, resetStory } = useInkStory(storyContent);
     const currentPageRef = useRef(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,9 +18,11 @@ const TopicView = ({ storyContent, onClose, onHome }) => {
 
         if (diagramTag) {
             const src = diagramTag.split(':')[1].trim();
+            // Prepend story ID to make path relative to assets/<story-id>/
+            const imagePath = `/assets/${storyId}/${src}`;
             diagram = (
                 <div className="diagram-container" style={{ margin: '1rem 0', textAlign: 'center' }}>
-                    <img src={`/assets/${src}`} alt="Diagram" style={{ maxWidth: '100%', borderRadius: '10px' }} />
+                    <img src={imagePath} alt="Diagram" style={{ maxWidth: '100%', borderRadius: '10px' }} />
                 </div>
             );
         }

@@ -1,7 +1,7 @@
 # What About - Story List
 # 
 # This file defines which stories appear in the hub.
-# Each story needs 4 fields: id, title, description, and file
+# Each story needs 5 fields: id, title, description, file, and release
 # Use a blank line to separate stories.
 #
 # Format:
@@ -9,13 +9,16 @@
 #   title: Display Title
 #   description: Brief description shown in the hub
 #   file: filename.ink (in the stories folder)
+#   release: true/false (false = dev only, true = include in production)
 
 id: age-verification
 title: Age Verification
 description: Should we verify age online? The pros, cons, and tech reality.
 file: age_verification.ink
+release: true
 
 id: demo
 title: Demo Story
 description: A sample story
 file: demo.ink
+release: false

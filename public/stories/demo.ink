@@ -1,6 +1,6 @@
-VAR topic_title = "Once Upon A Time"
+VAR topic_title = "Demo Story"
 
-This is a test story to demonstrate the What About platform.
+This is a test story to demonstrate the What About platform. # diagram: demo_mascot.png
 
 You're reading content from a raw .ink file that was compiled in your browser!
 
@@ -20,7 +20,7 @@ The platform uses:
 === more_info ===
 Each story can be split into multiple files for easier editing.
 
-Images are loaded from the /assets/ directory.
+Images are loaded from the /assets/ directory organized by story.
 
 The choice indicator shows what you selected in the history!
 

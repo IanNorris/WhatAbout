@@ -16,30 +16,37 @@ id: unique-story-id
 title: Display Title
 description: Brief description shown on the button
 file: story_filename.ink
+release: true
 
 id: another-story
 title: Another Story
 description: Another interesting topic to explore.
 file: another_story.ink
+release: false
 ```
 
 ### Format Rules
-1. Each story needs 4 fields: `id`, `title`, `description`, and `file`
+1. Each story needs 5 fields: `id`, `title`, `description`, `file`, and `release`
 2. Use a blank line to separate stories
 3. Lines starting with `#` are comments (ignored)
 4. Field names must be lowercase
 5. The `file` field should be just the filename (not a path)
+6. The `release` field controls production visibility:
+   - `release: true` - Story appears in both dev and production
+   - `release: false` - Story only appears in dev (hidden in production builds)
 
 ### Adding a New Story
 1. Create your `.ink` file in this folder
-2. Add a new entry to `stories.txt`:
+2. Create a folder for your story's images: `public/assets/your-story-id/`
+3. Add a new entry to `stories.txt`:
    ```
    id: my-new-topic
    title: My New Topic
    description: A fascinating discussion about something important.
    file: my_new_topic.ink
+   release: true
    ```
-3. Save and refresh the app - it will appear automatically!
+4. Save and refresh the app - it will appear automatically!
 
 ### Tips
 - Keep IDs short and URL-friendly (lowercase, hyphens instead of spaces)
@@ -65,7 +72,14 @@ This is regular text that appears on screen.
 This paragraph has an image. # diagram: image_filename.png
 ```
 
-Images must be in the `public/assets/` folder.
+Images are automatically loaded from `public/assets/{story-id}/` folder.
+
+**Example:**
+- Story ID: `my-story`
+- Image reference in .ink: `# diagram: my_image.png`
+- Actual path: `public/assets/my-story/my_image.png`
+
+No need to include the story ID in the diagram tag - it's added automatically!
 
 ### Organizing Large Stories
 
@@ -115,11 +129,19 @@ npm run build
 ## File Organization
 
 ```
-public/stories/
-├── stories.txt              # Story list (edit this!)
-├── demo.ink                 # Simple demo story
-├── age_verification.ink     # Age verification story
-└── README.md               # This file
+public/
+├── stories/
+│   ├── stories.txt              # Story list (edit this!)
+│   ├── README.md               # This file
+│   ├── demo.ink                 # Demo story (release: false)
+│   └── age_verification.ink     # Age verification story (release: true)
+└── assets/
+    ├── demo/                    # Demo story images
+    │   └── demo_mascot.png
+    └── age-verification/        # Age verification images
+        ├── happy_Internet_v2.png
+        ├── vpn_bypass_v2.png
+        └── ...
 ```
 
 When splitting large stories:

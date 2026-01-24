@@ -40,6 +40,7 @@ const App = () => {
         <div className="page-container">
           <TopicView
             storyContent={currentStackItem.story.content}
+            storyId={currentStackItem.story.id}
             onClose={traverseBack}
             onHome={returnToHub}
           />
