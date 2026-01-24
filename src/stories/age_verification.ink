@@ -1,7 +1,7 @@
 VAR topic_title = "Age Verification"
 
 Lets talk about...
-I think we should age verify online content. # diagram: happy_Internet.png
+I think we should age verify online content. # diagram: happy_Internet_v2.png
 
 On the surface, it seems like a no-brainer.
 We want to protect children from harmful content. 
@@ -13,7 +13,7 @@ If we require ID or age verification, we can ensure only adults see adult conten
     -> The_Loophole
 
 === The_Loophole ===
-People can use VPNs (Virtual Private Networks) to bypass these checks. # diagram: vpn_bypass.png
+People can use VPNs (Virtual Private Networks) to bypass these checks. # diagram: vpn_bypass_v2.png
 By routing their traffic through a different country that doesn't have these laws, they can access whatever they want.
 This pushes people towards free, often unsafe, VPN services just to access the web.
 
@@ -24,7 +24,7 @@ This pushes people towards free, often unsafe, VPN services just to access the w
 
 === Ban_VPNs ===
 I get it. If VPNs are the problem, why not get rid of them?
-But let's look at the legitimate uses of VPNs first. # diagram: vpn_uses.png
+But let's look at the legitimate uses of VPNs first. # diagram: vpn_uses_v2.png
 
 Security for remote workers accessing company systems.
 Protecting privacy on public Wi-Fi at cafes and airports.
@@ -34,7 +34,7 @@ And arguably more importantly... can we actually detect a VPN?
 
 *   [Surely technology can tell?]
 
-Think of the internet like a series of pipes. # diagram: pipes_metaphor.png
+Think of the internet like a series of pipes. # diagram: pipes_metaphor_v2.png
 Normal traffic is like a clear glass pipe. You can see the water (data) and where it's going.
 Encrypted traffic (like HTTPS, which is most of the web now) is like an opaque pipe. You know where the pipe goes, but you can't see the water.
 
@@ -50,7 +50,7 @@ If you try to ban specific VPN companies, they just move or change their IP addr
 *   [This seems impossible.] -> The_Real_Problem
 
 === China_Example ===
-China's Great Firewall is often cited as proof that VPN blocking works. # diagram: great_firewall.png
+China's Great Firewall is often cited as proof that VPN blocking works. # diagram: great_firewall_v2.png
 But here's what actually happens:
 
 The government plays Whac-A-Mole with VPN servers. They block known VPN IP addresses.
@@ -80,7 +80,7 @@ It's like saying: "Curtains are now illegal unless you're rich enough to apply f
     -> The_Real_Problem
 
 === AI_Verification ===
-"AI can estimate age from your face!" # diagram: face_scanning.png
+"AI can estimate age from your face!" # diagram: face_scanning_v2.png
 The technology exists. Some systems claim 95% accuracy.
 
 But let's think about that 5% error rate with real numbers:
@@ -94,7 +94,7 @@ That's millions of adults locked out, or millions of kids getting through.
     -> Privacy_Concerns
 
 === Privacy_Concerns ===
-To verify your age with AI, you need to: # diagram: data_collection.png
+To verify your age with AI, you need to: # diagram: data_collection_v2.png
 1. Upload a photo of your face.
 2. Provide it to every website you visit.
 3. Trust each website to store it securely.
@@ -108,7 +108,7 @@ Each copy is stored in a filing cabinet that might get stolen.
 *   [What about biometric data being leaked?] -> Data_Breach_Risk
 
 === Third_Party_Verification ===
-"One company verifies everyone, then issues tokens!" # diagram: honeypot_database.png
+"One company verifies everyone, then issues tokens!" # diagram: honeypot_database_v2.png
 
 Now you have created the world's most valuable database:
 - Real names
@@ -141,7 +141,7 @@ Now imagine a leak that includes:
     -> The_Real_Problem
 
 === Force_Apps ===
-"If checking at the ISP level fails, what about the App Stores?" # diagram: app_ecosystem.png
+"If checking at the ISP level fails, what about the App Stores?" # diagram: app_ecosystem_v2.png
 Apple and Google control what apps most people use.
 They could enforce age verification for every app.
 
@@ -163,7 +163,7 @@ Browsers don't go through app stores.
     -> The_Real_Problem
 
 === Alternative_Solutions ===
-"What if we focused on education and tools instead of restrictions?" # diagram: parental_controls.png
+"What if we focused on education and tools instead of restrictions?" # diagram: parental_controls_v3.png
 
 Parental control software already exists:
 - Filter content at the device or router level
@@ -182,7 +182,7 @@ Education programs teaching digital literacy:
     -> The_Real_Problem
 
 === The_Real_Problem ===
-Here's the uncomfortable truth: # diagram: whack_a_mole.png
+Here's the uncomfortable truth: # diagram: whack_a_mole_v2.png
 
 We're trying to solve a social problem—how we raise and protect children—with a technical solution.
 
