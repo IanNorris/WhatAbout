@@ -26,16 +26,8 @@ And now we're discussing cutting off their ability to socialize online.
     -> Marginalized_Groups
 
 *   [Can't they just... go outside?]
-    If we're serious about that, we need to invest in:
+    If we're serious about that, we need to invest in real alternatives—which requires understanding the full picture.
     
-    Youth clubs and community centers
-    Safe green spaces and parks  
-    After-school programs
-    Sports facilities and arts programs
-    Public transportation so teens can actually get to these places
-    
-    You can't cut online socialization without providing offline alternatives.
-    
-    Right now, we're doing the opposite: cutting both.
-    
-    -> Need_Both_Spaces
+    But first, there's a better way to handle digital spaces.
+    ~ navigateTo("better-parental-controls")
+    -> END

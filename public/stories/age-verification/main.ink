@@ -54,5 +54,8 @@ So in trying to protect children, we've incentivized them to use software that a
     -> END
 *   [We should use AI to verify age.] -> AI_Verification
 *   [Can't we just force age verification on the apps?] -> Force_Apps
-*   [What about other solutions?] -> Alternative_Solutions
+*   [What about other solutions?]
+    Yes. Let me show you what actually works.
+    ~ navigateTo("better-parental-controls")
+    -> END
 
