@@ -115,6 +115,44 @@ This will report any paths that end without:
 - Explicit END statement
 - Choices for the reader  
 - Divert to another section (->)
+- Exit to hub via `exit()` function
+
+### Exiting to Hub
+
+To provide a clean exit experience back to the hub, use the `exit()` external function:
+
+```ink
+EXTERNAL exit()
+
+VAR topic_title = "My Story"
+
+Story content here...
+
+* [I'm done learning about this]
+    Thanks for exploring! Come back anytime to learn more.
+    ~ exit()
+    -> END
+```
+
+**Important notes:**
+- Declare `EXTERNAL exit()` at the top of your main story file
+- Show a farewell message before calling `exit()`
+- Always include `-> END` after `exit()` (Ink requires a valid endpoint)
+- The exit triggers after a 3-second delay for reading the message
+- The reader is automatically returned to the hub
+
+**Bad example (don't do this):**
+```ink
+* [I'm done] -> END  // ❌ Abrupt, no farewell message
+```
+
+**Good example:**
+```ink
+* [I'm done]
+    Thanks for reading! Head back to explore other topics.
+    ~ exit()
+    -> END  // ✅ Provides context and smooth transition
+```
 
 ## Development Commands
 

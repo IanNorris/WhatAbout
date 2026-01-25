@@ -7,6 +7,13 @@
  * - Explicit END statement
  * - Choices for the reader
  * - Divert to another knot/stitch
+ * - Exit to hub via exit() function
+ * 
+ * Proper exit pattern:
+ *   * [Exit choice]
+ *       Farewell message here.
+ *       ~ exit()
+ *       -> END
  * 
  * Usage:
  *   node tools/analyze-ink.js public/stories/age_verification.ink
@@ -140,6 +147,7 @@ function analyzeStory(storyJson) {
                 // Check if this choice branch has meaningful content
                 let hasMeaningfulContent = false;
                 let hasImmediateEnd = false;
+                let hasExitCall = false;
                 
                 for (const item of branchContent) {
                     if (typeof item === 'string') {
@@ -152,13 +160,22 @@ function analyzeStory(storyJson) {
                                 hasMeaningfulContent = true;
                             }
                         }
-                    } else if (typeof item === 'object' && item !== null && item.end !== undefined) {
-                        hasImmediateEnd = true;
+                    } else if (typeof item === 'object' && item !== null) {
+                        // Check for END marker
+                        if (item.end !== undefined) {
+                            hasImmediateEnd = true;
+                        }
+                        // Check for exit() external function call
+                        // In compiled Ink, function calls appear as divert to path with specific pattern
+                        if (item['->'] && typeof item['->'] === 'string' && item['->'].includes('exit')) {
+                            hasExitCall = true;
+                        }
                     }
                 }
                 
                 // A choice that immediately ends without content is a dead end
-                if (hasImmediateEnd && !hasMeaningfulContent) {
+                // BUT exit() calls are intentional exits, not dead ends
+                if (hasImmediateEnd && !hasMeaningfulContent && !hasExitCall) {
                     deadEnds.push({
                         path: `${pathName} (choice branch)`,
                         reason: 'Choice ends immediately without providing content'

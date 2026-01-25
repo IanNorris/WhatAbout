@@ -134,6 +134,21 @@ INCLUDE section2.ink
 
 Runtime compilation automatically resolves all includes!
 
+### Exiting Back to Hub
+
+Use the `exit()` function to provide a smooth return to the hub:
+
+```ink
+EXTERNAL exit()
+
+* [I'm finished]
+    Thanks for learning with us! Feel free to explore other topics.
+    ~ exit()
+    -> END
+```
+
+The user will see the farewell message for 3 seconds before returning to the hub.
+
 ---
 
 Built with React + Vite
