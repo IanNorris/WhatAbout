@@ -1,7 +1,7 @@
 === Why_It_Works ===
 Let's compare the two approaches: # diagram: local_vs_central_control.png
 
-**Surveillance Approach** (Age Verification / Bans):
+Surveillance Approach (Age Verification / Bans):
 - Requires identifying everyone online
 - Creates central databases of identity documents
 - Can be bypassed with VPNs
@@ -11,7 +11,7 @@ Let's compare the two approaches: # diagram: local_vs_central_control.png
 - Privacy risks for everyone
 - Fails to address root causes
 
-**Empowerment Approach** (Parental Controls):
+Empowerment Approach (Parental Controls):
 - Works at the device level
 - No central database needed
 - Cannot be bypassed with VPNs
@@ -31,21 +31,21 @@ Which approach actually achieves the goal of protecting children?
 === Better_For_Everyone ===
 This approach works better for everyone: # diagram: preparation_vs_prevention.png
 
-**For children:**
+For children:
 - Gradual learning rather than sudden exposure at 16/18
 - Maintains access to age-appropriate safety features
 - Reduces incentive to lie or hide usage
 - Builds digital literacy skills
 - Preserves connections with support networks
 
-**For parents:**
+For parents:
 - Tools that actually work
 - Flexibility to match family values
 - Ongoing education and support
 - Control without surveillance
 - Ability to adjust as children mature
 
-**For society:**
+For society:
 - No surveillance infrastructure to be misused
 - No massive identity databases to be breached
 - Respects privacy for everyone
@@ -58,7 +58,7 @@ This approach works better for everyone: # diagram: preparation_vs_prevention.pn
 === Final_Thoughts ===
 The question isn't whether we should protect children online. Of course we should.
 
-The question is: **How do we do it effectively without creating worse problems?**
+The question is: How do we do it effectively without creating worse problems?
 
 Age verification and blanket bans:
 - Sound simple

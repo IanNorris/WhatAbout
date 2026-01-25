@@ -13,7 +13,7 @@ Parents can set them up to:
 
 These controls work at the device level. No central database. No government surveillance. No privacy risks for millions of people.
 
-And here's the crucial difference from age verification or bans: **VPNs don't bypass them**.
+And here's the crucial difference from age verification or bans: VPNs don't bypass them.
 
 The controls are on the device itself. It doesn't matter which website the child tries to access or which country it appears to come from.
 

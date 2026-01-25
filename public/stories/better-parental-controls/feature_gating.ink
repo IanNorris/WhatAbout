@@ -3,18 +3,18 @@ Here's an idea that tech companies could implement: app-specific parental contro
 
 Instead of blocking entire platforms, let parents control which features children can access.
 
-**For WhatsApp:**
+For WhatsApp:
 - Limit messaging to approved contacts only
 - Get copied on group chats
 - Require approval to join new groups
 
-**For Instagram/TikTok:**
+For Instagram/TikTok:
 - Disable "the algorithm" (only show posts from followed accounts in chronological order)
 - Limit who can message or comment
 - Set viewing time limits
 - Require approval for new follows
 
-**For YouTube:**
+For YouTube:
 - Restrict to approved channels only
 - Disable autoplay and recommendations  
 - Enable restricted mode by default
