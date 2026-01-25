@@ -137,23 +137,25 @@ function analyzeStory(storyJson) {
             });
         }
         
-        // Analyze choice branches for immediate dead ends
+        // Analyze choice branches for dead ends
         if (choiceBranches) {
             for (const [branchKey, branchContent] of Object.entries(choiceBranches)) {
                 if (!branchKey.startsWith('c-') || !Array.isArray(branchContent)) {
                     continue;
                 }
                 
-                // Check if this choice branch has meaningful content
+                // Check if this choice branch has meaningful content and proper ending
                 let hasMeaningfulContent = false;
-                let hasImmediateEnd = false;
+                let hasEnd = false;
+                let hasDivert = false;
                 let hasExitCall = false;
+                let hasNestedChoices = false;
                 
                 for (const item of branchContent) {
                     if (typeof item === 'string') {
                         // Check for END command (lowercase "end" string)
                         if (item === 'end') {
-                            hasImmediateEnd = true;
+                            hasEnd = true;
                         } else {
                             const text = item.replace(/^\^?\s*/, '').trim();
                             if (text.length > 0 && !text.match(/^[\n\r\s]*$/)) {
@@ -162,22 +164,37 @@ function analyzeStory(storyJson) {
                         }
                     } else if (typeof item === 'object' && item !== null) {
                         // Check for END marker
-                        if (item.end !== undefined) {
-                            hasImmediateEnd = true;
+                        if (item.end !== undefined || item['#n'] === 'END') {
+                            hasEnd = true;
                         }
-                        // Check for exit() external function call
-                        // In compiled Ink, function calls appear as divert to path with specific pattern
-                        if (item['->'] && typeof item['->'] === 'string' && item['->'].includes('exit')) {
-                            hasExitCall = true;
+                        // Check for divert
+                        if (item['->'] !== undefined) {
+                            // Check if it's an exit() call (intentional exit)
+                            if (typeof item['->'] === 'string' && item['->'].includes('exit')) {
+                                hasExitCall = true;
+                            }
+                            hasDivert = true;
+                        }
+                        // Check for nested choices
+                        if (item['*'] !== undefined || item['+'] !== undefined) {
+                            hasNestedChoices = true;
                         }
                     }
                 }
                 
-                // A choice that immediately ends without content is a dead end
-                // BUT exit() calls are intentional exits, not dead ends
-                if (hasImmediateEnd && !hasMeaningfulContent && !hasExitCall) {
+                // A choice branch is a dead end if it has content but no forward progress
+                // Exceptions: exit() calls are intentional exits
+                if (hasMeaningfulContent && !hasEnd && !hasDivert && !hasNestedChoices && !hasExitCall) {
                     deadEnds.push({
-                        path: `${pathName} (choice branch)`,
+                        path: `${pathName} (choice ${branchKey})`,
+                        reason: 'Choice branch ends without choices, END, or divert'
+                    });
+                }
+                
+                // Also flag immediate ends without any content (likely mistakes)
+                if (hasEnd && !hasMeaningfulContent && !hasExitCall) {
+                    deadEnds.push({
+                        path: `${pathName} (choice ${branchKey})`,
                         reason: 'Choice ends immediately without providing content'
                     });
                 }
