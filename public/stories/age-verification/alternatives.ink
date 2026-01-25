@@ -1,5 +1,5 @@
 === Alternative_Solutions ===
-"What if we focused on education and tools instead of restrictions?" # diagram: parental_controls_v3.png
+"What if we focused on education and tools instead of restrictions?" # diagram: parental_controls.png
 
 Parental control software already exists:
 - Filter content at the device or router level
@@ -21,7 +21,7 @@ They don't require building surveillance infrastructure.
 They don't create privacy risks for everyone.
 They don't assume one-size-fits-all policies work for all families.
 
-Different families have different values:
+Different families have different values: # diagram: family_flexibility.png
 Some parents want strict filtering until age 18.
 Some prefer open conversation and gradual exposure.
 Some focus on teaching critical thinking over blocking.

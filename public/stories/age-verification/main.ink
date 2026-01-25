@@ -7,7 +7,7 @@ INCLUDE alternatives.ink
 INCLUDE conclusion.ink
 
 Lets talk about...
-I think we should age verify online content. # diagram: happy_Internet_v2.png
+I think we should age verify online content. # diagram: happy_Internet.png
 
 On the surface, it seems like a no-brainer.
 We want to protect children from harmful content. 
@@ -24,7 +24,7 @@ After all, a child stumbling onto explicit content can be traumatizing. Parents 
     -> The_Loophole
 
 === The_Loophole ===
-People can use VPNs (Virtual Private Networks) to bypass these checks. # diagram: vpn_bypass_v2.png
+People can use VPNs (Virtual Private Networks) to bypass these checks. # diagram: vpn_bypass.png
 By routing their traffic through a different country that doesn't have these laws, they can access whatever they want.
 
 Think about it: if the UK requires age verification, but Canada doesn't, all you need is a VPN server in Canada.
