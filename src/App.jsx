@@ -4,16 +4,22 @@ import Hub from './components/Hub';
 import TopicView from './components/TopicView';
 
 const App = () => {
-  // Navigation Stack now stores objects? Or just IDs? 
-  // Let's store view state: { name: 'hub' } or { name: 'topic', story: ... }
-  // To keep it simple with the stack: Stack items are objects { view: 'hub' }
-
+  // Story stack: each item has { view, story, parentStoryTitle }
   const [navStack, setNavStack] = useState([{ view: 'hub' }]);
   const currentStackItem = navStack[navStack.length - 1];
   const currentView = currentStackItem.view;
 
   const navigateToTopic = (story) => {
-    setNavStack(prev => [...prev, { view: 'topic', story }]);
+    // If we're currently in a topic, use its title as parent
+    const currentParentTitle = currentStackItem.view === 'topic' 
+      ? currentStackItem.story.title 
+      : null;
+    
+    setNavStack(prev => [...prev, { 
+      view: 'topic', 
+      story,
+      parentStoryTitle: story.parentStoryTitle || currentParentTitle
+    }]);
   };
 
   const traverseBack = () => {
@@ -40,8 +46,11 @@ const App = () => {
           <TopicView
             storyContent={currentStackItem.story.content}
             storyId={currentStackItem.story.id}
+            storyTitle={currentStackItem.story.title}
+            parentStoryTitle={currentStackItem.parentStoryTitle}
             onClose={traverseBack}
             onHome={returnToHub}
+            onNavigateToStory={navigateToTopic}
           />
         </div>
       )}

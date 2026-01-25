@@ -149,6 +149,21 @@ EXTERNAL exit()
 
 The user will see the farewell message for 3 seconds before returning to the hub.
 
+### Cross-Linking Stories
+
+Link from one story to another using `navigateTo()`:
+
+```ink
+EXTERNAL navigateTo(story_id)
+
+* [Learn about related topic]
+    Let's explore that...
+    ~ navigateTo("related-story-id")
+    -> END
+```
+
+Users can return to the parent story via the menu's "Exit to [Parent]" option.
+
 ---
 
 Built with React + Vite

@@ -3,8 +3,8 @@ import useInkStory from '../hooks/useInkStory';
 import OverlayMenu from './OverlayMenu';
 import styles from './TopicView.module.css';
 
-const TopicView = ({ storyContent, storyId, onClose, onHome }) => {
-    const { pages, currentChoices, makeChoice, resetStory } = useInkStory(storyContent, onHome);
+const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, onClose, onHome, onNavigateToStory }) => {
+    const { pages, currentChoices, makeChoice, resetStory } = useInkStory(storyContent, storyTitle, onHome, onNavigateToStory);
     const currentPageRef = useRef(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -45,6 +45,9 @@ const TopicView = ({ storyContent, storyId, onClose, onHome }) => {
                 visible={isMenuOpen}
                 onClose={() => setIsMenuOpen(false)}
                 onHome={onHome}
+                onBack={parentStoryTitle ? onClose : null}
+                parentStoryTitle={parentStoryTitle}
+                currentStoryTitle={storyTitle}
                 onRestart={() => {
                     resetStory();
                     setIsMenuOpen(false);

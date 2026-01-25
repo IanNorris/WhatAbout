@@ -154,6 +154,54 @@ Story content here...
     -> END  // ✅ Provides context and smooth transition
 ```
 
+### Cross-Linking to Other Stories
+
+To link from one story to another, use the `navigateTo()` external function:
+
+```ink
+EXTERNAL navigateTo(story_id)
+
+VAR topic_title = "My Story"
+
+Story content here...
+
+Want to learn more about privacy?
+* [Explore Privacy Topic]
+    Let's dive deeper into that...
+    ~ navigateTo("privacy-basics")
+    -> END
+```
+
+**How it works:**
+- The user is pushed into the new story (added to navigation stack)
+- When they exit the sub-story via the menu, they return to where they left off
+- The menu shows "Exit to [Parent Story]" when in a sub-story
+- Story IDs must match the `id` field in `stories.txt`
+
+**Important notes:**
+- Declare `EXTERNAL navigateTo(story_id)` at the top of your main story file
+- The story ID parameter must exist in `stories.txt`
+- Always include `-> END` after navigation
+- The navigation happens immediately (no delay like `exit()`)
+- The parent story's progress is preserved when returning
+
+**Example use case:**
+```ink
+EXTERNAL navigateTo(story_id)
+
+This concept relates to encryption...
+
+* [Learn about encryption first]
+    Great idea! Let's explore that foundation.
+    ~ navigateTo("encryption-basics")
+    -> END
+    
+* [Continue without background]
+    Okay, proceeding with the assumption you know encryption...
+    -> advanced_content
+```
+
+
 ## Development Commands
 
 ```bash

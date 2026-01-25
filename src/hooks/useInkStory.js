@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Story } from 'inkjs';
 
-const useInkStory = (storyContent, onExit) => {
+const useInkStory = (storyContent, currentStoryId, onExit, onNavigateToStory) => {
     const [pages, setPages] = useState([]); // Array of page objects with paragraphs, choices, and selection info
     const [currentChoices, setCurrentChoices] = useState([]);
     const [isEnded, setIsEnded] = useState(false);
@@ -31,12 +31,49 @@ const useInkStory = (storyContent, onExit) => {
                     });
                 }
                 
+                // Bind external function for navigating to another story
+                if (onNavigateToStory) {
+                    s.BindExternalFunction('navigateTo', (storyId) => {
+                        // Fire off async work but return immediately
+                        (async () => {
+                            try {
+                                // Import loadInkStory and loadStoryList dynamically
+                                const { loadInkStory, loadStoryList } = await import('../stories');
+                                
+                                // Get story metadata
+                                const storyList = await loadStoryList();
+                                const targetStory = storyList.find(s => s.id === storyId);
+                                
+                                if (!targetStory) {
+                                    console.error(`Story not found: ${storyId}`);
+                                    return;
+                                }
+                                
+                                // Load and compile the story
+                                const compiledStory = await loadInkStory(targetStory.inkPath);
+                                
+                                // Navigate with parent info
+                                onNavigateToStory({
+                                    ...targetStory,
+                                    content: compiledStory,
+                                    parentStoryTitle: currentStoryId // Track where we came from
+                                });
+                            } catch (error) {
+                                console.error('Error navigating to story:', error);
+                            }
+                        })();
+                        
+                        // Return nothing (void) - Ink will treat this as null
+                        return null;
+                    });
+                }
+                
                 continueStory();
             } catch (err) {
                 console.error("Failed to load Ink story", err);
             }
         }
-    }, [storyContent, onExit]);
+    }, [storyContent, onExit, onNavigateToStory, currentStoryId]);
 
     const continueStory = useCallback(() => {
         const s = storyRef.current;

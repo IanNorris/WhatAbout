@@ -17,6 +17,18 @@ description: Should we verify age online? The pros, cons, and tech reality.
 file: main.ink
 release: true
 
+id: social-media-bans
+title: Social Media Bans
+description: Should we ban social media for under 16s? Exploring unintended consequences.
+file: main.ink
+release: true
+
+id: crosslink-demo
+title: Cross-Link Test
+description: Test story for cross-linking feature
+file: main.ink
+release: false
+
 id: demo
 title: Demo Story
 description: A sample story
