@@ -4,21 +4,21 @@ Parental controls only work if parents know about them and use them. # diagram: 
 We need comprehensive parent education programs:
 
 How to enable parental controls:
-- Step-by-step guides for each device type
-- What settings are recommended for different ages  
-- How to adjust controls as children mature
+• Step-by-step guides for each device type
+• What settings are recommended for different ages  
+• How to adjust controls as children mature
 
 How to coach children about online safety:
-- Not taking or sharing explicit or inappropriate content
-- Understanding the consequences if they do
-- What to do if they encounter harmful content
-- Why certain content is harmful and addictive
-- The importance of regular phone checks for safety (not surveillance)
+• Not taking or sharing explicit or inappropriate content
+• Understanding the consequences if they do
+• What to do if they encounter harmful content
+• Why certain content is harmful and addictive
+• The importance of regular phone checks for safety (not surveillance)
 
 Understanding the "why":
-- Why algorithms are designed to be addictive
-- How to recognize manipulation and misinformation  
-- Why certain features are particularly harmful to developing brains
+• Why algorithms are designed to be addictive
+• How to recognize manipulation and misinformation  
+• Why certain features are particularly harmful to developing brains
 
 *   [That sounds like a lot of work for parents.]
     It is. But so is dealing with the consequences of unsupervised internet access.

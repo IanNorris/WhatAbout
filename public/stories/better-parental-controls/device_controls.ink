@@ -4,12 +4,12 @@ On-device parental controls already exist on phones, tablets, and computers. # d
 Most people don't realize how powerful these tools are.
 
 Parents can set them up to:
-- Require approval before installing new apps
-- Filter web content with the ability to override specific sites
-- Set time limits for the device or specific apps
-- Lock the device during school hours or at night
-- Block or limit purchases
-- Receive reports on device usage
+• Require approval before installing new apps
+• Filter web content with the ability to override specific sites
+• Set time limits for the device or specific apps
+• Lock the device during school hours or at night
+• Block or limit purchases
+• Receive reports on device usage
 
 These controls work at the device level. No central database. No government surveillance. No privacy risks for millions of people.
 

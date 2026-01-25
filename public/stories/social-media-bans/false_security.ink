@@ -6,11 +6,11 @@ Parents think the ban means their children are safe.
 "Social media is banned for under 16s, so my 14-year-old can't access it. Problem solved."
 
 Meanwhile:
-- The child has used a VPN
-- Or borrowed a parent's ID
-- Or lied about their age
-- And is now on platforms with all safety features disabled
-- Accessing content without any parental awareness or oversight
+• The child has used a VPN
+• Or borrowed a parent's ID
+• Or lied about their age
+• And is now on platforms with all safety features disabled
+• Accessing content without any parental awareness or oversight
 
 The parent isn't monitoring anymore. Why would they? The law has "handled it."
 
@@ -57,18 +57,18 @@ The conversation shouldn't be "online OR offline." # diagram: both_spaces_needed
 It should be "How do we make both spaces safer and healthier?"
 
 Physical social spaces:
-- Reinvest in youth services and community centers  
-- Create and maintain safe green spaces
-- Fund after-school programs
-- Support sports and arts programs
-- Improve public transportation for teenagers
+• Reinvest in youth services and community centers  
+• Create and maintain safe green spaces
+• Fund after-school programs
+• Support sports and arts programs
+• Improve public transportation for teenagers
 
 Digital social spaces:
-- Teach digital literacy from an early age
-- Provide parents with tools and education
-- Design better parental controls
-- Hold platforms accountable for harmful design
-- Create age-appropriate online experiences
+• Teach digital literacy from an early age
+• Provide parents with tools and education
+• Design better parental controls
+• Hold platforms accountable for harmful design
+• Create age-appropriate online experiences
 
 We need both. Not one instead of the other.
 

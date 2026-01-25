@@ -75,10 +75,10 @@ Businesses and the wealthy get secure, private connections.
 Regular citizens are forced to expose their browsing to government surveillance.
 
 Think about what "approved" means in practice:
-- The government can see where the VPN connects
-- They can demand logs of who uses it and when
-- They can revoke approval at any time
-- They create a list of "trusted" VPNs that must cooperate with authorities
+• The government can see where the VPN connects
+• They can demand logs of who uses it and when
+• They can revoke approval at any time
+• They create a list of "trusted" VPNs that must cooperate with authorities
 
 This transforms a security tool into a surveillance tool.
 

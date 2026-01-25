@@ -6,10 +6,10 @@ Businesses and the wealthy get secure, private connections.
 Regular citizens are forced to expose their browsing to government surveillance.
 
 Think about what "approved" means in practice:
-- The government can see where the VPN connects
-- They can demand logs of who uses it and when
-- They can revoke approval at any time
-- They create a list of "trusted" VPNs that must cooperate with authorities
+• The government can see where the VPN connects
+• They can demand logs of who uses it and when
+• They can revoke approval at any time
+• They create a list of "trusted" VPNs that must cooperate with authorities
 
 This transforms a security tool into a surveillance tool.
 
@@ -17,14 +17,14 @@ It's like saying: "Curtains are now illegal unless you're rich enough to apply f
 And oh, by the way, the government gets to peek through approved curtains whenever they want.
 
 Who gets approval? 
-- Corporations, certainly
-- Government contractors
-- Maybe large hospitals and universities
+• Corporations, certainly
+• Government contractors
+• Maybe large hospitals and universities
 
 But:
-- Freelance journalists? Probably not.
-- Political activists? Unlikely.
-- Ordinary citizens who value privacy? No chance.
+• Freelance journalists? Probably not.
+• Political activists? Unlikely.
+• Ordinary citizens who value privacy? No chance.
 
 *   [That doesn't seem fair.]
     It's not. And it creates new problems:

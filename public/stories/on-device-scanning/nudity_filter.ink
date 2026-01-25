@@ -15,14 +15,14 @@ Not so fast. To disable the nudity filter, you need to **prove your age** throug
 This creates a catch-22 for privacy. # diagram: privacy_trap.png
 
 Option 1: **Keep the filter enabled**
-- Your phone blurs perfectly legal content between consenting adults
-- You have to manually unblur every flagged image
-- The system still scans everything (it has to, to know what to blur)
+• Your phone blurs perfectly legal content between consenting adults
+• You have to manually unblur every flagged image
+• The system still scans everything (it has to, to know what to blur)
 
 Option 2: **Disable the filter with age verification**
-- Upload your ID or face scan to a third party
-- Create a permanent record of your identity tied to your messaging
-- Hope that database doesn't get breached (spoiler: they always do)
+• Upload your ID or face scan to a third party
+• Create a permanent record of your identity tied to your messaging
+• Hope that database doesn't get breached (spoiler: they always do)
 
 Either way, your privacy is compromised.
 
@@ -32,12 +32,12 @@ Either way, your privacy is compromised.
 This isn't about pornography. # diagram: nudity_broad_definition.png
 
 AI "nudity detection" is notoriously broad and inaccurate. It flags:
-- Classical art (Venus de Milo, Sistine Chapel)
-- Medical images and diagrams
-- Breastfeeding photos  
-- Beach or swimming photos
-- Artistic photography
-- Educational anatomy content
+• Classical art (Venus de Milo, Sistine Chapel)
+• Medical images and diagrams
+• Breastfeeding photos  
+• Beach or swimming photos
+• Artistic photography
+• Educational anatomy content
 
 And remember: to unblur these innocent images, you need to age verify.
 
@@ -53,9 +53,9 @@ Now connect the dots: # diagram: scanning_plus_av.png
 5. Any flags or reports can be tied directly to you
 
 This isn't just about protecting children. It's about creating a system where:
-- Everyone is scanned
-- Everyone is identified  
-- Everything is potentially reportable
+• Everyone is scanned
+• Everyone is identified  
+• Everything is potentially reportable
 
 -> Cannot_Age_Verify
 
@@ -64,10 +64,10 @@ And here's a personal concern from the user who built this app: # diagram: locke
 
 Some people **cannot** age verify, even if they wanted to:
 
-- No government-issued photo ID (not everyone has a passport or driver's license)
-- Privacy-conscious individuals who refuse to participate in biometric scanning
-- People whose documents don't match their appearance (trans individuals, for example)
-- Those living off-grid or without traditional identification
+• No government-issued photo ID (not everyone has a passport or driver's license)
+• Privacy-conscious individuals who refuse to participate in biometric scanning
+• People whose documents don't match their appearance (trans individuals, for example)
+• Those living off-grid or without traditional identification
 
 What happens to them? Are they just... locked out of modern communication?
 
@@ -103,9 +103,9 @@ Would you like to explore the broader age verification concerns?
 There's another concerning connection here.
 
 The government is also pushing smartphone-based digital ID systems. Once your age verification is tied to a digital ID stored on your phone, you've created a direct link between:
-- Your verified identity
-- Your messaging activity
-- Your flagged content
+• Your verified identity
+• Your messaging activity
+• Your flagged content
 
 This surveillance infrastructure can be repurposed in ways we haven't fully considered yet.
 
@@ -122,11 +122,11 @@ Would you like to explore the digital ID concerns?
 There's a better way to protect children that doesn't involve scanning everyone's messages. # diagram: better_way.png
 
 <>**Voluntary, parent-controlled** filtering:
-- Parents choose to enable it for their children
-- Parents configure what's appropriate
-- Parents receive reports (not the government)
-- Disabled automatically when the child becomes an adult
-- No age verification required for adults to opt out
+• Parents choose to enable it for their children
+• Parents configure what's appropriate
+• Parents receive reports (not the government)
+• Disabled automatically when the child becomes an adult
+• No age verification required for adults to opt out
 
 This gives parents the tools they need without building mass surveillance infrastructure.
 

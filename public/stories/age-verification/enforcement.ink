@@ -37,10 +37,10 @@ They could enforce age verification for every app.
 And we're already seeing this play out in practice. # diagram: user_migration.png
 
 Early data from age-verification enforcement shows:
-- Compliant sites hemorrhaged users
-- Non-compliant sites experienced massive growth
-- One adult site estimated it had 3,000 clones
-- Only 37% of users say they're likely to complete age-verification
+• Compliant sites hemorrhaged users
+• Non-compliant sites experienced massive growth
+• One adult site estimated it had 3,000 clones
+• Only 37% of users say they're likely to complete age-verification
 
 Users always seek the path of least friction.
 When you force intrusive checks on compliant sites, traffic naturally flows to non-compliant alternatives.

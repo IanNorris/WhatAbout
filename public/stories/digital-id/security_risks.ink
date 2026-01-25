@@ -29,9 +29,9 @@ This was the system designed to be the gateway to all UK government services.
 If a friendly red-team can breach it undetected, what can hostile nation-states do?
 
 And this isn't isolated: # diagram: uk_threat_landscape.png
-- The National Cyber Security Centre reports four nationally significant cyber attacks every week
-- Over half of UK businesses reported cyber-attacks in the 12 months to 2024
-- The JLR attack is still ongoing
+• The National Cyber Security Centre reports four nationally significant cyber attacks every week
+• Over half of UK businesses reported cyber-attacks in the 12 months to 2024
+• The JLR attack is still ongoing
 
 *   [That's concerning, but those are other systems.]
     The problem goes deeper than individual systems.
@@ -43,10 +43,10 @@ Modern technology is built on layers of complexity. # diagram: tech_stack.png
 Each layer introduces new vulnerabilities.
 
 Recent examples:
-- A zero-click flaw in Android allowed hackers to remotely control devices
-- Around 40% of Android devices no longer receive security updates
-- Modern software development relies on complex supply chains
-- AI-generated code is already producing wildly insecure software
+• A zero-click flaw in Android allowed hackers to remotely control devices
+• Around 40% of Android devices no longer receive security updates
+• Modern software development relies on complex supply chains
+• AI-generated code is already producing wildly insecure software
 
 And age-verification systems created for Online Safety Act compliance are already being compromised. # diagram: av_breaches.png
 Britons are having their identity documents stolen.

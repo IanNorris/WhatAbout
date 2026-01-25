@@ -52,9 +52,9 @@ You can create multiple branches, loops, and complex narratives.
 === more_about_choices ===
 
 The choice system also shows:
-- **Selected choices** in blue (the one you picked)
-- **Unselected choices** greyed out (paths not taken)
-- **Choice history** preserved as you scroll back
+• **Selected choices** in blue (the one you picked)
+• **Unselected choices** greyed out (paths not taken)
+• **Choice history** preserved as you scroll back
 
 This makes it easy to understand the story structure as you explore.
 

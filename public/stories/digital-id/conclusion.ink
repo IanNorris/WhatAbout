@@ -34,25 +34,25 @@ Because we understand that these systems make everyone less safe.
 If you agree that digital ID poses unacceptable risks: # diagram: take_action.png
 
 REFUSE to participate:
-- Don't use optional digital ID systems
-- Don't age-verify unless absolutely necessary
-- Use privacy-preserving alternatives where possible
+• Don't use optional digital ID systems
+• Don't age-verify unless absolutely necessary
+• Use privacy-preserving alternatives where possible
 
 CONTACT your MP:
-- Explain your concerns about surveillance infrastructure
-- Share evidence about security risks
-- Ask them to support privacy-respecting alternatives
+• Explain your concerns about surveillance infrastructure
+• Share evidence about security risks
+• Ask them to support privacy-respecting alternatives
 
 SUPPORT organizations fighting for digital rights:
-- Open Rights Group
-- Privacy International
-- Electronic Frontier Foundation
-- Big Brother Watch
+• Open Rights Group
+• Privacy International
+• Electronic Frontier Foundation
+• Big Brother Watch
 
 EDUCATE others:
-- Share these concerns with friends and family
-- Help them understand what's being built
-- Show them there are better ways
+• Share these concerns with friends and family
+• Help them understand what's being built
+• Show them there are better ways
 
 The infrastructure being built today will shape the UK for generations.
 We have a brief window to stop it.

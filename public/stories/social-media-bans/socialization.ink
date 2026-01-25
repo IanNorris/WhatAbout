@@ -8,10 +8,10 @@ Nearly a third of London's youth clubs closed.
 For every £1 saved from these closures, about £3 was lost to education and crime costs.
 
 At the same time, outdoor play has declined:
-- "Stranger danger" fears
-- Increased traffic and reduced green spaces  
-- Rising housing density with less common areas
-- Parents working longer hours, less able to supervise outdoor play
+• "Stranger danger" fears
+• Increased traffic and reduced green spaces  
+• Rising housing density with less common areas
+• Parents working longer hours, less able to supervise outdoor play
 
 Children have fewer and fewer places to socialize in person.
 

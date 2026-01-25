@@ -36,10 +36,10 @@ They can be used to train facial recognition systems without your consent.
 They can be cross-referenced with other databases to track everywhere you go online.
 
 Consider what happens when you visit 50 different websites requiring age verification: # diagram: fifty_copies.png
-- 50 different companies now have your facial biometric data
-- 50 different security systems that need to protect it
-- 50 different legal jurisdictions with varying privacy laws
-- 50 potential breach points for hackers
+• 50 different companies now have your facial biometric data
+• 50 different security systems that need to protect it
+• 50 different legal jurisdictions with varying privacy laws
+• 50 potential breach points for hackers
 
 *   [Can't we use a trusted third party?] -> Third_Party_Verification
 *   [What about biometric data being leaked?] -> Data_Breach_Risk
@@ -65,12 +65,12 @@ Would you like to explore on-device scanning?
 "One company verifies everyone, then issues tokens!" # diagram: honeypot_database.png
 
 Now you have created the world's most valuable database:
-- Real names
-- Real faces  
-- Complete list of adult websites each person visits
-- Timestamps of when they visited
-- IP addresses showing where they were
-- Device fingerprints revealing what devices they use
+• Real names
+• Real faces  
+• Complete list of adult websites each person visits
+• Timestamps of when they visited
+• IP addresses showing where they were
+• Device fingerprints revealing what devices they use
 
 This is called a "honeypot" in security—a single target so valuable that every hacker on earth will attack it.
 
@@ -104,12 +104,12 @@ These weren't small companies. These were industry giants with massive security 
 And age-verification companies are already being compromised, with Britons having their identity documents and face scans stolen.
 
 Now imagine a leak that includes:
-- Your face
-- Your real name
-- Every adult website you visited
-- When you visited them
-- How long you stayed on each page
-- What you searched for
+• Your face
+• Your real name
+• Every adult website you visited
+• When you visited them
+• How long you stayed on each page
+• What you searched for
 
 This data is permanent. Once leaked, it's out there forever.
 Facial recognition means anyone can identify you from photos.

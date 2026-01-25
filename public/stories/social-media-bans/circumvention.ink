@@ -44,11 +44,11 @@ Seems harmless, right? They get access, everyone's happy.
 Except:
 
 Most platforms have specific safety features for users under 18:
-- Restricted who can message them
-- Limits on who can see their content  
-- Warnings about inappropriate content
-- Easier reporting for concerning behavior
-- Content algorithms that avoid mature themes
+• Restricted who can message them
+• Limits on who can see their content  
+• Warnings about inappropriate content
+• Easier reporting for concerning behavior
+• Content algorithms that avoid mature themes
 
 When a 14-year-old claims to be 21, all those protections turn off.
 
@@ -90,10 +90,10 @@ They delete apps before parents come home. They use private browsing. They creat
 Normal teenage privacy behavior—but with a crucial difference:
 
 When they encounter something troubling:
-- Cyberbullying
-- Grooming attempts  
-- Explicit content
-- Pressure to share inappropriate images
+• Cyberbullying
+• Grooming attempts  
+• Explicit content
+• Pressure to share inappropriate images
 
 They can't tell their parents. Because that would reveal they're on the banned platform.
 

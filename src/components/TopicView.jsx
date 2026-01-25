@@ -29,30 +29,51 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
         currentPageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, [pages]);
 
-    const renderParagraph = (p, index) => {
-        const diagramTag = p.tags?.find(t => t.startsWith('diagram:'));
-        let diagram = null;
+    const renderParagraphs = (paragraphs) => {
+        const elements = [];
+        let textBatch = [];
+        let batchStartIndex = 0;
 
-        if (diagramTag) {
-            const src = diagramTag.split(':')[1].trim();
-            // Prepend story ID to make path relative to assets/<story-id>/
-            const imagePath = `/assets/${storyId}/${src}`;
-            diagram = (
-                <div className="diagram-container" style={{ margin: '1rem 0', textAlign: 'center' }}>
-                    <img src={imagePath} alt="Diagram" style={{ maxWidth: '100%', borderRadius: '10px' }} />
-                </div>
-            );
-        }
+        const flushTextBatch = (currentIndex) => {
+            if (textBatch.length > 0) {
+                // Batch all text together and parse as full markdown (supports lists, etc.)
+                const combinedText = textBatch.join('\n');
+                const htmlContent = marked.parse(combinedText);
+                
+                elements.push(
+                    <div key={`text-${batchStartIndex}`} className={styles.textBlock}>
+                        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+                    </div>
+                );
+                textBatch = [];
+                batchStartIndex = currentIndex;
+            }
+        };
 
-        // Parse markdown and render as HTML
-        const htmlContent = marked.parseInline(p.text);
+        paragraphs.forEach((p, index) => {
+            const diagramTag = p.tags?.find(t => t.startsWith('diagram:'));
 
-        return (
-            <div key={index} className={styles.textBlock}>
-                <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-                {diagram}
-            </div>
-        );
+            if (diagramTag) {
+                // Flush any pending text before adding the diagram
+                flushTextBatch(index);
+
+                const src = diagramTag.split(':')[1].trim();
+                const imagePath = `/assets/${storyId}/${src}`;
+                elements.push(
+                    <div key={`diagram-${index}`} className="diagram-container" style={{ margin: '1rem 0', textAlign: 'center' }}>
+                        <img src={imagePath} alt="Diagram" style={{ maxWidth: '100%', borderRadius: '10px' }} />
+                    </div>
+                );
+            } else {
+                // Add text to batch
+                textBatch.push(p.text);
+            }
+        });
+
+        // Flush any remaining text
+        flushTextBatch(paragraphs.length);
+
+        return elements;
     };
 
     return (
@@ -97,7 +118,7 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                                 </div>
                             )}
                             
-                            {page.paragraphs.map((p, pIdx) => renderParagraph(p, `${pageIdx}-${pIdx}`))}
+                            {renderParagraphs(page.paragraphs)}
                             
                             {/* Show choices if they exist on this page */}
                             {page.choices && page.choices.length > 0 && (

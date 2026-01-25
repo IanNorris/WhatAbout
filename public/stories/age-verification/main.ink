@@ -41,10 +41,10 @@ This doesn't require technical expertise. VPN apps are downloadable from app sto
 And here's the problem: this pushes people—including teenagers—towards free, often unsafe, VPN services just to access the web.
 
 These free VPNs often:
-- Log your browsing activity and sell it to advertisers
-- Inject ads into the pages you visit
-- Contain malware that steals your data
-- Route your traffic through compromised servers
+• Log your browsing activity and sell it to advertisers
+• Inject ads into the pages you visit
+• Contain malware that steals your data
+• Route your traffic through compromised servers
 
 So in trying to protect children, we've incentivized them to use software that actively harms their privacy and security.
 

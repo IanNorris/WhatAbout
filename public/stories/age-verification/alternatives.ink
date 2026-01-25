@@ -2,19 +2,19 @@
 "What if we focused on education and tools instead of restrictions?" # diagram: parental_controls.png
 
 Parental control software already exists:
-- Filter content at the device or router level
-- Parents control it, not the government
-- No central database of everyone's browsing
-- Works on phones, tablets, computers, and game consoles
-- Can be adjusted as children mature
+• Filter content at the device or router level
+• Parents control it, not the government
+• No central database of everyone's browsing
+• Works on phones, tablets, computers, and game consoles
+• Can be adjusted as children mature
 
 Education programs teaching digital literacy:
-- How to evaluate sources
-- Recognizing manipulation and misinformation
-- Understanding manipulation tactics
-- When to ask for help
-- Critical thinking about online content
-- Healthy digital habits and boundaries
+• How to evaluate sources
+• Recognizing manipulation and misinformation
+• Understanding manipulation tactics
+• When to ask for help
+• Critical thinking about online content
+• Healthy digital habits and boundaries
 
 These solutions address the actual goal: helping parents protect their children.
 They don't require building surveillance infrastructure.

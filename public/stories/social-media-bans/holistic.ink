@@ -4,24 +4,24 @@ The real solution requires thinking bigger than just "ban" or "allow." # diagram
 We need a multi-layered approach:
 
 Physical infrastructure:
-- Reinvest in youth services (reverse the 72% cuts)
-- Fund youth clubs and community centers  
-- Create and maintain safe public spaces
-- Support organized activities and sports
-- Provide affordable transportation for teenagers
+• Reinvest in youth services (reverse the 72% cuts)
+• Fund youth clubs and community centers  
+• Create and maintain safe public spaces
+• Support organized activities and sports
+• Provide affordable transportation for teenagers
 
 Digital infrastructure:
-- Require platforms to offer robust parental controls
-- Mandate feature-gating options for parents
-- Hold companies accountable for harmful algorithmic design
-- Enforce existing laws against predatory behavior
+• Require platforms to offer robust parental controls
+• Mandate feature-gating options for parents
+• Hold companies accountable for harmful algorithmic design
+• Enforce existing laws against predatory behavior
 
 Education infrastructure:
-- Digital literacy in schools from an early age
-- Parent education programs with ongoing support  
-- Teaching critical thinking about online content
-- Age-appropriate discussions about online safety
-- Community resources for families
+• Digital literacy in schools from an early age
+• Parent education programs with ongoing support  
+• Teaching critical thinking about online content
+• Age-appropriate discussions about online safety
+• Community resources for families
 
 This addresses the root causes rather than just treating symptoms.
 
@@ -47,11 +47,11 @@ Prevention assumes that at some magic age (16? 18? 21?) people are suddenly read
 Preparation recognizes that people learn gradually through guidance and experience.
 
 Think about how we teach children to cross the street:
-- We don't ban them from streets until they're 16
-- We hold their hand when they're young
-- We teach them to look both ways  
-- We supervise with decreasing intensity
-- Eventually they can do it safely on their own
+• We don't ban them from streets until they're 16
+• We hold their hand when they're young
+• We teach them to look both ways  
+• We supervise with decreasing intensity
+• Eventually they can do it safely on their own
 
 The same approach works for digital spaces:
 
@@ -97,10 +97,10 @@ Teach digital literacy from childhood—not just block and hope.
 Support families with ongoing resources—not one-time laws.
 
 This approach:
-- Respects family autonomy and values  
-- Protects privacy for everyone
-- Adapts to individual needs
-- Builds long-term skills
-- Doesn't create surveillance infrastructure
+• Respects family autonomy and values  
+• Protects privacy for everyone
+• Adapts to individual needs
+• Builds long-term skills
+• Doesn't create surveillance infrastructure
 
 *   [This makes more sense than a ban.] -> The_Real_Problem

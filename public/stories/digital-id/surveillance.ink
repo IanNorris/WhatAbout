@@ -40,9 +40,9 @@ There's another surveillance proposal that connects to all this. # diagram: surv
 The UK has proposed requiring phones to scan messages and photos before they're encrypted and sent.
 
 Combined with digital ID, this creates complete surveillance:
-- Your identity is verified and trackable (digital ID)
-- Your messages are scanned before sending (on-device scanning)
-- Your browsing is tied to your real identity (age verification + digital ID)
+• Your identity is verified and trackable (digital ID)
+• Your messages are scanned before sending (on-device scanning)
+• Your browsing is tied to your real identity (age verification + digital ID)
 
 Every layer of digital communication becomes monitored.
 
@@ -61,10 +61,10 @@ The right to privacy is a protected right under the European Convention on Human
 Digital ID systems fundamentally undermine this right.
 
 You cannot exercise privacy rights when:
-- Your location is trackable in real-time
-- Your browsing history is tied to your identity
-- Your face can be identified by any camera
-- Your digital identity is required for basic services
+• Your location is trackable in real-time
+• Your browsing history is tied to your identity
+• Your face can be identified by any camera
+• Your digital identity is required for basic services
 
 This isn't about hiding wrongdoing.
 It's about the fundamental right to live without constant surveillance.

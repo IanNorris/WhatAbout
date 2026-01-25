@@ -42,10 +42,10 @@ Here's the bottom line: # diagram: vpn_bypass.png
 You cannot eliminate VPN access without breaking the internet itself.
 
 Every attempt to block VPNs will:
-- Harm legitimate users (workers, journalists, activists)
-- Require massive surveillance infrastructure
-- Fail to stop determined users anyway
-- Drive people to less secure, shadier VPN services
+• Harm legitimate users (workers, journalists, activists)
+• Require massive surveillance infrastructure
+• Fail to stop determined users anyway
+• Drive people to less secure, shadier VPN services
 
 Any policy that requires blocking VPNs—whether for age verification or social media restrictions—is fundamentally unworkable.
 

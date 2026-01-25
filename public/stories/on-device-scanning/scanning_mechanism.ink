@@ -19,9 +19,9 @@ The scanning software runs on your phone's operating system - iOS or Android. So
 But they're doing it because of government requirements. The UK government mandates the scanning, but doesn't directly operate it.
 
 This creates a strange situation where:
-- The government decides *what* must be scanned
-- Tech companies build the *tools* to do the scanning  
-- Your phone automatically scans *everything* you send
+• The government decides *what* must be scanned
+• Tech companies build the *tools* to do the scanning  
+• Your phone automatically scans *everything* you send
 
 And here's the critical question: who sees the results?
 
@@ -55,18 +55,18 @@ This happens automatically. There's no warrant. No judicial oversight for the in
 There's a crucial difference between *voluntary* parental controls and *mandatory* scanning. # diagram: voluntary_vs_mandatory.png
 
 <>**Voluntary parental controls** (the good kind):
-- Parents choose to enable them
-- Parents configure what's filtered
-- Parents see the reports (not the government)
-- Children know they're being monitored
-- Can be disabled when the child is an adult
+• Parents choose to enable them
+• Parents configure what's filtered
+• Parents see the reports (not the government)
+• Children know they're being monitored
+• Can be disabled when the child is an adult
 
 <>**Mandatory scanning** (the concerning kind):
-- Enabled for everyone by default
-- Government decides what's flagged
-- Reports may go to law enforcement
-- Happens without your knowledge
-- Cannot be fully disabled
+• Enabled for everyone by default
+• Government decides what's flagged
+• Reports may go to law enforcement
+• Happens without your knowledge
+• Cannot be fully disabled
 
 The UK proposals include *both* - but here's the problem: they also require age verification to disable certain features like the nudity filter.
 

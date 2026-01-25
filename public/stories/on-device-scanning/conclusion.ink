@@ -19,19 +19,19 @@ We don't have to choose between privacy and safety. That's a false dichotomy.
 There are better ways to protect children: # diagram: better_alternatives.png
 
 <>**For parents:**
-- Voluntary parental controls that parents configure and control
-- Education about online safety for children and parents
-- Open communication between parents and children about online risks
+• Voluntary parental controls that parents configure and control
+• Education about online safety for children and parents
+• Open communication between parents and children about online risks
 
 <>**For law enforcement:**
-- Traditional warrants and targeted surveillance of suspects
-- International cooperation to take down CSAM distribution networks
-- Focus resources on investigating and prosecuting offenders
+• Traditional warrants and targeted surveillance of suspects
+• International cooperation to take down CSAM distribution networks
+• Focus resources on investigating and prosecuting offenders
 
 <>**For platforms:**
-- Better reporting tools for users who encounter illegal content
-- Human moderators (not just AI) reviewing reports
-- Cooperation with law enforcement on specific investigations
+• Better reporting tools for users who encounter illegal content
+• Human moderators (not just AI) reviewing reports
+• Cooperation with law enforcement on specific investigations
 
 None of these require scanning everyone's messages all the time.
 
@@ -41,19 +41,19 @@ None of these require scanning everyone's messages all the time.
 If you're concerned about on-device scanning: # diagram: take_action_steps.png
 
 <>**Contact your MP:**
-- Express concerns about breaking encryption
-- Ask about oversight and scope limitations  
-- Request evidence that this approach is effective
+• Express concerns about breaking encryption
+• Ask about oversight and scope limitations  
+• Request evidence that this approach is effective
 
 <>**Use your voice:**
-- Talk to friends and family about privacy implications
-- Support organizations fighting for digital rights
-- Share this information
+• Talk to friends and family about privacy implications
+• Support organizations fighting for digital rights
+• Share this information
 
 <>**Use privacy-protecting tools:**
-- Choose messaging apps with strong encryption
-- Use devices and platforms that respect privacy
-- Learn about and use parental controls (the voluntary kind)
+• Choose messaging apps with strong encryption
+• Use devices and platforms that respect privacy
+• Learn about and use parental controls (the voluntary kind)
 
 <>**Learn more:**
 Would you like to explore related topics?

@@ -2,10 +2,10 @@
 Let's step back and look at what's really happening here. # diagram: intent_vs_impact.png
 
 The intent behind social media bans is genuinely good:
-- Protect children from harmful content  
-- Reduce cyberbullying and predatory behavior
-- Combat mental health issues linked to social media
-- Give children space to develop without algorithmic manipulation
+• Protect children from harmful content  
+• Reduce cyberbullying and predatory behavior
+• Combat mental health issues linked to social media
+• Give children space to develop without algorithmic manipulation
 
 No one disputes these are important goals.
 
@@ -83,22 +83,22 @@ Social media bans require age verification.
 Age verification requires proving who you are and how old you are.
 
 That means:
-- Uploading identity documents to private companies
-- Face scans and biometric data
-- Central databases linking your identity to your online activity  
-- Systems that know which websites you visit and when
+• Uploading identity documents to private companies
+• Face scans and biometric data
+• Central databases linking your identity to your online activity  
+• Systems that know which websites you visit and when
 
 These databases are irresistible targets for:
-- Cybercriminals seeking identity documents  
-- Nation-states conducting espionage
-- Authoritarian governments tracking dissidents
-- Stalkers and abusers finding victims
-- Data brokers selling your information
+• Cybercriminals seeking identity documents  
+• Nation-states conducting espionage
+• Authoritarian governments tracking dissidents
+• Stalkers and abusers finding victims
+• Data brokers selling your information
 
 We've already seen this play out:
-- 2.1 million age verification photos stolen from Discord
-- Multiple breaches of "secure" identity verification systems  
-- Age verification data being sold to third parties
+• 2.1 million age verification photos stolen from Discord
+• Multiple breaches of "secure" identity verification systems  
+• Age verification data being sold to third parties
 
 And here's the thing: these systems will be breached. It's not "if," it's "when."
 
@@ -123,26 +123,26 @@ We have a genuine problem: children need protection and guidance in digital spac
 We have two approaches:
 
 <>**The Ban Approach:**
-- One-size-fits-all restriction  
-- Requires surveillance infrastructure
-- Creates privacy and security risks
-- Easy to circumvent with VPNs
-- Pushes children to lie about age (disabling protections)
-- Encourages hiding usage (preventing help-seeking)  
-- Hits marginalized groups hardest
-- Creates false sense of security
-- Doesn't prepare children for eventual access
+• One-size-fits-all restriction  
+• Requires surveillance infrastructure
+• Creates privacy and security risks
+• Easy to circumvent with VPNs
+• Pushes children to lie about age (disabling protections)
+• Encourages hiding usage (preventing help-seeking)  
+• Hits marginalized groups hardest
+• Creates false sense of security
+• Doesn't prepare children for eventual access
 
 <>**The Empowerment Approach:**
-- Family-level decisions with parental controls
-- No surveillance infrastructure needed  
-- Privacy-preserving and secure
-- Can't circumvent (controls are on the device)
-- Children keep age-appropriate protections
-- Encourages open communication with parents
-- Flexible for individual needs  
-- Builds real awareness
-- Prepares children gradually
+• Family-level decisions with parental controls
+• No surveillance infrastructure needed  
+• Privacy-preserving and secure
+• Can't circumvent (controls are on the device)
+• Children keep age-appropriate protections
+• Encourages open communication with parents
+• Flexible for individual needs  
+• Builds real awareness
+• Prepares children gradually
 
 The ban approach has good intentions. But intentions aren't enough.
 

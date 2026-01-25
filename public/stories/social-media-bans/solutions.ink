@@ -4,12 +4,12 @@ Let's talk about what actually works. # diagram: parental_controls.png
 On-device parental controls already exist on phones, tablets, and computers.
 
 Parents can set them up to:
-- Require approval before installing new apps
-- Filter web content with the ability to override specific sites
-- Set time limits for the device or specific apps
-- Lock the device during school hours or at night
-- Block or limit purchases
-- Receive reports on device usage
+• Require approval before installing new apps
+• Filter web content with the ability to override specific sites
+• Set time limits for the device or specific apps
+• Lock the device during school hours or at night
+• Block or limit purchases
+• Receive reports on device usage
 
 These controls work at the device level. No central database. No government surveillance. No privacy risks for millions of people.
 
@@ -40,10 +40,10 @@ Some have proposed automatically scanning messages and images on phones before t
 The idea is to detect and filter "harmful content" automatically - protecting children without needing age verification at websites.
 
 But this approach:
-- Breaks end-to-end encryption
-- Creates mass surveillance infrastructure  
-- Has high false positive rates
-- Can be expanded to scan for anything governments want
+• Breaks end-to-end encryption
+• Creates mass surveillance infrastructure  
+• Has high false positive rates
+• Can be expanded to scan for anything governments want
 
 It's worth understanding these concerns.
 
@@ -62,20 +62,20 @@ Here's an even better idea that tech companies could implement: # diagram: featu
 App-specific feature controls for parents:
 
 For WhatsApp:
-- Limit messaging to approved contacts only
-- Get copied on group chats
-- Require approval to join new groups
+• Limit messaging to approved contacts only
+• Get copied on group chats
+• Require approval to join new groups
 
 For Instagram/TikTok:
-- Disable "the algorithm" (only show posts from followed accounts in chronological order)
-- Limit who can message or comment
-- Set viewing time limits
-- Require approval for new follows
+• Disable "the algorithm" (only show posts from followed accounts in chronological order)
+• Limit who can message or comment
+• Set viewing time limits
+• Require approval for new follows
 
 For YouTube:
-- Restrict to approved channels only
-- Disable autoplay and recommendations  
-- Enable restricted mode by default
+• Restrict to approved channels only
+• Disable autoplay and recommendations  
+• Enable restricted mode by default
 
 This is more acceptable to tech firms than outright bans or age verification. It's also more effective.
 
@@ -101,21 +101,21 @@ Parental controls only work if parents know about them and use them. # diagram: 
 We need comprehensive parent education programs:
 
 How to enable parental controls:
-- Step-by-step guides for each device type
-- What settings are recommended for different ages  
-- How to adjust controls as children mature
+• Step-by-step guides for each device type
+• What settings are recommended for different ages  
+• How to adjust controls as children mature
 
 How to coach children about online safety:
-- Not taking or sharing explicit or inappropriate content
-- Understanding the consequences if they do
-- What to do if they encounter harmful content
-- Why certain content is harmful and addictive
-- The importance of regular phone checks for safety
+• Not taking or sharing explicit or inappropriate content
+• Understanding the consequences if they do
+• What to do if they encounter harmful content
+• Why certain content is harmful and addictive
+• The importance of regular phone checks for safety
 
 Understanding the "why":
-- Why algorithms are designed to be addictive
-- How to recognize manipulation and misinformation  
-- Why certain features are particularly harmful to developing brains
+• Why algorithms are designed to be addictive
+• How to recognize manipulation and misinformation  
+• Why certain features are particularly harmful to developing brains
 
 *   [That sounds like a lot of work for parents.]
     It is. But so is dealing with the consequences of unsupervised internet access.
@@ -160,23 +160,23 @@ It also shifts the conversation from "the government banned it" to "our family h
 On-device controls and parent education address the real goal: keeping children safe. # diagram: local_vs_central_control.png
 
 They're more effective because:
-- Controls work regardless of which website or app the child tries to use
-- No circumvention via VPN (the controls are on the device itself)
-- Parents can adjust rules as children demonstrate maturity  
-- No need to lie about age (so safety features stay enabled)
-- Children are less likely to hide usage (parents are involved, not just law enforcement)
+• Controls work regardless of which website or app the child tries to use
+• No circumvention via VPN (the controls are on the device itself)
+• Parents can adjust rules as children demonstrate maturity  
+• No need to lie about age (so safety features stay enabled)
+• Children are less likely to hide usage (parents are involved, not just law enforcement)
 
 They're more privacy-preserving:
-- No central database of everyone's identity
-- No surveillance infrastructure  
-- No security risks from data breaches
-- Decisions stay within the family
+• No central database of everyone's identity
+• No surveillance infrastructure  
+• No security risks from data breaches
+• Decisions stay within the family
 
 They're more flexible:
-- Different families can make different choices  
-- Rules can adapt as children grow
-- Cultural and religious values can be respected
-- Special needs and circumstances can be accommodated
+• Different families can make different choices  
+• Rules can adapt as children grow
+• Cultural and religious values can be respected
+• Special needs and circumstances can be accommodated
 
 *   [But parents aren't always responsible.]
     True. And age verification laws don't fix that.

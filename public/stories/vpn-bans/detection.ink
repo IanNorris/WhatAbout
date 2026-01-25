@@ -2,9 +2,9 @@
 This is the core technical problem. # diagram: pipes_metaphor.png
 
 Think of the internet like a series of tubes:
-- Normal traffic is like a clear glass pipe. You can see the data and where it's going.
-- Encrypted traffic (HTTPS—which is most of the web now) is like an opaque pipe. You know where the pipe goes, but not what's inside.
-- A VPN is like putting a pipe *inside* another pipe.
+• Normal traffic is like a clear glass pipe. You can see the data and where it's going.
+• Encrypted traffic (HTTPS—which is most of the web now) is like an opaque pipe. You know where the pipe goes, but not what's inside.
+• A VPN is like putting a pipe *inside* another pipe.
 
 The ISP (Internet Service Provider) only sees the outside pipe—they see you connecting to a VPN server.
 They have no idea what connections are inside or where they lead.
