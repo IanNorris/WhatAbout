@@ -22,22 +22,22 @@ They work at the point of access—the device itself.
 === Better_Solutions ===
 Better solutions focus on what we can control: # diagram: holistic_approach.png
 
-**Device-level protections:**
+<>**Device-level protections:**
 - Parental controls that work regardless of which site is accessed
 - Content filtering at the router or device level
 - Time limits and device restrictions
 
-**Education:**
+<>**Education:**
 - Teaching digital literacy to children and parents
 - Open communication about online risks
 - Critical thinking skills for evaluating content
 
-**Platform accountability:**
+<>**Platform accountability:**
 - Requiring better safety features by default
 - Age-appropriate design without surveillance
 - Transparency about algorithms and content
 
-**Physical alternatives:**
+<>**Physical alternatives:**
 - Investment in youth services and community spaces
 - Support for offline social connections
 - Addressing root causes of problematic internet use

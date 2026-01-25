@@ -122,7 +122,7 @@ We have a genuine problem: children need protection and guidance in digital spac
 
 We have two approaches:
 
-**The Ban Approach:**
+<>**The Ban Approach:**
 - One-size-fits-all restriction  
 - Requires surveillance infrastructure
 - Creates privacy and security risks
@@ -133,7 +133,7 @@ We have two approaches:
 - Creates false sense of security
 - Doesn't prepare children for eventual access
 
-**The Empowerment Approach:**
+<>**The Empowerment Approach:**
 - Family-level decisions with parental controls
 - No surveillance infrastructure needed  
 - Privacy-preserving and secure
