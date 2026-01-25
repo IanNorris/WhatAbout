@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Story } from 'inkjs';
 
-const useInkStory = (storyContent, currentStoryId, onExit, onNavigateToStory) => {
+const useInkStory = (storyContent, currentStoryId, currentStoryTitle, savedState, onExit, onNavigateToStory) => {
     const [pages, setPages] = useState([]); // Array of page objects with paragraphs, choices, and selection info
     const [currentChoices, setCurrentChoices] = useState([]);
     const [isEnded, setIsEnded] = useState(false);
@@ -9,6 +9,7 @@ const useInkStory = (storyContent, currentStoryId, onExit, onNavigateToStory) =>
 
     const storyRef = useRef(null);
     const pendingChoicesRef = useRef(null); // Store choices for the current page before selection
+    const savedStateRef = useRef(savedState); // Use ref to avoid re-triggering effect
 
     useEffect(() => {
         if (storyContent) {
@@ -20,6 +21,15 @@ const useInkStory = (storyContent, currentStoryId, onExit, onNavigateToStory) =>
             try {
                 const s = new Story(storyContent);
                 storyRef.current = s;
+                
+                // Restore saved state if provided
+                if (savedStateRef.current) {
+                    try {
+                        s.state.LoadJson(savedStateRef.current);
+                    } catch (err) {
+                        console.error("Failed to restore story state:", err);
+                    }
+                }
                 
                 // Bind external function for exiting to hub
                 if (onExit) {
@@ -37,12 +47,15 @@ const useInkStory = (storyContent, currentStoryId, onExit, onNavigateToStory) =>
                         // Fire off async work but return immediately
                         (async () => {
                             try {
+                                // Save current story state
+                                const currentState = s.state.ToJson();
+                                
                                 // Import loadInkStory and loadStoryList dynamically
                                 const { loadInkStory, loadStoryList } = await import('../stories');
                                 
                                 // Get story metadata
                                 const storyList = await loadStoryList();
-                                const targetStory = storyList.find(s => s.id === storyId);
+                                const targetStory = storyList.find(story => story.id === storyId);
                                 
                                 if (!targetStory) {
                                     console.error(`Story not found: ${storyId}`);
@@ -52,11 +65,11 @@ const useInkStory = (storyContent, currentStoryId, onExit, onNavigateToStory) =>
                                 // Load and compile the story
                                 const compiledStory = await loadInkStory(targetStory.inkPath);
                                 
-                                // Navigate with parent info
-                                onNavigateToStory({
+                                // Navigate with parent info, passing current state
+                                onNavigateToStory(currentState, {
                                     ...targetStory,
                                     content: compiledStory,
-                                    parentStoryTitle: currentStoryId // Track where we came from
+                                    parentStoryTitle: currentStoryTitle // Track where we came from (use title, not ID)
                                 });
                             } catch (error) {
                                 console.error('Error navigating to story:', error);
@@ -73,7 +86,8 @@ const useInkStory = (storyContent, currentStoryId, onExit, onNavigateToStory) =>
                 console.error("Failed to load Ink story", err);
             }
         }
-    }, [storyContent, onExit, onNavigateToStory, currentStoryId]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [storyContent, currentStoryId]); // Only re-run when story content or ID changes
 
     const continueStory = useCallback(() => {
         const s = storyRef.current;

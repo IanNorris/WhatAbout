@@ -37,6 +37,11 @@ const OverlayMenu = ({ visible, onClose, onHome, onBack, parentStoryTitle, curre
                         Share This Thought
                     </button>
                 </li>
+                <li className={styles.menuItem}>
+                    <button className={styles.menuButton} onClick={onClose}>
+                        Close
+                    </button>
+                </li>
             </ul>
         </div>
     );

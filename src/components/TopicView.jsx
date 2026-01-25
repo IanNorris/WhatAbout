@@ -3,14 +3,24 @@ import useInkStory from '../hooks/useInkStory';
 import OverlayMenu from './OverlayMenu';
 import styles from './TopicView.module.css';
 
-const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, onClose, onHome, onNavigateToStory }) => {
-    const { pages, currentChoices, makeChoice, resetStory } = useInkStory(storyContent, storyTitle, onHome, onNavigateToStory);
-    const currentPageRef = useRef(null);
+const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedState, onClose, onHome, onNavigateToStory }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { pages, currentChoices, makeChoice, resetStory } = useInkStory(
+        storyContent,
+        storyId,
+        storyTitle,
+        savedState,
+        onHome,
+        (storyState, newStory) => {
+            setIsMenuOpen(false); // Close menu when navigating
+            onNavigateToStory(storyState, newStory);
+        }
+    );
+    const currentPageRef = useRef(null);
 
     useEffect(() => {
         currentPageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, [pages, currentChoices]);
+    }, [pages]);
 
     const renderParagraph = (p, index) => {
         const diagramTag = p.tags?.find(t => t.startsWith('diagram:'));
@@ -45,7 +55,10 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, onClos
                 visible={isMenuOpen}
                 onClose={() => setIsMenuOpen(false)}
                 onHome={onHome}
-                onBack={parentStoryTitle ? onClose : null}
+                onBack={parentStoryTitle ? () => {
+                    setIsMenuOpen(false);
+                    onClose();
+                } : null}
                 parentStoryTitle={parentStoryTitle}
                 currentStoryTitle={storyTitle}
                 onRestart={() => {
