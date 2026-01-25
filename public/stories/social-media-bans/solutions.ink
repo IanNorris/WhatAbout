@@ -30,6 +30,32 @@ These controls work at the device level. No central database. No government surv
     That's where education comes in.
     -> Parent_Education
 
+*   [What about scanning content on the device itself?]
+    That's a different approach - but it comes with serious concerns.
+    -> On_Device_Scanning_Crosslink
+
+= On_Device_Scanning_Crosslink
+Some have proposed automatically scanning messages and images on phones before they're sent. # diagram: alternative_scanning.png
+
+The idea is to detect and filter "harmful content" automatically - protecting children without needing age verification at websites.
+
+But this approach:
+- Breaks end-to-end encryption
+- Creates mass surveillance infrastructure  
+- Has high false positive rates
+- Can be expanded to scan for anything governments want
+
+It's worth understanding these concerns.
+
+Would you like to explore on-device scanning?
+
+*   [Yes, tell me about on-device scanning.]
+    ~ navigateTo("on-device-scanning")
+    -> END
+
+*   [No, stick with parental controls.]
+    -> Better_Solutions
+
 === Feature_Gating ===
 Here's an even better idea that tech companies could implement: # diagram: feature_gating.png
 

@@ -30,6 +30,31 @@ Once this infrastructure exists, the temptation to use it grows with every crisi
     And unlike temporary emergency powers, this infrastructure is permanent.
     -> Privacy_Rights
 
+*   [What about scanning messages on the device?]
+    That's another piece of the surveillance puzzle worth understanding.
+    -> On_Device_Scanning_Crosslink
+
+= On_Device_Scanning_Crosslink
+There's another surveillance proposal that connects to all this. # diagram: surveillance_layers.png
+
+The UK has proposed requiring phones to scan messages and photos before they're encrypted and sent.
+
+Combined with digital ID, this creates complete surveillance:
+- Your identity is verified and trackable (digital ID)
+- Your messages are scanned before sending (on-device scanning)
+- Your browsing is tied to your real identity (age verification + digital ID)
+
+Every layer of digital communication becomes monitored.
+
+Would you like to explore the on-device scanning concerns?
+
+*   [Yes, tell me about on-device scanning.]
+    ~ navigateTo("on-device-scanning")
+    -> END
+
+*   [No, continue with digital ID.]
+    -> Surveillance_Concerns
+
 === Privacy_Rights ===
 The right to privacy is a protected right under the European Convention on Human Rights, Article 8. # diagram: echr_article_8.png
 

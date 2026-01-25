@@ -43,6 +43,23 @@ Consider what happens when you visit 50 different websites requiring age verific
 
 *   [Can't we use a trusted third party?] -> Third_Party_Verification
 *   [What about biometric data being leaked?] -> Data_Breach_Risk
+*   [What about scanning messages on the phone itself?] -> On_Device_Scanning_Crosslink
+
+= On_Device_Scanning_Crosslink
+Some have proposed a different approach: instead of verifying age at websites, scan content on your phone before it's sent.
+
+The idea is to detect "harmful content" before it reaches children - filtering or blurring it automatically.
+
+But this approach has even deeper privacy and security concerns.
+
+Would you like to explore on-device scanning?
+
+*   [Yes, tell me about on-device scanning.]
+    ~ navigateTo("on-device-scanning")
+    -> END
+
+*   [No, continue with age verification.]
+    -> Privacy_Concerns
 
 === Third_Party_Verification ===
 "One company verifies everyone, then issues tokens!" # diagram: honeypot_database.png

@@ -41,6 +41,12 @@ description: Is digital ID convenient or dangerous? Security risks and surveilla
 file: main.ink
 release: true
 
+id: on-device-scanning
+title: On-Device Scanning
+description: Should your phone scan messages before encryption? Privacy and security implications.
+file: main.ink
+release: true
+
 id: crosslink-demo
 title: Cross-Link Test
 description: Test story for cross-linking feature
