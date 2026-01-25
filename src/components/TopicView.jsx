@@ -9,7 +9,7 @@ const TopicView = ({ storyContent, storyId, onClose, onHome }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
-        currentPageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        currentPageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, [pages, currentChoices]);
 
     const renderParagraph = (p, index) => {
