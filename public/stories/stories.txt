@@ -23,6 +23,12 @@ description: Should we ban social media for under 16s? Exploring unintended cons
 file: main.ink
 release: true
 
+id: vpn-bans
+title: VPN Bans
+description: Can we ban VPNs to enforce age restrictions? The technical reality.
+file: main.ink
+release: true
+
 id: crosslink-demo
 title: Cross-Link Test
 description: Test story for cross-linking feature
