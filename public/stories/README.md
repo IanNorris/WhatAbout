@@ -197,8 +197,8 @@ public/
     ├── demo/                    # Demo story images
     │   └── demo_mascot.png
     └── age-verification/        # Age verification images
-        ├── happy_Internet_v2.png
-        ├── vpn_bypass_v2.png
+        ├── happy_Internet.png
+        ├── vpn_bypass.png
         └── ...
 ```
 

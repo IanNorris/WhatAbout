@@ -1,5 +1,5 @@
 === AI_Verification ===
-"AI can estimate age from your face!" # diagram: face_scanning_v2.png
+"AI can estimate age from your face!" # diagram: face_scanning.png
 The technology exists. Some systems claim 95% accuracy.
 
 But let's think about that 5% error rate with real numbers:
@@ -12,7 +12,7 @@ In reality, with varying lighting, camera angles, makeup, filters, and diverse f
 
 Some people look older than they are. Some look younger.
 A 16-year-old who looks 20 gets through.
-A 25-year-old who looks young gets blocked.
+A 25-year-old who looks young gets blocked. # diagram: ai_error_scale.png
 
 *   [We can review the mistakes manually.]
     Can you? That's millions of appeals per site, per day.
@@ -21,7 +21,7 @@ A 25-year-old who looks young gets blocked.
     -> Privacy_Concerns
 
 === Privacy_Concerns ===
-To verify your age with AI, you need to: # diagram: data_collection_v2.png
+To verify your age with AI, you need to: # diagram: data_collection.png
 1. Upload a photo of your face.
 2. Provide it to every website you visit.
 3. Trust each website to store it securely.
@@ -35,7 +35,7 @@ They can be sold on dark web marketplaces.
 They can be used to train facial recognition systems without your consent.
 They can be cross-referenced with other databases to track everywhere you go online.
 
-Consider what happens when you visit 50 different websites requiring age verification:
+Consider what happens when you visit 50 different websites requiring age verification: # diagram: fifty_copies.png
 - 50 different companies now have your facial biometric data
 - 50 different security systems that need to protect it
 - 50 different legal jurisdictions with varying privacy laws
@@ -45,7 +45,7 @@ Consider what happens when you visit 50 different websites requiring age verific
 *   [What about biometric data being leaked?] -> Data_Breach_Risk
 
 === Third_Party_Verification ===
-"One company verifies everyone, then issues tokens!" # diagram: honeypot_database_v2.png
+"One company verifies everyone, then issues tokens!" # diagram: honeypot_database.png
 
 Now you have created the world's most valuable database:
 - Real names
@@ -57,7 +57,7 @@ Now you have created the world's most valuable database:
 
 This is called a "honeypot" in security—a single target so valuable that every hacker on earth will attack it.
 
-Imagine the blackmail potential:
+Imagine the blackmail potential: # diagram: blackmail_power.png
 Public figures, politicians, religious leaders—all their private browsing exposed.
 Job candidates having their internet history reviewed by employers.
 Insurance companies denying coverage based on inferred health concerns from browsing patterns.
@@ -72,7 +72,7 @@ Authoritarian regimes identifying dissidents by what they read.
     -> The_Real_Problem
 
 === Data_Breach_Risk ===
-In 2017, Equifax leaked 147 million people's Social Security numbers, birth dates, and addresses.
+In 2017, Equifax leaked 147 million people's Social Security numbers, birth dates, and addresses. # diagram: breach_timeline.png
 In 2013, Yahoo leaked 3 billion accounts.
 In 2018, Marriott leaked 500 million passport numbers.
 In 2021, Facebook leaked 533 million users' phone numbers and personal data.

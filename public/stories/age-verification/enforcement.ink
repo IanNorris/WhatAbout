@@ -1,5 +1,5 @@
 === Force_Apps ===
-"If checking at the ISP level fails, what about the App Stores?" # diagram: app_ecosystem_v2.png
+"If checking at the ISP level fails, what about the App Stores?" # diagram: app_ecosystem.png
 Apple and Google control what apps most people use.
 They could enforce age verification for every app.
 
@@ -16,7 +16,7 @@ They could enforce age verification for every app.
     They can send notifications, work offline, and appear on your home screen.
     But they're just web pages. The browser loads them like any other site.
 
-    Third: The web itself.
+    Third: The web itself. # diagram: app_bypass.png
     Browsers don't go through app stores.
     Safari, Chrome, Firefox—they're installed by default or downloaded directly.
     Once you have a browser, you have access to the entire web.
