@@ -89,12 +89,18 @@ function analyzeStory(storyJson) {
         let hasEnd = false;
         let hasDivert = false;
         let hasText = false;
+        let hasNestedArrays = false;
+        let choiceBranches = null;
         
         for (let i = 0; i < content.length; i++) {
             const item = content[i];
             
             if (typeof item === 'string' && item.trim().length > 0) {
                 hasText = true;
+            } else if (Array.isArray(item)) {
+                hasNestedArrays = true;
+                // Recursively analyze nested arrays
+                analyzeContent(item, pathName);
             } else if (typeof item === 'object' && item !== null) {
                 // Check for choices (marked with * or +)
                 if (item['*'] !== undefined || item['+'] !== undefined) {
@@ -108,15 +114,57 @@ function analyzeStory(storyJson) {
                 if (item['->'] !== undefined || item.divert !== undefined) {
                     hasDivert = true;
                 }
+                // Check for choice branches (c-0, c-1, etc.)
+                if (!choiceBranches && Object.keys(item).some(k => k.startsWith('c-'))) {
+                    choiceBranches = item;
+                }
             }
         }
         
         // A dead end is text without forward progress
-        if (hasText && !hasChoices && !hasEnd && !hasDivert) {
+        // Don't flag if there are nested arrays (they likely contain the continuation)
+        if (hasText && !hasChoices && !hasEnd && !hasDivert && !hasNestedArrays) {
             deadEnds.push({
                 path: pathName,
                 reason: 'Content ends without choices, END, or divert'
             });
+        }
+        
+        // Analyze choice branches for immediate dead ends
+        if (choiceBranches) {
+            for (const [branchKey, branchContent] of Object.entries(choiceBranches)) {
+                if (!branchKey.startsWith('c-') || !Array.isArray(branchContent)) {
+                    continue;
+                }
+                
+                // Check if this choice branch has meaningful content
+                let hasMeaningfulContent = false;
+                let hasImmediateEnd = false;
+                
+                for (const item of branchContent) {
+                    if (typeof item === 'string') {
+                        // Check for END command (lowercase "end" string)
+                        if (item === 'end') {
+                            hasImmediateEnd = true;
+                        } else {
+                            const text = item.replace(/^\^?\s*/, '').trim();
+                            if (text.length > 0 && !text.match(/^[\n\r\s]*$/)) {
+                                hasMeaningfulContent = true;
+                            }
+                        }
+                    } else if (typeof item === 'object' && item !== null && item.end !== undefined) {
+                        hasImmediateEnd = true;
+                    }
+                }
+                
+                // A choice that immediately ends without content is a dead end
+                if (hasImmediateEnd && !hasMeaningfulContent) {
+                    deadEnds.push({
+                        path: `${pathName} (choice branch)`,
+                        reason: 'Choice ends immediately without providing content'
+                    });
+                }
+            }
         }
     }
     
