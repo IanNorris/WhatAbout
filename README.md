@@ -65,6 +65,40 @@ Pre-compiled JSON files are optional - the app works without them!
 - **inkjs** - Ink story runtime and compiler
 - **CSS Modules** - Scoped styling
 
+## 🐛 Error Handling
+
+The app provides helpful error messages when things go wrong:
+
+### Missing Include Files
+If an INCLUDE file is missing, you'll see:
+```
+Could not find file: section1.ink
+
+Make sure the file exists in the same folder as your main story file.
+Path attempted: /stories/my-story/section1.ink
+```
+
+### Compilation Errors
+If your Ink syntax has errors, you'll see:
+```
+Story has compilation errors:
+
+  1. ERROR: line 15: Expected choice text after '* ['
+  2. ERROR: line 23: Unrecognized statement
+
+Please fix these issues in your .ink file.
+```
+
+### File Not Found
+If the main story file is missing:
+```
+Could not load story file: /stories/my-story/main.ink
+
+Please make sure the file exists and the path is correct.
+```
+
+All errors are shown in the UI with clear formatting, making it easy for content creators to fix issues without checking the browser console.
+
 ## 📚 Story Format
 
 Stories use [Ink](https://github.com/inkle/ink) scripting language:

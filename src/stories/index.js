@@ -136,7 +136,7 @@ async function resolveIncludes(source, basePath) {
         try {
             const response = await fetch(includePath);
             if (!response.ok) {
-                throw new Error(`Failed to load include ${includePath}: ${response.statusText}`);
+                throw new Error(`Could not find file: ${include.filename}\n\nMake sure the file exists in the same folder as your main story file.\nPath attempted: ${includePath}`);
             }
             
             let includeSource = await response.text();
@@ -147,8 +147,11 @@ async function resolveIncludes(source, basePath) {
             // Add to collected content
             includedContent.push(includeSource);
         } catch (error) {
-            console.error(`Error loading include ${include.filename}:`, error);
-            throw error;
+            // Re-throw with helpful context
+            if (error.message.includes('Could not find file')) {
+                throw error; // Already has good message
+            }
+            throw new Error(`Error loading ${include.filename}: ${error.message}`);
         }
     }
     
@@ -174,16 +177,19 @@ export async function loadInkStory(inkPath) {
         try {
             const jsonResponse = await fetch(jsonPath);
             if (jsonResponse.ok) {
-                console.log(`Loading pre-compiled story from ${jsonPath}`);
                 const jsonData = await jsonResponse.json();
-                console.log(`Successfully loaded pre-compiled JSON: ${JSON.stringify(jsonData).length} chars`);
+                if (import.meta.env.DEV) {
+                    console.log(`📄 Loaded pre-compiled story from ${jsonPath}`);
+                }
                 return jsonData;
             }
         } catch (e) {
-            console.log(`Could not load pre-compiled version (${e.message}), will compile at runtime`);
+            // No pre-compiled version or it's invalid, will compile at runtime
         }
         
-        console.log(`Compiling story at runtime from ${inkPath}`);
+        if (import.meta.env.DEV) {
+            console.log(`🔨 Compiling story at runtime from ${inkPath}`);
+        }
         
         // Extract base path for resolving includes
         const lastSlash = inkPath.lastIndexOf('/');
@@ -192,7 +198,7 @@ export async function loadInkStory(inkPath) {
         // Load .ink source
         const response = await fetch(inkPath);
         if (!response.ok) {
-            throw new Error(`Failed to load ${inkPath}: ${response.statusText}`);
+            throw new Error(`Could not load story file: ${inkPath}\n\nPlease make sure the file exists and the path is correct.`);
         }
         
         let inkSource = await response.text();
@@ -200,19 +206,8 @@ export async function loadInkStory(inkPath) {
         // Resolve all INCLUDE statements
         inkSource = await resolveIncludes(inkSource, basePath);
         
-        console.log(`Resolved source length: ${inkSource.length} characters`);
-        
-        // Show a chunk from the middle to see if main content is there
-        const midStart = Math.floor(inkSource.length / 2) - 250;
-        console.log(`Middle 500 chars (from ${midStart}):`, inkSource.substring(midStart, midStart + 500));
-        
-        // Look for the story start
-        const storyStartIndex = inkSource.indexOf("Lets talk about");
-        if (storyStartIndex >= 0) {
-            console.log(`Found "Lets talk about" at position ${storyStartIndex}`);
-            console.log('Content around it:', inkSource.substring(storyStartIndex - 50, storyStartIndex + 200));
-        } else {
-            console.log('⚠️ WARNING: Could not find "Lets talk about" in resolved source!');
+        if (import.meta.env.DEV) {
+            console.log(`📝 Resolved ${inkSource.length} characters of story content`);
         }
         
         // Compile .ink to JSON using inkjs compiler
@@ -225,25 +220,29 @@ export async function loadInkStory(inkPath) {
         } catch (compileError) {
             // Compilation failed - check for errors
             if (compiler.errors && compiler.errors.length > 0) {
-                console.error('Ink compilation errors:', compiler.errors);
-                throw new Error(`Ink compilation failed:\n${compiler.errors.join('\n')}`);
+                const errorDetails = compiler.errors.map((err, i) => `  ${i + 1}. ${err}`).join('\n');
+                throw new Error(`Story has compilation errors:\n\n${errorDetails}\n\nPlease fix these issues in your .ink file.`);
             }
             // If no specific errors, rethrow the original error
-            throw compileError;
+            throw new Error(`Story compilation failed: ${compileError.message}`);
         }
         
         // Log warnings in development mode only (they don't prevent the story from working)
         if (compiler.warnings && compiler.warnings.length > 0 && import.meta.env.DEV) {
-            console.info(`📝 Ink compilation completed with ${compiler.warnings.length} warning(s) for ${inkPath}:`, compiler.warnings);
+            console.info(`📝 Story compiled with ${compiler.warnings.length} warning(s):`, compiler.warnings);
         }
         
         const jsonOutput = compiledStory.ToJson();
-        console.log(`Compiled to JSON: ${jsonOutput.length} characters`);
-        console.log('First 500 chars of JSON:', jsonOutput.substring(0, 500));
+        
+        if (import.meta.env.DEV) {
+            console.log(`✅ Story compiled successfully: ${jsonOutput.length} characters`);
+        }
         
         return jsonOutput;
     } catch (error) {
-        console.error(`Error loading Ink story from ${inkPath}:`, error);
-        throw error;
+        // Provide helpful error message to users
+        const userMessage = error.message || 'An unknown error occurred';
+        console.error(`❌ Error loading story from ${inkPath}:`, error);
+        throw new Error(userMessage);
     }
 }

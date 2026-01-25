@@ -36,8 +36,9 @@ const Hub = ({ onSelectTopic }) => {
                 content: compiledStory
             });
         } catch (err) {
-            setError(`Failed to load story: ${err.message}`);
-            console.error(err);
+            // Show user-friendly error message
+            setError(err.message);
+            console.error('Story loading error:', err);
         } finally {
             setLoading(false);
             setLoadingStoryId(null);
@@ -49,7 +50,23 @@ const Hub = ({ onSelectTopic }) => {
             <h1 className={styles.title}>Let's talk about...</h1>
 
             {error && (
-                <div style={{ color: '#f4a261', marginBottom: '1rem', textAlign: 'center' }}>
+                <div style={{ 
+                    color: '#f4a261', 
+                    marginBottom: '1rem', 
+                    padding: '1rem',
+                    backgroundColor: 'rgba(244, 162, 97, 0.1)',
+                    borderRadius: '8px',
+                    border: '1px solid rgba(244, 162, 97, 0.3)',
+                    maxWidth: '600px',
+                    margin: '0 auto 1rem',
+                    whiteSpace: 'pre-wrap',
+                    textAlign: 'left',
+                    fontSize: '0.9rem',
+                    lineHeight: '1.5'
+                }}>
+                    <div style={{ fontWeight: 'bold', marginBottom: '0.5rem', textAlign: 'center' }}>
+                        ⚠️ Story Loading Error
+                    </div>
                     {error}
                 </div>
             )}
