@@ -4,7 +4,7 @@ import OverlayMenu from './OverlayMenu';
 import styles from './TopicView.module.css';
 
 const TopicView = ({ storyContent, storyId, onClose, onHome }) => {
-    const { pages, currentChoices, makeChoice, resetStory } = useInkStory(storyContent);
+    const { pages, currentChoices, makeChoice, resetStory } = useInkStory(storyContent, onHome);
     const currentPageRef = useRef(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 

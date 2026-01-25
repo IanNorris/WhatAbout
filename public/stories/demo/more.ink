@@ -10,7 +10,10 @@ Images are automatically loaded from the assets folder for your story.
 The system prepends your story ID, so you don't need to repeat it!
 
 * [What else can I do?] -> organizing_content
-* [I'm done] -> END
+* [I'm done]
+    Glad you learned about adding images! See you next time.
+    ~ exit()
+    -> END
 
 === organizing_content ===
 
@@ -24,6 +27,9 @@ The dead end analyzer helps you find missing content with the analyze-ink comman
 
 * [This is powerful!]
     It is! And it's all designed to make creating interactive content as simple as possible.
+    
+    Thanks for exploring! Head back anytime to learn more.
+    ~ exit()
     -> END
 
 -> END

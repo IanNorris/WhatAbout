@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Story } from 'inkjs';
 
-const useInkStory = (storyContent) => {
+const useInkStory = (storyContent, onExit) => {
     const [pages, setPages] = useState([]); // Array of page objects with paragraphs, choices, and selection info
     const [currentChoices, setCurrentChoices] = useState([]);
     const [isEnded, setIsEnded] = useState(false);
@@ -20,12 +20,23 @@ const useInkStory = (storyContent) => {
             try {
                 const s = new Story(storyContent);
                 storyRef.current = s;
+                
+                // Bind external function for exiting to hub
+                if (onExit) {
+                    s.BindExternalFunction('exit', () => {
+                        // Delay to allow reading final text (3 seconds)
+                        setTimeout(() => {
+                            onExit();
+                        }, 3000);
+                    });
+                }
+                
                 continueStory();
             } catch (err) {
                 console.error("Failed to load Ink story", err);
             }
         }
-    }, [storyContent]);
+    }, [storyContent, onExit]);
 
     const continueStory = useCallback(() => {
         const s = storyRef.current;

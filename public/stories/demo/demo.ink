@@ -1,5 +1,7 @@
 VAR topic_title = "Demo Story"
 
+EXTERNAL exit()
+
 INCLUDE more.ink
 
 Welcome to the What About platform! # diagram: demo_mascot.png
@@ -30,7 +32,10 @@ The platform has several key features: # diagram: features_diagram.png
 
 * [How do I add images?] -> adding_images
 * [What about organizing content?] -> organizing_content
-* [I'm ready to explore more] -> END
+* [I'm ready to explore more]
+    Thanks for checking out the features! You can always come back to explore more.
+    ~ exit()
+    -> END
 
 === choices_explained ===
 
@@ -54,4 +59,7 @@ The choice system also shows:
 This makes it easy to understand the story structure as you explore.
 
 * [Show me the features] -> features
-* [I'm done exploring] -> END
+* [I'm done exploring]
+    Hope this helped! See you back at the hub.
+    ~ exit()
+    -> END
