@@ -35,6 +35,12 @@ description: Empowering families with tools that work better than surveillance.
 file: main.ink
 release: true
 
+id: digital-id
+title: Digital ID
+description: Is digital ID convenient or dangerous? Security risks and surveillance concerns.
+file: main.ink
+release: true
+
 id: crosslink-demo
 title: Cross-Link Test
 description: Test story for cross-linking feature
