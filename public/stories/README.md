@@ -47,7 +47,9 @@ release: false
    file: main.ink
    release: true
    ```
-5. Save and refresh the app - it will appear automatically!
+5. Save and refresh the app - it will load and compile automatically!
+
+**That's it!** No build step, no npm commands. Just create your .ink files and they work.
 
 ### Tips
 - Keep IDs short and URL-friendly (lowercase, hyphens instead of spaces)
@@ -117,21 +119,32 @@ This will report any paths that end without:
 ## Development Commands
 
 ```bash
-# Start dev server (manually compile .ink first)
-npm run compile-ink  # Compile .ink files to .json
-npm run dev          # Start dev server
-
-# Or use the combined command:
-npm run dev:full     # Auto-compile .ink on changes + start dev server
+# Start dev server
+npm run dev          # Stories are compiled at runtime automatically
 
 # Analyze a story for dead ends
 npm run analyze-ink public/stories/age_verification/main.ink
 
-# Build for production (compiles .ink automatically)
+# Build for production
 npm run build
 ```
 
-**Note:** Compiled .json files are gitignored - they're generated from .ink source files.
+**Note:** Stories are compiled at runtime from .ink source files. No build step required!
+The app automatically loads and compiles .ink files, resolving all INCLUDE statements.
+
+### Optional: Pre-compilation for Performance
+
+For better load times in production, you can optionally pre-compile stories:
+
+```bash
+# Compile .ink files to .json once
+npm run compile-ink
+
+# Watch and auto-compile on changes
+npm run compile-ink:watch
+```
+
+Pre-compiled .json files are gitignored. If present, they'll be used instead of runtime compilation.
 
 ## File Organization
 

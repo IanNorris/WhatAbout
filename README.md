@@ -1,16 +1,105 @@
-# React + Vite
+# What About
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive web app that explores complex topics through conversational narratives powered by [Ink](https://github.com/inkle/ink).
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **No Build Required for Content**: Add new .ink story files and they work immediately - no compilation needed!
+- **Runtime Compilation**: Stories are compiled in the browser using inkjs, including full INCLUDE support
+- **Non-Technical Friendly**: Content creators can add stories without understanding npm or build processes
+- **Optional Pre-compilation**: For production performance, optionally pre-compile stories to JSON
 
-## React Compiler
+## 🚀 Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Start development server
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Visit http://localhost:5173 and start exploring!
+
+## 📝 Adding a New Story
+
+1. Create a folder in `public/stories/` with your story ID (e.g., `my-topic`)
+2. Create your `.ink` file(s) in that folder
+3. Add images to `public/assets/my-topic/`
+4. Add an entry to `public/stories/stories.txt`:
+   ```
+   id: my-topic
+   title: My Topic
+   description: An interesting discussion
+   file: main.ink
+   release: true
+   ```
+5. Refresh the browser - your story is live!
+
+See `public/stories/README.md` for detailed documentation.
+
+## 🔧 Development Commands
+
+```bash
+npm run dev           # Start dev server
+npm run build         # Build for production
+npm run lint          # Run linter
+npm run analyze-ink   # Analyze story for dead ends
+```
+
+### Optional Performance Optimization
+
+For faster load times, you can optionally pre-compile stories:
+
+```bash
+npm run compile-ink          # Compile once
+npm run compile-ink:watch    # Auto-compile on changes
+```
+
+Pre-compiled JSON files are optional - the app works without them!
+
+## 🛠 Tech Stack
+
+- **React** - UI framework
+- **Vite** - Build tool
+- **inkjs** - Ink story runtime and compiler
+- **CSS Modules** - Scoped styling
+
+## 📚 Story Format
+
+Stories use [Ink](https://github.com/inkle/ink) scripting language:
+
+```ink
+This is narrative text.
+
+* [First choice]
+    Response to first choice.
+* [Second choice]
+    Response to second choice.
+```
+
+### Images
+
+Add images using tags:
+
+```ink
+This paragraph has a diagram. # diagram: my_image.png
+```
+
+Images load from `public/assets/{story-id}/`
+
+### Multi-File Stories
+
+Use INCLUDE to split large stories:
+
+**main.ink:**
+```ink
+INCLUDE section1.ink
+INCLUDE section2.ink
+```
+
+Runtime compilation automatically resolves all includes!
+
+---
+
+Built with React + Vite
