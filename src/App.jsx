@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Layout from './components/Layout';
 import Hub from './components/Hub';
 import TopicView from './components/TopicView';
-import demoStory from './stories/demo.json';
 
 const App = () => {
   // Navigation Stack now stores objects? Or just IDs? 
