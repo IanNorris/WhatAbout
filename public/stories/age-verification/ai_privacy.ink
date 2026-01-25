@@ -70,6 +70,10 @@ Authoritarian regimes identifying dissidents by what they read.
     Perfect for blackmail, identity theft, stalking, harassment, and political persecution.
     You've built the surveillance infrastructure of an authoritarian's dreams.
     -> The_Real_Problem
+*   [What if the government runs it instead?]
+    That's an important question. Can we trust the government with this data?
+    ~ navigateTo("digital-id")
+    -> END
 
 === Data_Breach_Risk ===
 In 2017, Equifax leaked 147 million people's Social Security numbers, birth dates, and addresses. # diagram: breach_timeline.png
@@ -77,8 +81,10 @@ In 2013, Yahoo leaked 3 billion accounts.
 In 2018, Marriott leaked 500 million passport numbers.
 In 2021, Facebook leaked 533 million users' phone numbers and personal data.
 In 2022, Twitter exposed 5.4 million accounts.
+In 2024, a cybercrime group stole 2.1 million identity photos from Discord users—many of them children being age-verified.
 
 These weren't small companies. These were industry giants with massive security budgets.
+And age-verification companies are already being compromised, with Britons having their identity documents and face scans stolen.
 
 Now imagine a leak that includes:
 - Your face

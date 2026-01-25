@@ -31,4 +31,28 @@ They could enforce age verification for every app.
     That's not a bug—it's the fundamental architecture of the internet.
     The web was built to survive censorship, whether from authoritarian governments or network failures.
     That's a feature, not a bug.
+    -> Real_World_Impact
+
+=== Real_World_Impact ===
+And we're already seeing this play out in practice. # diagram: user_migration.png
+
+Early data from age-verification enforcement shows:
+- Compliant sites hemorrhaged users
+- Non-compliant sites experienced massive growth
+- One adult site estimated it had 3,000 clones
+- Only 37% of users say they're likely to complete age-verification
+
+Users always seek the path of least friction.
+When you force intrusive checks on compliant sites, traffic naturally flows to non-compliant alternatives.
+These unregulated sites then climb search rankings as user numbers grow.
+
+This applies to gaming too. # diagram: gaming_impact.png
+Ninety-five percent of studios develop at least one live-service title, with multiplayer communication core to the experience.
+Yet platforms like Xbox are mandating age-verification for online communication.
+Studios and platform holders are blocking communication for non-verified users rather than risk fines.
+Those who refuse to—or cannot—age-verify are left with a much smaller online world.
+
+*   [This seems counterproductive.]
+    It is. We're pushing people toward less safe alternatives.
+    And we're fragmenting online communities in the process.
     -> The_Real_Problem

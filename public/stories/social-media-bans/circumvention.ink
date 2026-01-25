@@ -54,7 +54,14 @@ When a 14-year-old claims to be 21, all those protections turn off.
 
 The platform now treats them as an adult. The algorithm serves them adult content. Strangers can message them without restrictions. The safety rails disappear.
 
-So the child is now *more* exposed to the very harms the ban was meant to prevent.
+So the child is now more exposed to the very harms the ban was meant to prevent.
+
+And when they turn 16 and can legally access social media? # diagram: sixteen_digital_id.png
+If the face scan fails to verify their age, they'll need to provide ID.
+This pushes teenagers—some as young as 16—toward digital ID systems.
+Systems that track their location, browsing history, and create permanent surveillance records.
+
+We're not just removing protections. We're funneling children into surveillance infrastructure.
 
 *   [Can't we fix that somehow?]
     How? If the platform knows they're under 16, they'd be banned.
@@ -65,6 +72,11 @@ So the child is now *more* exposed to the very harms the ban was meant to preven
     
     We've created a system where the safety measure increases the danger.
     -> Hiding_Usage
+
+*   [What about the digital ID concerns?]
+    That's a critical issue. Government-run ID systems have their own serious problems.
+    ~ navigateTo("digital-id")
+    -> END
 
 *   [What about parents monitoring them?]
     That's the other problem.
