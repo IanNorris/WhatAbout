@@ -42,8 +42,14 @@ But the child is actually in *more* danger than before the ban.
     We've traded regulated platforms with some safeguards for unregulated platforms with none.
 
 -
-*   [So what's the alternative?] -> Better_Solutions
-*   [This seems impossible to solve.] -> Better_Solutions
+*   [So what's the alternative?]
+    Let me show you what actually works.
+    ~ navigateTo("better-parental-controls")
+    -> END
+*   [This seems impossible to solve.]
+    Not impossible. Just needs a different approach.
+    ~ navigateTo("better-parental-controls")
+    -> END
 
 === Need_Both_Spaces ===
 The conversation shouldn't be "online OR offline." # diagram: both_spaces_needed.png

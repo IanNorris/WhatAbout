@@ -91,5 +91,6 @@ The child who needs help the most is the least likely to get it.
     Exactly. The ban creates a false sense of security.
     -> False_Sense_Of_Security
 *   [Surely we can find a better approach?]
-    Yes. But first, let's look at the bigger picture.
-    -> Social_Crisis
+    Yes. Let me show you what actually works.
+    ~ navigateTo("better-parental-controls")
+    -> END
