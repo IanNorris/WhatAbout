@@ -1,4 +1,10 @@
+EXTERNAL navigateTo(story_id)
+
 VAR topic_title = "Social Media Bans"
+
+// For cross-story navigation
+VAR came_from_age_verification = false
+VAR came_from_social_media = false
 
 INCLUDE circumvention.ink
 INCLUDE socialization.ink
@@ -38,6 +44,10 @@ In trying to protect children, we've pushed them toward software that actively h
 
 <> (I've explored this in detail in my discussion about age verification. The technical reality is that VPN bans are either impossible or require authoritarian surveillance systems—and even China can't fully stop them.)
 
+*   [Can we ban VPNs then?]
+    That's an important question. Let me walk you through why that doesn't work.
+    ~ navigateTo("vpn-bans")
+    -> END
 *   [Okay, but even if some bypass it, surely it helps?]
     Let's look at what actually happens when kids bypass these bans.
     -> Circumvention_Reality

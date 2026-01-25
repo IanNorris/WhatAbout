@@ -1,4 +1,10 @@
+EXTERNAL navigateTo(story_id)
+
 VAR topic_title = "Age Verification"
+
+// For cross-story navigation
+VAR came_from_age_verification = false
+VAR came_from_social_media = false
 
 INCLUDE vpn.ink
 INCLUDE ai_privacy.ink
@@ -42,7 +48,10 @@ These free VPNs often:
 
 So in trying to protect children, we've incentivized them to use software that actively harms their privacy and security.
 
-*   [So we should ban VPNs!] -> Ban_VPNs
+*   [So we should ban VPNs!]
+    That's an important question. Let me walk you through why that doesn't work.
+    ~ navigateTo("vpn-bans")
+    -> END
 *   [We should use AI to verify age.] -> AI_Verification
 *   [Can't we just force age verification on the apps?] -> Force_Apps
 *   [What about other solutions?] -> Alternative_Solutions
