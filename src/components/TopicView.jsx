@@ -1,7 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { marked } from 'marked';
 import useInkStory from '../hooks/useInkStory';
 import OverlayMenu from './OverlayMenu';
 import styles from './TopicView.module.css';
+
+// Configure marked to use inline rendering without wrapping in <p> tags
+marked.use({
+    breaks: true,
+    gfm: true,
+});
 
 const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedState, onClose, onHome, onNavigateToStory }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,9 +44,12 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
             );
         }
 
+        // Parse markdown and render as HTML
+        const htmlContent = marked.parseInline(p.text);
+
         return (
             <div key={index} className={styles.textBlock}>
-                {p.text}
+                <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
                 {diagram}
             </div>
         );
