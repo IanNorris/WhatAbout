@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './OverlayMenu.module.css';
 
-const OverlayMenu = ({ visible, onClose, onHome, onRestart }) => {
+const OverlayMenu = ({ visible, onClose, onHome, onBack, parentStoryTitle, currentStoryTitle, onRestart }) => {
     if (!visible) return null;
 
     return (
@@ -16,9 +16,16 @@ const OverlayMenu = ({ visible, onClose, onHome, onRestart }) => {
                         Back to Hub
                     </button>
                 </li>
+                {onBack && parentStoryTitle && (
+                    <li className={styles.menuItem}>
+                        <button className={styles.menuButton} onClick={onBack}>
+                            Exit to "{parentStoryTitle}"
+                        </button>
+                    </li>
+                )}
                 <li className={styles.menuItem}>
                     <button className={styles.menuButton} onClick={onRestart}>
-                        Restart Topic
+                        Restart {currentStoryTitle ? `"${currentStoryTitle}"` : 'Topic'}
                     </button>
                 </li>
                 <li className={styles.menuItem}>
