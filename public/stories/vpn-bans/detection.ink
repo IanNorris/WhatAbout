@@ -1,7 +1,7 @@
 === Can_We_Detect ===
 This is the core technical problem. # diagram: pipes_metaphor.png
 
-Think of the internet like a series of pipes:
+Think of the internet like a series of tubes:
 - Normal traffic is like a clear glass pipe. You can see the data and where it's going.
 - Encrypted traffic (HTTPS—which is most of the web now) is like an opaque pipe. You know where the pipe goes, but not what's inside.
 - A VPN is like putting a pipe *inside* another pipe.
@@ -24,7 +24,7 @@ If you could break VPN encryption, you'd also break online banking, medical reco
     
     And self-hosted VPNs (which anyone can set up on a cloud server for $5/month) are indistinguishable from any other secure web service.
     
-    If you ban the outer pipes, you break the secure tunnels used by banks, governments, and businesses.
+    If you ban the outer tubes, you break the secure tunnels used by banks, governments, and businesses.
     
     If you try to ban specific VPN companies, they just move or change their IP addresses.
 
