@@ -29,12 +29,6 @@ description: Can we ban VPNs to enforce age restrictions? The technical reality.
 file: main.ink
 release: true
 
-id: better-parental-controls
-title: Better Parental Controls
-description: Empowering families with tools that work better than surveillance.
-file: main.ink
-release: true
-
 id: digital-id
 title: Digital ID
 description: Is digital ID convenient or dangerous? Security risks and surveillance concerns.
@@ -44,6 +38,12 @@ release: true
 id: on-device-scanning
 title: On-Device Scanning
 description: Should your phone scan messages before encryption? Privacy and security implications.
+file: main.ink
+release: true
+
+id: better-parental-controls
+title: Better Parental Controls
+description: Empowering families with tools that work better than surveillance.
 file: main.ink
 release: true
 
