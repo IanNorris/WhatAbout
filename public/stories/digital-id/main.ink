@@ -10,20 +10,16 @@ INCLUDE policy_recommendations.ink
 INCLUDE conclusion.ink
 
 Lets talk about...
-I think we need digital ID for convenience and fraud prevention. # diagram: digital_wallet.png
+We should adopt digital ID for convenience and fraud prevention. # diagram: digital_wallet.png
 
-On the surface, it makes sense.
-A single digital identity that you can use everywhere—government services, banking, age verification, even unlocking your phone.
-No more fumbling for physical cards. No more forgetting your passport.
-Just tap your phone and prove who you are.
+On the surface it makes sense. One app for everything—government services, banking, age verification. No more fumbling for cards or passports. Just tap your phone and you're verified.
 
-The government says it will reduce fraud and improve online safety.
-Tech companies promise a seamless, frictionless experience.
-Everyone seems to agree this is the future.
+The government says it reduces fraud. Tech companies promise a seamless experience. Everyone seems to agree this is the future.
 
-*   [That sounds convenient.]
-    It does. And convenience is powerful.
-    But convenience comes with costs that aren't immediately obvious.
-    Let me show you what we're actually building.
+*   [What's wrong with that?]
+    Convenience is powerful. But it comes with costs that aren't immediately obvious.
+    -> Security_Risks
+*   [Seems like a good idea to me.]
+    That's what most people think. Until you see what gets built.
     -> Security_Risks
 

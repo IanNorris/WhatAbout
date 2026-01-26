@@ -5,43 +5,37 @@ Build a surveillance state in pursuit of perfect security and convenience.
 OR
 Accept some inconvenience and some risk in exchange for privacy and freedom.
 
-Perfect security is impossible.
-Perfect convenience always comes at a cost.
-And once surveillance infrastructure exists, it will be used—if not now, then later.
+Perfect security is impossible. Perfect convenience always costs. And once surveillance infrastructure exists, it will be used.
 
-The National Cyber Security Centre reports four nationally significant cyber attacks every week.
-Yet we're proposing to create the most valuable target in history.
+Technology Secretary Peter Kyle says: "If you want to overturn the Online Safety Act you are on the side of predators."
 
-Technology Secretary Peter Kyle says If you want to overturn the Online Safety Act you are on the side of predators.
+This is insulting to security professionals who understand that these systems make everyone less safe.
 
-This is not just wrong—it's insulting to those who have spent their professional lives protecting people from online threats.
+*   [But what about protecting children?]
+    Protecting children is critical. But building surveillance infrastructure doesn't protect them.
+    -> Better_Child_Protection
+*   [What can I do?]
+    -> What_You_Can_Do
 
-Those of us with working knowledge of how these systems fail in theory and practice refuse to participate.
-Not because we don't care about safety.
-Because we understand that these systems make everyone less safe.
+=== Better_Child_Protection ===
+Surveillance infrastructure puts everyone at greater risk—including children. # diagram: child_safety.png
 
-*   [What about the children?]
-    Protecting children is important. Critical, even.
-    But building surveillance infrastructure doesn't protect them—it puts everyone at greater risk.
-    
-    For actual solutions that work, see the story on parental controls.
+Actual solutions that work: parental controls, ISP filters, on-device restrictions, digital literacy education.
+
+For comprehensive approaches to online safety, see the story on parental controls.
+
+*   [Tell me more about parental controls.]
     ~ navigateTo("better-parental-controls")
     -> END
-*   [What can I do?]
+*   [What can I do about this now?]
     -> What_You_Can_Do
 
 === What_You_Can_Do ===
 If you agree that digital ID poses unacceptable risks: # diagram: take_action.png
 
-REFUSE to participate:
-• Don't use optional digital ID systems
-• Don't age-verify unless absolutely necessary
-• Use privacy-preserving alternatives where possible
+REFUSE to participate. Don't use optional systems. Don't age-verify unless necessary. Use privacy-preserving alternatives.
 
-CONTACT your MP:
-• Explain your concerns about surveillance infrastructure
-• Share evidence about security risks
-• Ask them to support privacy-respecting alternatives
+CONTACT your MP. Explain surveillance concerns. Share evidence about security risks. Ask them to support privacy-respecting alternatives.
 
 SUPPORT organizations fighting for digital rights:
 • Open Rights Group
@@ -49,22 +43,15 @@ SUPPORT organizations fighting for digital rights:
 • Electronic Frontier Foundation
 • Big Brother Watch
 
-EDUCATE others:
-• Share these concerns with friends and family
-• Help them understand what's being built
-• Show them there are better ways
+EDUCATE others. Share these concerns. Help them understand what's being built.
 
-The infrastructure being built today will shape the UK for generations.
-We have a brief window to stop it.
-After it's built, it will be too late.
+The infrastructure being built today will shape the UK for generations. We have a brief window to stop it.
 
 *   [I want to learn more about alternatives.]
-    Yes. Let me show you what actually works.
     ~ navigateTo("better-parental-controls")
     -> END
 *   [I've seen enough.]
-    Thank you for engaging with these issues.
-    The future of privacy in the UK depends on people understanding what's at stake.
+    Thank you for engaging with these issues. The future of privacy in the UK depends on people understanding what's at stake.
     ~ exit()
     -> END
 

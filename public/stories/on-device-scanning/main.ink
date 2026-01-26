@@ -13,13 +13,9 @@ INCLUDE conclusion.ink
 Let's talk about...
 On-device scanning for your messages. # diagram: phone_scanning.png
 
-You might have heard this called "client-side scanning" or "content moderation at the source."
+The UK wants to require smartphones to scan your messages and photos *before* they're encrypted. The goal sounds good: detect child abuse material (CSAM).
 
-The UK government has proposed requiring smartphones to automatically scan your messages and photos *before* they're encrypted and sent. The goal? To detect illegal content like child sexual abuse material (CSAM) and potentially other harmful content.
-
-It sounds like a reasonable safety measure. After all, we want to protect children.
-
-But here's the thing: this fundamentally breaks how encrypted messaging works. And it creates surveillance infrastructure that can be repurposed in ways you might not expect.
+But it fundamentally breaks encryption—and creates surveillance infrastructure governments can repurpose.
 
 *   [How does this break encryption?]
     -> E2E_Encryption.Breaking_E2E
@@ -27,8 +23,8 @@ But here's the thing: this fundamentally breaks how encrypted messaging works. A
 *   [What exactly gets scanned?]
     -> Scanning_Mechanism.What_Gets_Scanned
 
-*   [Tell me about the nudity filter requirement.]
+*   [I'm concerned about the nudity filter requirement.]
     -> Nudity_Filter.Age_Verification_Requirement
 
-*   [I've heard enough. What can I do?]
+*   [What can I do about this?]
     -> Conclusion.Take_Action

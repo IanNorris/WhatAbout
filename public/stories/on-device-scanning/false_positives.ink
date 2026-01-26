@@ -1,67 +1,69 @@
 === False_Positives ===
 
 = Innocent_Content
-AI is not perfect. And when you're scanning billions of messages, even a tiny error rate creates huge problems. # diagram: false_positive_scale.png
+AI isn't perfect. With billions of messages scanned, even a tiny error rate causes huge problems. # diagram: false_positive_scale.png
 
-Let's say the scanning system has a 99.9% accuracy rate - sounds great, right?
-
-If WhatsApp scans 100 billion messages per day worldwide, a 0.1% false positive rate means **100 million innocent messages flagged every day.**
+If the system achieves 99.9% accuracy on WhatsApp's 100 billion daily messages, that's **100 million innocent messages flagged every day**.
 
 These could be:
-• Parents sharing bath-time photos of their children
-• Medical images sent to doctors  
-• Art photography or classical paintings
-• Couples sharing intimate photos (legal between consenting adults)
-• Memes or screenshots that happen to match patterns
+• Parents sharing bath-time photos with doctors
+• Medical images sent to physicians
+• Classical art or photography
+• Couples sharing legal intimate photos
+• Screenshots or memes matching patterns
 
--> Real_World_Examples
+*   [Is this already happening?]
+    -> Real_World_Examples
+
+*   [What happens to people who get falsely flagged?]
+    -> The_Chilling_Effect
 
 = Real_World_Examples
-This isn't theoretical - it's already happening. # diagram: google_photos_incident.png
+This is already happening. # diagram: google_photos_incident.png
 
-In 2022, a father took photos of his toddler's groin area to send to a doctor for a telehealth appointment. Google Photos' CSAM detection flagged the images. 
+A father took photos of his toddler's groin to send to a doctor for telehealth. Google Photos' CSAM detection flagged it.
 
-Result?
-• His Google account was disabled
-• He lost access to emails, photos, contacts - everything
-• Police investigated him  
+Result:
+• His account was disabled
+• Lost emails, photos, contacts—everything
+• Police investigated
 • Even after being cleared, Google refused to restore his account
 
-His crime? Being a concerned parent following his doctor's instructions.
+His only crime? Following his doctor's instructions.
 
--> The_Chilling_Effect
+*   [How does this affect people's behavior?]
+    -> The_Chilling_Effect
+
+*   [What about due process?]
+    -> No_Due_Process
 
 = The_Chilling_Effect
 When people know they're being watched, they change their behavior. # diagram: chilling_effect.png
 
-This is called the "chilling effect" - and it's a recognized harm to free expression.
+You might avoid discussing sensitive medical issues, sharing art that could be misinterpreted, or sending health information to your teenager.
 
-If you know your messages are being scanned:
-• You might avoid discussing sensitive medical issues
-• You might not share art or educational content that could be misinterpreted
-• You might not send your teenager information about sexual health
-• You might self-censor political or religious speech
+You don't have to be doing anything wrong—just imagining the consequences of false accusation changes what you send.
 
-And here's the thing: you don't have to be *doing* anything wrong to worry. You just have to imagine the consequences of being falsely accused.
+*   [How does someone defend themselves?]
+    -> No_Due_Process
 
--> No_Due_Process
-
-= No_Due_Process
-The scanning happens before you send the message. # diagram: no_warrant.png
-
-There's no warrant. No judge reviewing whether there's probable cause to search your device.
-
-Traditional law enforcement needs a warrant to search your phone. They need to convince a judge that there's good reason to believe you've committed a crime.
-
-But with on-device scanning, *everyone's* phone is searched, all the time, just in case.
-
-It's like having police search every car at every intersection, just to make sure nobody is transporting anything illegal.
-
-*   [So how does this expand beyond CSAM?]
+*   [Does this expand beyond CSAM?]
     -> Scope_Creep.Starts_With_CSAM
 
-*   [What about that nudity filter requirement?]
-    -> Nudity_Filter.Age_Verification_Requirement
-
-*   [I've heard enough. What can I do?]
+*   [I've seen enough. What can I do?]
     -> Conclusion.Take_Action
+
+= No_Due_Process
+The scanning happens before you even send the message. # diagram: no_warrant.png
+
+No warrant. No judge reviewing probable cause. No chance to challenge the accusation.
+
+Traditional law enforcement needs a warrant to search your phone—they have to convince a judge there's good reason. But on-device scanning searches *everyone's* phone all the time, just in case.
+
+It's like police searching every car at every intersection to make sure nobody's transporting anything illegal.
+
+*   [How does this expand beyond CSAM?]
+    -> Scope_Creep.Starts_With_CSAM
+
+*   [What about the nudity filter requirement?]
+    -> Nudity_Filter.Age_Verification_Requirement

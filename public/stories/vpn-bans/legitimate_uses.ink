@@ -1,21 +1,18 @@
 === Legitimate_Uses ===
-VPNs have many legitimate, essential uses: # diagram: vpn_uses.png
+VPNs are essential for far more than just bypassing age restrictions. # diagram: vpn_uses.png
 
 Security for remote workers accessing company systems.
-Protecting privacy on public Wi-Fi at cafes and airports.
-Helping people in restrictive regimes access information.
-Journalists protecting their sources and communications.
-Activists avoiding government surveillance in authoritarian countries.
-Businesses conducting sensitive communications and financial transactions.
+Protecting privacy on public Wi-Fi.
+Journalists protecting their sources.
+Activists avoiding government surveillance.
+Businesses conducting sensitive transactions.
+People in restrictive countries accessing information.
 
-Yes, some people use VPNs to bypass age restrictions. But that's a tiny fraction of VPN usage.
+Banning VPNs to stop a small amount of misuse harms all these legitimate users.
 
-Banning VPNs would harm all these legitimate users just to try stopping a small percentage of misuse.
-
-*   [Can't we just ban VPNs for personal use?]
-    That creates a two-tier system. We'll get to that.
-    But first, there's a more fundamental problem: can we even detect VPNs?
+*   [Can't we just ban personal VPNs?]
+    That creates a dangerous two-tier system.
+    But there's an even bigger problem: can we actually detect VPNs?
     -> Can_We_Detect
-
-*   [Surely we can detect VPN traffic?]
+*   [What's the technical problem?]
     -> Can_We_Detect

@@ -7,15 +7,13 @@ INCLUDE approved_vpns.ink
 INCLUDE conclusion.ink
 
 Lets talk about...
-We should ban VPNs to enforce age restrictions.
+VPN bans seem like an obvious solution to age restrictions. # diagram: happy_vpn_block.png
 
-On the surface, it seems logical. VPNs let people bypass age verification for adult content and social media restrictions for teenagers.
+VPNs let teenagers bypass age verification and social media bans. If we could eliminate VPNs, these restrictions would actually work.
 
-If we could eliminate VPNs, these age restrictions would actually work.
-
-The reasoning sounds simple: close the loophole, problem solved.
-
-*   [That makes sense to me.]
-    It would be convenient. But there are some major problems with this approach.
-    First, let's look at who else uses VPNs and why.
+*   [That makes sense.]
+    It would be convenient. But VPN bans create massive problems.
+    -> Legitimate_Uses
+*   [Why wouldn't it work?]
+    Several reasons. Let's start with who actually needs VPNs.
     -> Legitimate_Uses

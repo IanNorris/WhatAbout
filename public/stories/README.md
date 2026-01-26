@@ -185,6 +185,39 @@ Want to learn more about privacy?
 - The navigation happens immediately (no delay like `exit()`)
 - The parent story's progress is preserved when returning
 
+**Best Practice: Always provide an "exit ramp"**
+
+To avoid jarring topic switches, give users a preview and explicit choice before navigating:
+
+❌ **Bad example (jarring, immediate switch):**
+```ink
+* [What about VPNs?]
+    ~ navigateTo("vpn-bans")  // Immediately switches topic
+    -> END
+```
+
+✅ **Good example (preview with choice):**
+```ink
+* [What about VPNs?]
+    That's a whole separate topic worth exploring.
+    -> VPN_Preview
+
+=== VPN_Preview ===
+Banning VPNs seems obvious, but it opens up questions about surveillance, legitimate uses, and technical feasibility.
+
+* [Take me through why VPN bans don't work]
+    ~ navigateTo("vpn-bans")  // User explicitly chose to switch
+    -> END
+* [I'll take your word for it. Continue here.]
+    -> current_topic_continues
+```
+
+The exit ramp pattern:
+1. Acknowledges the user's interest
+2. Previews what the new topic covers
+3. Gives explicit choice to explore or stay
+4. Prevents surprise redirects
+
 **Example use case:**
 ```ink
 EXTERNAL navigateTo(story_id)

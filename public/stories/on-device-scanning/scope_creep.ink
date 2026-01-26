@@ -1,113 +1,118 @@
 === Scope_Creep ===
 
 = Starts_With_CSAM
-Every surveillance system starts with a justification nobody can argue with. # diagram: scope_creep_stages.png
+Every surveillance system starts with a justification nobody argues with. # diagram: scope_creep_stages.png
 
-"We're only using this to catch child abusers."
-"We're only targeting terrorists."  
+"We're only using this for child abusers."
+"We're only targeting terrorists."
 "We're only stopping the worst criminals."
 
-And then, gradually, the scope expands.
+Then the scope expands.
 
--> Historical_Examples
+*   [Has this pattern happened before?]
+    -> Historical_Examples
+
+*   [Is it already expanding in these proposals?]
+    -> Already_Expanding
 
 = Historical_Examples
-We've seen this pattern before: # diagram: mission_creep_examples.png
+We've seen this pattern: # diagram: mission_creep_examples.png
 
-<>**Post-9/11 surveillance:**
-• Started: "We need to stop terrorists"
-• Became: Mass surveillance of all citizens (revealed by Edward Snowden)
+**Post-9/11 surveillance:**
+Started as stopping terrorists. Became mass surveillance of all citizens (revealed by Snowden).
 
-<>**UK's Investigatory Powers Act:**
-• Started: "We need to catch serious criminals"  
-• Became: Councils using it to spy on dog owners and check school catchment areas
+**UK's Investigatory Powers Act:**
+Started as catching serious criminals. Councils now use it to spy on dog owners and verify school catchment areas.
 
-<>**China's social credit system:**
-• Started: "We need to reduce fraud"
-• Became: Tracking citizens' social media posts and restricting travel
+**China's social credit system:**
+Started as reducing fraud. Now tracks social media posts and restricts travel.
 
-The pattern is always the same:
-1. Build the infrastructure for a noble purpose
-2. Expand it to less serious cases
-3. Eventually use it for political or social control
+The pattern: build infrastructure for a noble cause, expand it to less serious cases, eventually weaponize for political control.
 
--> Already_Expanding
+*   [Is it already expanding in these proposals?]
+    -> Already_Expanding
+
+*   [Who decides what's "harmful"?]
+    -> Who_Decides
 
 = Already_Expanding
-We don't even have to wait for scope creep - it's already in the proposals. # diagram: expanding_definitions.png
+The proposals are already expanding beyond CSAM. # diagram: expanding_definitions.png
 
-The UK legislation doesn't just mention CSAM. It includes vague language about:
+The UK legislation includes vague language about:
 • "Harmful content" (undefined)
 • "Priority offences" (expandable list)
 • "Content of concern" (government decides)
 
-Once the scanning infrastructure exists, adding new categories is trivial. Just update the AI models and the list of banned patterns.
+Once the infrastructure exists, adding new categories is trivial—just update the AI models.
 
-No new legislation needed. No public debate. Just a quiet expansion of what gets flagged and reported.
+No new legislation. No public debate. Just a quiet expansion.
 
--> Who_Decides
+*   [Who decides what's "harmful"?]
+    -> Who_Decides
+
+*   [How is this used in other countries?]
+    -> International_Precedent
+
+*   [Can't we just trust governments?]
+    -> Who_Decides
 
 = Who_Decides
-And here's the critical question: who decides what's "harmful"? # diagram: government_control.png
+Who decides what's "harmful"? # diagram: government_control.png
 
-Today it might be CSAM (which everyone agrees is harmful).
+Today it's CSAM (which everyone agrees on).
 
 Tomorrow it could be:
 • Political dissent ("misinformation")
-• LGBTQ+ content (already banned in some countries)
-• Religious or atheistic content (depending on who's in power)
+• LGBTQ+ content (banned in some countries)
+• Religious or atheistic content (depends who's in power)
 • Criticism of the government ("extremism")
 • Union organizing or protest coordination
-• Abortion information or resources
+• Abortion information
 
-The scanning system doesn't care what it's scanning for. It just follows its instructions.
+The scanning system follows instructions. It doesn't care what it scans for.
 
--> International_Precedent
+*   [Is this already happening elsewhere?]
+    -> International_Precedent
+
+*   [Can surveillance ever be scaled back?]
+    -> The_Ratchet_Effect
 
 = International_Precedent
-We know this isn't hypothetical because it's already happening. # diagram: global_surveillance.png
+We know this isn't hypothetical. It's already happening. # diagram: global_surveillance.png
 
-<>**China** already scans messages for:
+**China** scans messages for:
 • References to Tiananmen Square
 • Criticism of the government
-• "Subversive" political content
 • LGBTQ+ discussions
 
-<>**Russia** scans for:
+**Russia** scans for:
 • Anti-war content
-• Opposition to the government  
+• Opposition to the government
 • "LGBTQ propaganda"
 
-<>**Saudi Arabia** scans for:
+**Saudi Arabia** scans for:
 • Atheism
-• Criticism of Islam  
-• Women's rights advocacy
+• Criticism of Islam
 
-Once you build the scanning infrastructure, authoritarian governments will absolutely use it for political control.
+Once you build the infrastructure, authoritarian governments use it for political control. Even democracies—governments change. What seems reasonable today gets weaponized tomorrow.
 
-And even in democracies, governments change. What seems reasonable today might be weaponized tomorrow.
+*   [So we can never scale this back?]
+    -> The_Ratchet_Effect
 
--> The_Ratchet_Effect
+*   [I've heard enough. What can I do?]
+    -> Conclusion.Take_Action
 
 = The_Ratchet_Effect
-Here's the problem with surveillance infrastructure: # diagram: ratchet_effect.png
-
-It only moves in one direction.
+Surveillance infrastructure only moves in one direction. # diagram: ratchet_effect.png
 
 Once you build the ability to scan everyone's messages:
 • Future governments will expand it
-• New "threats" will be added to the scanning list
+• New "threats" get added to the scanning list
 • The infrastructure becomes permanent
 
-You can't un-build it without losing the original use case. And there's always a crisis that justifies expanding it "just a little more."
+You can't un-build it without losing the original use case. And there's always a crisis justifying "just a little more."
 
-This is called the "ratchet effect" - surveillance powers ratchet up but never ratchet down.
+This is the "ratchet effect"—surveillance powers ratchet up but never down.
 
-*   [What about false positives in all this?]
-    -> False_Positives.Innocent_Content
-
-*   [Tell me about the nudity filter requirement.]
-    -> Nudity_Filter.Age_Verification_Requirement
-
-*   [I've heard enough. What can I do?]
+*   [What can I do about this?]
     -> Conclusion.Take_Action

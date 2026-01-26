@@ -1,53 +1,37 @@
 === China_Example ===
 China's Great Firewall is often cited as proof that VPN blocking works. # diagram: great_firewall.png
 
-But here's what actually happens:
+Here's what actually happens:
 
-The government plays Whac-A-Mole with VPN servers. They block known VPN IP addresses.
-VPN companies create new servers with new IPs.
-The cycle repeats endlessly.
+China plays Whac-A-Mole with VPN servers. They block known IPs. VPN companies create new servers. The cycle repeats.
 
-China employs thousands of engineers and censors working full-time on this problem.
-They use deep packet inspection, analyzing traffic patterns at the millisecond level.
-They monitor connections and block suspicious patterns.
-They even block entire protocols that might be used for circumvention.
+China employs thousands of engineers. They use deep packet inspection, analyzing traffic patterns. They block suspicious protocols. They've spent two decades and billions of dollars on the most sophisticated censorship system in history.
 
-And yet...
+And yet—VPNs still work in China.
 
-VPNs still work in China. Not perfectly, but they work.
+Technically savvy users create personal VPN servers on cloud platforms (indistinguishable from normal web traffic). Students connect to home country servers. Businesses maintain international connections.
 
-Meanwhile, technically savvy users create their own VPN servers on cloud platforms. These look like normal encrypted web traffic.
-Students studying abroad connect back to their home country's servers.
-Businesses maintain international connections that can't be blocked without crippling trade.
+The government would have to block all encrypted traffic to all foreign servers—which would destroy international trade and economic ties.
 
-The government would have to block all encrypted traffic to all foreign servers—which would shut down international business.
+China's economy depends on foreign investment, manufacturing, and exports. Cutting encrypted connections would be economic suicide.
 
-China's economy depends on foreign investment, manufacturing exports, and international trade.
-Cutting off encrypted connections to the outside world would be economic suicide.
+Even the world's most authoritarian surveillance state—with unlimited resources and control—cannot eliminate VPNs without breaking the internet.
 
-*   [So even China can't fully stop it?]
-    Exactly. They make it harder and drive people to shadier solutions.
-    
-    They've spent billions of dollars and two decades building the most sophisticated censorship system in human history.
-    
-    But they can't eliminate the fundamental problem without breaking the internet itself.
-    
-    And remember: anyone determined to bypass restrictions will be just as resourceful as Chinese citizens trying to access Facebook. The UK doesn't have China's resources or authoritarian control to even attempt this level of blocking.
-    
+The UK has none of China's resources or control. If China can't do it, no democracy can.
+
+*   [So we can't block them at all?]
     -> Technical_Reality
 
 === Technical_Reality ===
-Here's the bottom line: # diagram: vpn_bypass.png
+You cannot eliminate VPNs without breaking the internet itself. # diagram: vpn_bypass.png
 
-You cannot eliminate VPN access without breaking the internet itself.
-
-Every attempt to block VPNs will:
+Any VPN ban will:
 • Harm legitimate users (workers, journalists, activists)
 • Require massive surveillance infrastructure
-• Fail to stop determined users anyway
-• Drive people to less secure, shadier VPN services
+• Fail to stop determined users
+• Drive people to less secure services
 
-Any policy that requires blocking VPNs—whether for age verification or social media restrictions—is fundamentally unworkable.
+Policies that require blocking VPNs are fundamentally unworkable.
 
-*   [What about approved VPNs?] -> Approved_VPNs
-*   [So what's the alternative?] -> The_Alternative
+*   [What's the alternative?]
+    -> The_Alternative

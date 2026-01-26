@@ -1,103 +1,43 @@
 === Policy_Solutions ===
-Here's what responsible digital identity policy looks like: # diagram: policy_framework.png
+Responsible digital identity policy is actually straightforward: # diagram: policy_framework.png
 
-SCRAP digital ID in all forms:
-• No smartphone-based digital ID
-• No Yoti-backed digital Citizen Card
-• No biometric backing for any ID system
-• Limit One Login strictly to accessing online government services
+SCRAP digital ID in all forms. No smartphone-based ID, no Citizen Card, no biometric backing.
+REPEAL the Companies House identification mandate. Use offline, in-person verification.
+PAUSE Online Safety Act age verification enforcement. Work with experts to explore evidence-based alternatives.
 
-This doesn't mean eliminating online government services.
-It means not creating surveillance infrastructure to support them.
+We can maintain online government services without building surveillance infrastructure.
 
-REPEAL the Companies House identification mandate: # diagram: companies_house.png
-• Remove the One Login requirement for company directors
-• Use offline, in-person verification
-• No biometric data storage
-• Address the security concerns raised by Sir David Davis
-
-PAUSE enforcement of the Online Safety Act's age verification requirements: # diagram: osa_pause.png
-• Work with privacy, security, and technology experts
-• Explore evidence-based alternatives
-• Don't build infrastructure that enables mass surveillance
-
-There are better approaches to online safety that don't require age verification.
-You can explore those alternatives in the other stories.
-
-*   [What about stricter regulation for verification providers?]
-    If we're going to mandate age or ID verification despite the risks, we need proportional regulation.
-    -> Stricter_Regulation
-*   [What other alternatives exist?]
-    Many. Let me show you what actually works.
+*   [What if we need better security for verification systems?]
+    Security regulation is a band-aid. The real solution is to not build these systems.
+    -> Regulation_Wont_Work
+*   [What are the actual alternatives that work?]
+    Many. Evidence-based approaches that protect both children and privacy.
     -> Better_Approaches
 
-=== Stricter_Regulation ===
-If digital ID or age verification must exist, regulation must match the risk: # diagram: regulatory_framework.png
+=== Regulation_Wont_Work ===
+If digital ID or age verification must exist, regulation should match the risk. But regulation doesn't solve the fundamental problem. # diagram: regulatory_framework.png
 
-PROPORTIONAL FINES based on harm:
-• If data could have been exposed: substantial fines
-• If data was actually exposed: additional catastrophic fines
-• Scale with severity and number affected
+Even with proportional fines, banned data reuse, digital watermarking, regular audits, and criminal liability for executives—you're treating the symptom, not the cause.
 
-BAN improper data usage:
-• No reuse of data beyond verification itself
-• No consent-based data reuse privacy policies
-• Consumers don't get a choice of verification vendor
-• All data beyond verification status deleted within 24 hours
-• Only exception: legal hold
+The real solution is to avoid building these systems in the first place.
 
-DIGITAL WATERMARKING:
-• Mark documents at point of collection
-• Origin can be identified if leaked
-• Enables accountability and prosecution
-
-REGULAR AUDITS:
-• All services collecting face scans or identity documents
-• Unannounced inspections
-• Public reporting of compliance
-
-ANTI-MONEY-LAUNDERING GRADE REGULATIONS:
-• Same standards as financial institutions
-• Digital Identity and Attributes Trust Framework compliance
-• Criminal liability for executives in case of breaches
-
-*   [That seems reasonable if we must have these systems.]
-    It's a bare minimum. But it's still treating the symptom, not the cause.
-    The real solution is to avoid building these systems in the first place.
+*   [What about the alternatives?]
+    These actually work without surveillance infrastructure.
     -> Better_Approaches
 
 === Better_Approaches ===
 Instead of surveillance infrastructure, we can: # diagram: alternative_approaches.png
 
-MANDATE algorithmic transparency and controls:
-• Clear options to disable algorithmic content
-• Disable infinite scrolling
-• Default-off settings for addictive features
-• User control over their experience
+MANDATE algorithmic transparency. Clear options to disable algorithmic content, disable infinite scrolling, user control over experience.
 
-SUPPORT responsible parenting:
-• Parental training on device controls
-• ISP-level content filters
-• On-device restrictions, not population-wide surveillance
-• Education throughout childhood about online harms
+SUPPORT responsible parenting. Parental training, ISP-level filters, on-device restrictions, education throughout childhood.
 
-INDUSTRY-SPECIFIC WORKING GROUPS:
-• Identify realistic online-safety standards by sector
-• Account for entity size and resources
-• Similar to Ofcom's approach with One Touch Switching
-• Share success and failure cases collectively
+INDUSTRY-SPECIFIC WORKING GROUPS. Identify realistic safety standards by sector, similar to Ofcom's approach.
 
-CREATE A DIGITAL BILL OF RIGHTS:
-• Apply to government and private sector
-• Strong protection for end-to-end encryption
-• Remove warrantless access to user data
-• End bulk collection of internet connection records
-• Protect the right to private communication
+CREATE A DIGITAL BILL OF RIGHTS. Apply to government and private sector. Strong protection for end-to-end encryption. Remove warrantless access to data.
 
-These approaches improve safety without building surveillance infrastructure.
+These improve safety without building surveillance infrastructure. Based on evidence, not fear.
 
 *   [This seems comprehensive.]
-    It is. And it's based on evidence, not fear.
-    But it requires accepting that we can't eliminate all risk.
+    It is. But it requires accepting that we can't eliminate all risk.
     -> The_Choice
-

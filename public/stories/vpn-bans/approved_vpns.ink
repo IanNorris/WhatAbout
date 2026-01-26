@@ -1,43 +1,26 @@
 === Approved_VPNs ===
-"We'll only allow corporate or government-approved VPNs!" # diagram: two_tier_internet.png
+"We'll only allow approved government and corporate VPNs!" # diagram: two_tier_internet.png
 
-This creates a two-tier internet:
-Businesses and the wealthy get secure, private connections.
-Regular citizens are forced to expose their browsing to government surveillance.
+This creates a two-tier internet. The wealthy get secure connections. Regular people get surveillance.
 
-Think about what "approved" means in practice:
-• The government can see where the VPN connects
-• They can demand logs of who uses it and when
-• They can revoke approval at any time
-• They create a list of "trusted" VPNs that must cooperate with authorities
+Think about "approved" in practice:
+• Government sees where the VPN connects
+• They demand logs of who uses it and when
+• They can revoke approval instantly
+• VPN providers must cooperate with authorities
 
-This transforms a security tool into a surveillance tool.
+A security tool becomes a surveillance tool.
 
-It's like saying: "Curtains are now illegal unless you're rich enough to apply for a curtain license."
-And oh, by the way, the government gets to peek through approved curtains whenever they want.
+It's like saying: "Curtains are illegal unless you apply for a government license and let them peek through."
 
-Who gets approval? 
-• Corporations, certainly
-• Government contractors
-• Maybe large hospitals and universities
+Who gets approval? Corporations, maybe large hospitals. But freelance journalists? Political activists? Ordinary privacy-conscious people? No.
 
-But:
-• Freelance journalists? Probably not.
-• Political activists? Unlikely.
-• Ordinary citizens who value privacy? No chance.
+And the problem still exists. Kids use their parent's work VPN. Their older sibling's university account. Their friend's family business VPN.
 
-*   [That doesn't seem fair.]
-    It's not. And it creates new problems:
-    
-    Children and teenagers can still use their parent's work laptop with an "approved" VPN.
-    
-    Or their older sibling's university VPN.
-    
-    Or a friend whose parents work for a company with VPN access.
-    
-    You've created a surveillance infrastructure without solving the underlying problem.
-    
+You've built massive surveillance infrastructure without solving anything.
+
+*   [That seems like a bad idea.]
+    It is. There's a better approach.
     -> The_Alternative
-
-*   [This seems like a bad idea all around.]
+*   [What about other options?]
     -> The_Alternative

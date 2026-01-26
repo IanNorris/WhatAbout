@@ -15,7 +15,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
 }
 
@@ -23,7 +22,6 @@ body {
   font-family: var(--font-main);
   background-color: var(--color-bg);
   color: var(--color-text-main);
-  line-height: 1.6;
   width: 100vw;
   height: 100vh;
   overflow: hidden;

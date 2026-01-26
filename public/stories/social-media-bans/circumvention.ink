@@ -1,101 +1,94 @@
 === Circumvention_Reality ===
-Here's what's already happening in Australia, where they've implemented similar bans: # diagram: circumvention_reality.png
+In Australia, about 1 in 3 parents are planning to help their children dodge the ban. # diagram: circumvention_reality.png
 
-About 1 in 3 parents are planning to help their children dodge the ban.
+The law says these platforms are too dangerous. But parents—who see their kids' social needs—are actively helping them bypass it.
 
-Think about that. The law says these platforms are too dangerous for children. But parents—who understand their kids' need for social connection—are actively helping them circumvent it.
-
-Other kids are stealing their parents' IDs and scanning their faces without consent. Some are using photos of their siblings. A few have even tried using photos of their dog.
-
-These aren't "bad kids" breaking the law for fun. They're socially isolated teenagers trying to stay connected with their friends.
+Other kids are stealing IDs, using sibling photos. These aren't "bad kids"—they're socially isolated teens trying to connect with friends.
 
 *   [Why would parents help them bypass it?]
-    Because they see what policymakers often miss.
-    
-    Their child is the only one in their friend group without access. They're excluded from group chats about homework, weekend plans, and inside jokes.
-    
-    They come home from school upset because everyone's talking about something that happened online that they missed.
-    
-    They can't participate in their school's sports team group chat or the drama club's planning discussions.
-    
-    The parent weighs the risks: the theoretical harms the law aims to prevent versus the very real social isolation their child is experiencing right now.
-    
-    Many choose connection.
+    -> Parent_Motivation
+*   [What happens when kids bypass the ban?]
+    -> Lying_About_Age
+
+=== Parent_Motivation ===
+Parents see what policymakers miss. # diagram: social_isolation.png
+
+Their child is the only one without access. Excluded from group chats about homework, weekend plans, inside jokes. Can't participate in the sports team chat or drama club planning.
+
+The parent weighs the risks: theoretical harms versus very real social isolation right now.
 
 *   [But they're breaking the law!]
-    Yes. And that tells us something important.
-    
-    When a third of parents are willing to break the law to help their children, maybe the law is trying to solve the problem the wrong way.
-    
-    It's not that parents don't care about safety. They just recognize that social isolation has its own very real harms.
-
--
-*   [What happens when kids bypass the ban?]
-    That's where things get worse.
+    Yes. And when a third of parents are willing to break the law to help their children, maybe the law is solving the problem the wrong way.
+    It's not that parents don't care about safety—they recognize that social isolation has its own very real harms.
+    -> Lying_About_Age
+*   [What happens when kids bypass it?]
     -> Lying_About_Age
 
 === Lying_About_Age ===
-To get past the age verification, children have to lie about their age. # diagram: age_lying_consequences.png
+To bypass age verification, children lie about their age. # diagram: age_lying_consequences.png
 
-They say they're 18 or 21 instead of 14.
+They say they're 18 or 21 instead of 14. Seems harmless—they get access, problem solved. Except all the safety features turn off.
 
-Seems harmless, right? They get access, everyone's happy.
+*   [What safety features?]
+    -> Safety_Features_Lost
+*   [Can't we fix that somehow?]
+    -> Cant_Fix_The_Lie
 
-Except:
-
-Most platforms have specific safety features for users under 18:
+=== Safety_Features_Lost ===
+Most platforms have specific protections for users under 18:
 • Restricted who can message them
-• Limits on who can see their content  
+• Limits on who can see their content
 • Warnings about inappropriate content
 • Easier reporting for concerning behavior
 • Content algorithms that avoid mature themes
 
-When a 14-year-old claims to be 21, all those protections turn off.
+When a 14-year-old claims to be 21, all those protections vanish. The platform serves them adult content. Strangers can message without restrictions.
 
-The platform now treats them as an adult. The algorithm serves them adult content. Strangers can message them without restrictions. The safety rails disappear.
-
-So the child is now more exposed to the very harms the ban was meant to prevent.
-
-And when they turn 16 and can legally access social media? # diagram: sixteen_digital_id.png
-If the face scan fails to verify their age, they'll need to provide ID.
-This pushes teenagers—some as young as 16—toward digital ID systems.
-Systems that track their location, browsing history, and create permanent surveillance records.
-
-We're not just removing protections. We're funneling children into surveillance infrastructure.
+The child is now more exposed to the very harms the ban was meant to prevent.
 
 *   [Can't we fix that somehow?]
-    How? If the platform knows they're under 16, they'd be banned.
-    
-    The ban itself requires children to lie to access the service.
-    
-    And the lie removes their protections.
-    
-    We've created a system where the safety measure increases the danger.
+    -> Cant_Fix_The_Lie
+*   [What about parents monitoring them?]
     -> Hiding_Usage
 
-*   [What about the digital ID concerns?]
-    That's a critical issue. Government-run ID systems have their own serious problems.
+=== Cant_Fix_The_Lie ===
+How? If the platform knows they're under 16, they'd be banned.
+
+The ban itself requires children to lie to access the service. And the lie removes their protections.
+
+We've created a system where the safety measure increases the danger.
+
+*   [What about digital ID?]
+    When kids turn 16 and can legally access social media, if face scans fail, they need ID. This pushes teenagers into digital ID systems that track location, browsing history, and create permanent surveillance records.
+    -> Digital_ID_Path
+*   [What about parents monitoring them?]
+    -> Hiding_Usage
+
+=== Digital_ID_Path ===
+Want to explore the concerns with digital ID systems?
+
+*   [Yes, tell me about digital ID.]
     ~ navigateTo("digital-id")
     -> END
-
-*   [What about parents monitoring them?]
-    That's the other problem.
+*   [No, continue with social media bans.]
     -> Hiding_Usage
 
 === Hiding_Usage ===
 Since the child isn't supposed to be on these platforms, they hide it. # diagram: hidden_usage.png
 
-They delete apps before parents come home. They use private browsing. They create accounts their parents don't know about.
+They delete apps before parents come home. Private browsing. Secret accounts.
 
 Normal teenage privacy behavior—but with a crucial difference:
 
-When they encounter something troubling:
-• Cyberbullying
-• Grooming attempts  
-• Explicit content
-• Pressure to share inappropriate images
+*   [What's the difference?]
+    -> Cant_Ask_For_Help
+*   [I can see where this is going.]
+    -> Cant_Ask_For_Help
 
-They can't tell their parents. Because that would reveal they're on the banned platform.
+=== Cant_Ask_For_Help ===
+When they encounter something troubling—cyberbullying, grooming attempts, explicit content, pressure to share inappropriate images—they can't tell their parents.
+
+Because that would reveal they're on the banned platform.
 
 The child who needs help the most is the least likely to get it.
 
@@ -103,6 +96,13 @@ The child who needs help the most is the least likely to get it.
     Exactly. The ban creates a false sense of security.
     -> False_Sense_Of_Security
 *   [Surely we can find a better approach?]
-    Yes. Let me show you what actually works.
+    -> Better_Approach_Question
+
+=== Better_Approach_Question ===
+Yes. There are solutions that actually work without these unintended consequences.
+
+*   [Show me what actually works.]
     ~ navigateTo("better-parental-controls")
     -> END
+*   [Tell me more about the false security first.]
+    -> False_Sense_Of_Security
