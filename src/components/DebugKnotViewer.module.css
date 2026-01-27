@@ -1,0 +1,189 @@
+.piButton {
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    width: 1em;
+    height: 1em;
+	border: none;
+    background: var(--color-cloud-dark);
+    color: var(--color-accent);
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 150;
+}
+
+.piButton:hover {
+    color: var(--color-text-main);
+}
+
+.panel {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    width: 20rem;
+    max-height: 40rem;
+    background: var(--color-cloud-dark);
+    border: 3px solid var(--color-accent);
+    border-radius: var(--radius-cloud);
+    padding: 1rem;
+    z-index: 160;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.panelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--color-text-sub);
+}
+
+.panelHeader h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--color-accent);
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-text-sub);
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.closeButton:hover {
+    color: var(--color-text-main);
+    transform: rotate(90deg);
+}
+
+.currentKnot {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(123, 163, 255, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid var(--color-accent);
+	font-size: 2rem;
+}
+
+.currentKnot strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-sub);
+    margin-bottom: 0.25rem;
+}
+
+.knotPath {
+    font-size: 1rem;
+    color: var(--color-accent);
+    word-break: break-all;
+}
+
+.knotList {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 0.5rem;
+}
+
+.knotListHeader {
+    font-size: 1rem;
+    color: var(--color-text-sub);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.knotButton {
+    width: 100%;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    margin-bottom: 0.4rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: var(--color-text-main);
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.knotButton:hover {
+    background: rgba(123, 163, 255, 0.15);
+    border-color: var(--color-accent);
+}
+
+.activeKnot {
+    background: rgba(123, 163, 255, 0.2);
+    border-color: var(--color-accent);
+    font-weight: bold;
+}
+
+.noKnots {
+    padding: 1rem;
+    text-align: center;
+    color: var(--color-text-sub);
+    font-style: italic;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .panel {
+        right: 10px;
+        bottom: 70px;
+        width: calc(100vw - 20px);
+        max-width: 320px;
+    }
+
+    .piButton {
+        right: 10px;
+        bottom: 10px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+		display: none;
+    }
+}
+
+/* Custom scrollbar for knot list */
+.knotList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.knotList::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+.knotList::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 3px;
+}
+
+.knotList::-webkit-scrollbar-thumb:hover {
+    background: #5a8aff;
+}

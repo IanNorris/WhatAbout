@@ -6,10 +6,13 @@ const useInkStory = (storyContent, currentStoryId, currentStoryTitle, savedState
     const [currentChoices, setCurrentChoices] = useState([]);
     const [isEnded, setIsEnded] = useState(false);
     const [globalTags, setGlobalTags] = useState({});
+    const [currentKnot, setCurrentKnot] = useState('');
+    const [availableKnots, setAvailableKnots] = useState([]);
 
     const storyRef = useRef(null);
     const pendingChoicesRef = useRef(null); // Store choices for the current page before selection
     const savedStateRef = useRef(savedState); // Use ref to avoid re-triggering effect
+    const lastKnotRef = useRef(''); // Track last known knot
 
     useEffect(() => {
         if (storyContent) {
@@ -21,6 +24,18 @@ const useInkStory = (storyContent, currentStoryId, currentStoryTitle, savedState
             try {
                 const s = new Story(storyContent);
                 storyRef.current = s;
+                
+                // Extract available knots from story JSON
+                // Knots are stored in root[2] (after the main flow and "done" marker)
+                if (Array.isArray(storyContent.root) && storyContent.root.length > 2) {
+                    const knotsObject = storyContent.root[2];
+                    if (typeof knotsObject === 'object') {
+                        const knots = Object.keys(knotsObject).filter(key => 
+                            !key.startsWith('global decl') && key !== 'listDefs'
+                        );
+                        setAvailableKnots(knots);
+                    }
+                }
                 
                 // Restore saved state if provided
                 if (savedStateRef.current) {
@@ -150,6 +165,22 @@ const useInkStory = (storyContent, currentStoryId, currentStoryTitle, savedState
         }
 
         s.ChooseChoiceIndex(index);
+        
+        // Try to detect knot from the choice's target path
+        try {
+            const choice = currentChoices[index];
+            if (choice && choice.targetPath) {
+                const pathComponents = choice.targetPath.componentsString || choice.targetPath.toString();
+                const knotName = pathComponents.split('.')[0];
+                if (knotName && !knotName.match(/^\d+$/)) {
+                    lastKnotRef.current = knotName;
+                    setCurrentKnot(knotName);
+                }
+            }
+        } catch (err) {
+            // Silently fail - not critical
+        }
+        
         setCurrentChoices([]);
         pendingChoicesRef.current = null;
         continueStory();
@@ -161,7 +192,31 @@ const useInkStory = (storyContent, currentStoryId, currentStoryTitle, savedState
             setPages([]);
             setCurrentChoices([]);
             setIsEnded(false);
+            lastKnotRef.current = '';
+            setCurrentKnot('');
             continueStory();
+        }
+    }, [continueStory]);
+
+    const navigateToKnot = useCallback((knotPath) => {
+        const s = storyRef.current;
+        if (!s) return;
+
+        try {
+            // Clear current pages and reset to navigate to knot
+            setPages([]);
+            setCurrentChoices([]);
+            setIsEnded(false);
+            
+            // Update the knot tracker immediately
+            lastKnotRef.current = knotPath;
+            setCurrentKnot(knotPath);
+            
+            // Use ChoosePathString to jump to the knot
+            s.ChoosePathString(knotPath);
+            continueStory();
+        } catch (err) {
+            console.error(`Failed to navigate to knot: ${knotPath}`, err);
         }
     }, [continueStory]);
 
@@ -170,7 +225,10 @@ const useInkStory = (storyContent, currentStoryId, currentStoryTitle, savedState
         currentChoices,
         makeChoice,
         isEnded,
-        resetStory
+        resetStory,
+        currentKnot,
+        availableKnots,
+        navigateToKnot
     };
 };
 

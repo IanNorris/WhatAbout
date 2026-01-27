@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { marked } from 'marked';
 import useInkStory from '../hooks/useInkStory';
 import OverlayMenu from './OverlayMenu';
+import DebugKnotViewer from './DebugKnotViewer';
 import styles from './TopicView.module.css';
 
 // Configure marked to use inline rendering without wrapping in <p> tags
@@ -12,7 +13,7 @@ marked.use({
 
 const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedState, onClose, onHome, onNavigateToStory }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const { pages, currentChoices, makeChoice, resetStory } = useInkStory(
+    const { pages, currentChoices, makeChoice, resetStory, currentKnot, availableKnots, navigateToKnot } = useInkStory(
         storyContent,
         storyId,
         storyTitle,
@@ -96,6 +97,12 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                     resetStory();
                     setIsMenuOpen(false);
                 }}
+            />
+
+            <DebugKnotViewer
+                currentKnot={currentKnot}
+                availableKnots={availableKnots}
+                onNavigateToKnot={navigateToKnot}
             />
 
             <div className={styles.scrollContainer}>
