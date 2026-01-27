@@ -3,7 +3,7 @@
 = Innocent_Content
 AI isn't perfect. With billions of messages scanned, even a tiny error rate causes huge problems. # diagram: false_positive_scale.png
 
-If the system achieves 99.9% accuracy on WhatsApp's 100 billion daily messages, that's **100 million innocent messages flagged every day**.
+If the system achieves 99.9% accuracy on WhatsApp's 100 billion daily messages, that's __100 million innocent messages flagged every day__.
 
 These could be:
 • Parents sharing bath-time photos with doctors
@@ -70,3 +70,4 @@ It's like police searching every car at every intersection to make sure nobody's
     
 *   [I've seen enough. What can I do?]
     -> Conclusion.Take_Action
+

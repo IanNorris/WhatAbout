@@ -18,13 +18,13 @@ Then the scope expands.
 = Historical_Examples
 We've seen this pattern: # diagram: mission_creep_examples.png
 
-**Post-9/11 surveillance:**
+__Post-9/11 surveillance:__
 Started as stopping terrorists. Became mass surveillance of all citizens (revealed by Snowden).
 
-**UK's Investigatory Powers Act:**
+__UK's Investigatory Powers Act:__
 Started as catching serious criminals. Councils now use it to spy on dog owners and verify school catchment areas.
 
-**China's social credit system:**
+__China's social credit system:__
 Started as reducing fraud. Now tracks social media posts and restricts travel.
 
 The pattern: build infrastructure for a noble cause, expand it to less serious cases, eventually weaponize for political control.
@@ -80,17 +80,17 @@ The scanning system follows instructions. It doesn't care what it scans for.
 = International_Precedent
 We know this isn't hypothetical. It's already happening. # diagram: global_surveillance.png
 
-**China** scans messages for:
+__China__ scans messages for:
 • References to Tiananmen Square
 • Criticism of the government
 • LGBTQ+ discussions
 
-**Russia** scans for:
+__Russia__ scans for:
 • Anti-war content
 • Opposition to the government
 • "LGBTQ propaganda"
 
-**Saudi Arabia** scans for:
+__Saudi Arabia__ scans for:
 • Atheism
 • Criticism of Islam
 
@@ -119,3 +119,4 @@ This is the "ratchet effect"—surveillance powers ratchet up but never down.
     
 *   [Tell me about false positives.]
     -> False_Positives.Innocent_Content
+

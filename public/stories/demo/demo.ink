@@ -22,13 +22,13 @@ Stories are written in Ink, a narrative scripting language that lets you create 
 
 The platform has several key features: # diagram: features_diagram.png
 
-**Client-side compilation** means .ink files load and compile in your browser - no build step needed!
+__Client-side compilation__ means .ink files load and compile in your browser - no build step needed!
 
-**Modular structure** lets you split large stories into smaller files using INCLUDE statements.
+__Modular structure__ lets you split large stories into smaller files using INCLUDE statements.
 
-**Dead end detection** helps you find missing content with a simple command.
+__Dead end detection__ helps you find missing content with a simple command.
 
-**Image support** allows you to add diagrams and visuals to enhance your narrative.
+__Image support__ allows you to add diagrams and visuals to enhance your narrative.
 
 * [How do I add images?] -> adding_images
 * [What about organizing content?] -> organizing_content
@@ -52,9 +52,9 @@ You can create multiple branches, loops, and complex narratives.
 === more_about_choices ===
 
 The choice system also shows:
-• **Selected choices** in blue (the one you picked)
-• **Unselected choices** greyed out (paths not taken)
-• **Choice history** preserved as you scroll back
+• __Selected choices__ in blue (the one you picked)
+• __Unselected choices__ greyed out (paths not taken)
+• __Choice history__ preserved as you scroll back
 
 This makes it easy to understand the story structure as you explore.
 
@@ -63,3 +63,4 @@ This makes it easy to understand the story structure as you explore.
     Hope this helped! See you back at the hub.
     ~ exit()
     -> END
+

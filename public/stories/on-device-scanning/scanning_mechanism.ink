@@ -55,13 +55,13 @@ You likely won't know you've been flagged. No warrant. No judicial oversight. Ju
 = Voluntary_vs_Mandatory
 There's a big difference between optional parental controls and mandatory scanning. # diagram: voluntary_vs_mandatory.png
 
-**Voluntary controls:**
+__Voluntary controls:__
 • Parents choose to enable them
 • Parents configure what's filtered
 • Only parents see reports
 • Children know they're monitored
 
-**Mandatory scanning:**
+__Mandatory scanning:__
 • Everyone scanned automatically
 • Government decides what's flagged
 • Reports go to law enforcement
@@ -82,3 +82,4 @@ Even adults need to prove their age to opt out.
     
 *   [I understand the issues. What can I do?]
     -> Conclusion.Take_Action
+
