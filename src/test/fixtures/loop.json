@@ -1,0 +1,1 @@
+{"inkVersion":21,"root":[["^Story with a loop","\n",{"->":"loop"},["done",{"#n":"g-0"}],null],"done",{"loop":[["^You are in a loop.","\n","ev","str","^Continue","/str","/ev",{"*":".^.c-0","flg":20},"ev","str","^Exit","/str","/ev",{"*":".^.c-1","flg":20},{"c-0":["\n",{"->":"loop"},{"#f":5}],"c-1":["\n","^You exited!","\n","end",{"#f":5}]}],null]}],"listDefs":{}}
