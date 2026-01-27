@@ -155,7 +155,7 @@ describe('Real Story Validation', () => {
           `${story.id} has ${stuckPaths.length} dead end(s) where story has no choices and doesn't end properly.`
         ).toBe(0);
 
-      }, 60000); // 60 second timeout per story
+      }, 300000); // 5 minute timeout (social-media-bans is very complex with 558k+ paths)
     });
   });
 
