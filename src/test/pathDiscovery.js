@@ -127,24 +127,39 @@ export async function discoverAllPaths(compiledStoryJson, options = {}) {
     const newContent = [];
     const visitedKnots = new Set(knotHistory);
     
-    while (story.canContinue) {
-      const text = story.Continue();
-      if (trackContent) {
-        newContent.push(text);
-      }
-      
-      // Track current knot after each Continue
-      try {
-        const currentPath = story.state.currentPathString;
-        if (currentPath) {
-          const knotMatch = currentPath.match(/^([^.]+)/);
-          if (knotMatch && knotMatch[1] && !knotMatch[1].match(/^\d+$/)) {
-            visitedKnots.add(knotMatch[1]);
-          }
+    try {
+      while (story.canContinue) {
+        const text = story.Continue();
+        if (trackContent) {
+          newContent.push(text);
         }
-      } catch (err) {
-        // Ignore
+        
+        // Track current knot after each Continue
+        try {
+          const currentPath = story.state.currentPathString;
+          if (currentPath) {
+            const knotMatch = currentPath.match(/^([^.]+)/);
+            if (knotMatch && knotMatch[1] && !knotMatch[1].match(/^\d+$/)) {
+              visitedKnots.add(knotMatch[1]);
+            }
+          }
+        } catch (err) {
+          // Ignore
+        }
       }
+    } catch (err) {
+      // Story had a runtime error (e.g., ran out of content)
+      paths.push({
+        choices: choiceHistory,
+        choiceIndices: choiceIndexHistory,
+        completed: false,
+        endReason: 'error',
+        content: trackContent ? [...contentHistory, ...newContent] : [],
+        knots: Array.from(visitedKnots),
+        error: err.message || String(err),
+      });
+      pathsAborted++;
+      return;
     }
 
     const updatedContent = trackContent ? [...contentHistory, ...newContent] : [];
@@ -229,8 +244,19 @@ export async function discoverAllPaths(compiledStoryJson, options = {}) {
   // Bind external functions
   story.BindExternalFunction('navigateTo', mockNavigateTo);
   story.BindExternalFunction('exit', mockExit);
+  
+  // Add error handler to catch runtime errors
+  const runtimeErrors = [];
+  story.onError = (message, type) => {
+    runtimeErrors.push({ message, type });
+  };
 
   explorePath(story, [], [], [], [], 0);
+  
+  // If we encountered runtime errors, include them in stats
+  if (runtimeErrors.length > 0) {
+    console.error('Runtime errors encountered:', runtimeErrors);
+  }
 
   return {
     paths,
@@ -241,6 +267,7 @@ export async function discoverAllPaths(compiledStoryJson, options = {}) {
       maxDepthReached: paths.some(p => p.endReason === 'maxDepth'),
       loopsDetected: paths.filter(p => p.endReason === 'loop').length,
       navigateToPaths: paths.filter(p => p.navigateToStory).length,
+      runtimeErrors: runtimeErrors.length,
     },
   };
 }

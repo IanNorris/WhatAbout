@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const fixtures = ['simple', 'choices', 'loop', 'knots'];
+const fixtures = ['simple', 'choices', 'loop', 'knots', 'position-tracking'];
 const fixturesDir = path.join(__dirname, '../src/test/fixtures');
 
 for (const fixture of fixtures) {

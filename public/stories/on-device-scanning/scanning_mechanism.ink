@@ -76,3 +76,6 @@ Even adults need to prove their age to opt out.
 
 *   [This could expand beyond CSAM?]
     -> Scope_Creep.Starts_With_CSAM
+    
+*   [I understand the issues. What can I do?]
+    -> Conclusion.Take_Action

@@ -67,3 +67,6 @@ It's like police searching every car at every intersection to make sure nobody's
 
 *   [What about the nudity filter requirement?]
     -> Nudity_Filter.Age_Verification_Requirement
+    
+*   [I've seen enough. What can I do?]
+    -> Conclusion.Take_Action

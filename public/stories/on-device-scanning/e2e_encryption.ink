@@ -17,3 +17,6 @@ Yes, the message is still encrypted in transit. But it was already read by scann
 
 *   [What about false positives?]
     -> False_Positives.Innocent_Content
+    
+*   [I understand. What can I do?]
+    -> Conclusion.Take_Action

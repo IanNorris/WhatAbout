@@ -30,3 +30,5 @@ public/stories/**/*.json
 *.sw?
 playwright-report
 test-results
+test-output.txt
+test-results.txt
