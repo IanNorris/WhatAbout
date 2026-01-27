@@ -221,12 +221,15 @@ The test will find:
 
 Before committing a new story:
 
-- [ ] No `**text:**` at start of lines (use `•` or indent)
+- [ ] No `**text:**` at start of lines (use `•` or `__text__` instead)
 - [ ] Exploration sections have sticky exit choice (`+`)
 - [ ] All sections either:
   - Have at least one sticky choice, OR
   - End with explicit `-> DONE` or `-> END`, OR
   - Auto-continue to another section
+- [ ] All referenced images exist in `public/assets/your-story/`
+- [ ] Run syntax validation: `npm run test:run -- src/__tests__/story-syntax.test.js`
+- [ ] Run image validation: `npm run test:run -- src/__tests__/story-images.test.js`
 - [ ] Run path discovery test
 - [ ] Check test output for runtime errors
 
