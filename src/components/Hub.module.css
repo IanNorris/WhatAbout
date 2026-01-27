@@ -62,3 +62,41 @@
     color: var(--color-text-sub);
     line-height: 1.4;
 }
+
+/* Custom scrollbar styling - Bold and prominent */
+.hubContainer::-webkit-scrollbar {
+    width: 16px;
+}
+
+.hubContainer::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.hubContainer::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, 
+        #7ba3ff 0%, 
+        #5a8aff 50%, 
+        #7ba3ff 100%);
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(123, 163, 255, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(123, 163, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.hubContainer::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, 
+        #8fb5ff 0%, 
+        #6a9aff 50%, 
+        #8fb5ff 100%);
+    box-shadow: 0 0 24px rgba(123, 163, 255, 0.9),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    border-color: rgba(123, 163, 255, 1);
+}
+
+/* Firefox scrollbar */
+.hubContainer {
+    scrollbar-width: auto;
+    scrollbar-color: #7ba3ff rgba(0, 0, 0, 0.4);
+}
