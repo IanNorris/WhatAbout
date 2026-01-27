@@ -249,6 +249,8 @@ export async function discoverAllPaths(compiledStoryJson, options = {}) {
   const runtimeErrors = [];
   story.onError = (message, type) => {
     runtimeErrors.push({ message, type });
+    // Throw to ensure the error is caught in the try-catch block
+    throw new Error(message);
   };
 
   explorePath(story, [], [], [], [], 0);
