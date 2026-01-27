@@ -5,9 +5,9 @@ Protecting children is important. But on-device scanning is being presented as t
 
 That's false.
 
-**Option A:** Scan everyone's private messages all the time, break encryption, create surveillance infrastructure, hope it's never misused.
+__Option A:__ Scan everyone's private messages all the time, break encryption, create surveillance infrastructure, hope it's never misused.
 
-**Option B:** Use targeted law enforcement, voluntary parental controls, education, and support services without sacrificing everyone's privacy.
+__Option B:__ Use targeted law enforcement, voluntary parental controls, education, and support services without sacrificing everyone's privacy.
 
 We don't have to choose between privacy and safety.
 
@@ -20,17 +20,17 @@ We don't have to choose between privacy and safety.
 = Better_Alternatives
 Better ways exist to protect children: # diagram: better_alternatives.png
 
-**For parents:**
+__For parents:__
 • Voluntary parental controls that parents configure
 • Education about online safety
 • Open communication about online risks
 
-**For law enforcement:**
+__For law enforcement:__
 • Traditional warrants for targeted surveillance
 • International cooperation taking down abuse networks
 • Resources for investigating and prosecuting offenders
 
-**For platforms:**
+__For platforms:__
 • Better reporting tools
 • Human moderators (not just AI)
 • Cooperation on specific investigations
@@ -46,17 +46,17 @@ None require scanning everyone's messages all the time.
 = What_You_Can_Do
 If you're concerned about on-device scanning: # diagram: take_action_steps.png
 
-**Contact your MP:**
+__Contact your MP:__
 • Express concerns about breaking encryption
 • Ask about oversight and scope limitations
 • Request evidence this approach works
 
-**Use your voice:**
+__Use your voice:__
 • Talk to friends and family about privacy implications
 • Support organizations fighting for digital rights
 • Share this information
 
-**Use privacy-protecting tools:**
+__Use privacy-protecting tools:__
 • Choose messaging apps with strong encryption
 • Use platforms that respect privacy
 • Learn about voluntary parental controls
@@ -86,3 +86,4 @@ Don't let surveillance infrastructure be built in the name of safety without ask
 Thanks for learning about this.
 ~ exit()
 -> END
+

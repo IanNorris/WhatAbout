@@ -17,22 +17,22 @@ These work at the point of access—the device itself. They don't depend on bloc
 === Better_Solutions ===
 Better approaches focus on what we can actually control. # diagram: holistic_approach.png
 
-**Device-level protections:**
+__Device-level protections:__
 • Parental controls that work on any network
 • Content filtering at router or device level
 • Time limits and access restrictions
 
-**Education:**
+__Education:__
 • Digital literacy for children and parents
 • Open communication about online risks
 • Critical thinking about content
 
-**Platform accountability:**
+__Platform accountability:__
 • Better safety features by default
 • Age-appropriate design without surveillance
 • Transparency about algorithms
 
-**Offline alternatives:**
+__Offline alternatives:__
 • Youth services and community spaces
 • Support for real-world social connections
 • Addressing root causes of excessive use
@@ -51,3 +51,4 @@ These solutions:
 *   [Tell me more about the alternatives.]
     ~ navigateTo("better-parental-controls")
     -> END
+

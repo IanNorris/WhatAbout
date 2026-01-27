@@ -3,7 +3,7 @@
 = Age_Verification_Requirement
 The UK wants a "nudity filter" that blurs images containing nudity before they're displayed. # diagram: nudity_filter_av.png
 
-To disable it, you must **prove your age** to a third party.
+To disable it, you must __prove your age__ to a third party.
 
 Sounds simple. You're an adult—just verify and move on. But this creates something darker.
 
@@ -16,10 +16,10 @@ Sounds simple. You're an adult—just verify and move on. But this creates somet
 = The_Privacy_Trap
 You get two bad options:
 
-**Option 1: Keep the filter**
+__Option 1: Keep the filter__
 Your phone blurs legal content between consenting adults. You manually unblur every flagged image. The system still scans everything (it has to, to know what to blur).
 
-**Option 2: Disable it with age verification**
+__Option 2: Disable it with age verification__
 Upload your ID or face scan to a third party. Create a permanent record linking your identity to your messaging.
 
 Either way, your privacy gets compromised.
@@ -64,7 +64,7 @@ This creates a system where everyone is scanned, everyone is identified, and eve
     -> Age_Verification_Crosslink
 
 = Cannot_Age_Verify
-Some people **cannot** age verify, even if they want to: # diagram: locked_out.png
+Some people __cannot__ age verify, even if they want to: # diagram: locked_out.png
 
 • No government-issued photo ID
 • Privacy-conscious people refusing biometric scanning
@@ -116,7 +116,7 @@ Interested in exploring this?
 = Parental_Controls_Crosslink
 There's a better way to protect children—without scanning everyone. # diagram: better_way.png
 
-**Voluntary, parent-controlled** filtering:
+__Voluntary, parent-controlled__ filtering:
 • Parents choose to enable it
 • Parents configure what's appropriate
 • Parents see reports (not the government)
@@ -132,3 +132,4 @@ Interested in exploring better parental controls?
 
 *   [No, continue here.]
     -> Cannot_Age_Verify
+
