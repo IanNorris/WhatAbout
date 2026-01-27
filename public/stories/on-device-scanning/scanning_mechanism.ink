@@ -3,9 +3,9 @@
 = What_Gets_Scanned
 The proposal scans both images and text messages before encryption. # diagram: scanning_layers.png
 
-**Images:** AI analyzes photos for matches against known illegal content databases or flags "suspicious" images.
+• Images: AI analyzes photos for matches against known illegal content databases or flags "suspicious" images.
 
-**Text:** The system searches for patterns or keywords indicating illegal activity.
+• Text: The system searches for patterns or keywords indicating illegal activity.
 
 Both happen automatically, on your device, without your consent for each message.
 
@@ -14,6 +14,9 @@ Both happen automatically, on your device, without your consent for each message
 
 *   [What happens when something's flagged?]
     -> Reporting_Mechanism
+
++   [I understand the basics. What can I do?]
+    -> Conclusion.Take_Action
 
 = Who_Controls_It
 The scanning software runs on iOS or Android, so Apple and Google implement it. # diagram: control_chain.png
