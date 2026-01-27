@@ -252,7 +252,63 @@ npm run test:run
 npm run test:e2e
 ```
 
-## Troubleshooting
+## Story Authoring Best Practices
+
+### Common Pitfalls to Avoid
+
+When writing Ink stories, be aware of these issues that testing has revealed:
+
+#### 1. Markdown Bold Syntax (`**text:**`)
+
+**⚠️ CRITICAL**: Do NOT start lines with `**text:**` - Ink interprets this as a choice/bullet!
+
+```ink
+// ❌ BAD - Creates unwanted choices
+**Images:** Description here
+**Text:** More description
+
+// ✅ GOOD - Use bullet points instead
+• Images: Description here
+• Text: More description
+
+// ✅ GOOD - Or indent
+  **Images:** Description here
+  **Text:** More description
+```
+
+See `STORY_AUTHORING.md` for details on why this happens.
+
+#### 2. Non-Sticky Choices in Exploration Sections
+
+Always provide a sticky exit choice (`+`) in sections users can return to:
+
+```ink
+// ❌ BAD - Can create dead-ends
+* [Option A] -> Detail_A
+* [Option B] -> Detail_B
+
+// ✅ GOOD - Sticky exit available
+* [Option A] -> Detail_A
+* [Option B] -> Detail_B
++ [I understand. Continue.] -> Next_Section
+```
+
+### Testing Your Story
+
+Run path discovery to find structural issues:
+
+```bash
+npm run test:run -- src/__tests__/real-stories.test.js --testNamePattern="your-story"
+```
+
+The test will identify:
+- ❌ Runtime errors (dead-ends)
+- ❌ Unreachable knots
+- ✅ Loops (intentional - users exploring)
+
+See `STORY_AUTHORING.md` for complete authoring guide.
+
+
 
 ### Tests Failing Due to Module Cache
 

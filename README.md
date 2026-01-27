@@ -44,8 +44,33 @@ See `public/stories/README.md` for detailed documentation.
 npm run dev           # Start dev server
 npm run build         # Build for production
 npm run lint          # Run linter
+npm run test          # Run test suite
 npm run analyze-ink   # Analyze story for dead ends
 ```
+
+## 🧪 Testing
+
+Comprehensive testing framework for story validation:
+
+```bash
+npm run test          # Run tests in watch mode
+npm run test:run      # Run tests once
+npm run test:ui       # Run with visual UI
+npm run test:e2e      # Run end-to-end tests
+```
+
+See `TESTING.md` for full testing documentation.
+
+### Story Authoring
+
+When writing Ink stories, avoid common pitfalls:
+
+- ⚠️ Don't start lines with `**text:**` (Ink treats as choice)
+- ✅ Use bullet points `•` or indent markdown formatting
+- ✅ Add sticky exit choices (`+`) in exploration sections
+- ✅ Run path discovery tests to find dead-ends
+
+See `STORY_AUTHORING.md` for complete authoring guide.
 
 ### Optional Performance Optimization
 
