@@ -1,13 +1,13 @@
 .piButton {
     position: fixed;
-    bottom: 0.5em;
-    right: 0.5em;
-    width: 1em;
-    height: 1em;
+    bottom: 0.75rem;
+    right: 1.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
 	border: none;
     background: var(--color-cloud-dark);
     color: var(--color-accent);
-    font-size: 1em;
+    font-size: 0.75rem;
     font-weight: bold;
     cursor: pointer;
     z-index: 150;
