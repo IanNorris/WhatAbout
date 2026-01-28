@@ -94,6 +94,13 @@ git push origin v1.2.3
 
 ## 🔧 Configuration
 
+### No External Dependencies
+The compile script uses the **inkjs Node.js compiler** (cross-platform), not external binaries. This means:
+- ✅ Works on Linux, macOS, and Windows
+- ✅ No Inky installation required
+- ✅ Works in CI/CD environments
+- ✅ Uses the same inkjs dependency as the runtime
+
 ### No Secrets Required
 All workflows use built-in `GITHUB_TOKEN` - no setup needed!
 

@@ -6,14 +6,17 @@
  * Compiles .ink files to .json for use with inkjs.
  * Can run once or watch for changes.
  * 
+ * Uses the inkjs compiler (cross-platform Node.js implementation).
+ * 
  * Usage:
  *   node tools/compile-ink.js          # Compile all .ink files once
  *   node tools/compile-ink.js --watch  # Watch for changes and recompile
  */
 
-import { spawn } from 'child_process';
+import { Compiler } from 'inkjs/compiler/Compiler';
+import { PosixFileHandler } from 'inkjs/compiler/FileHandler/PosixFileHandler';
 import { watch } from 'fs';
-import { readdir } from 'fs/promises';
+import { readdir, readFile, writeFile } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
@@ -21,8 +24,6 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Path to inklecate compiler (using inkjs-compatible version)
-const INKLECATE_PATH = path.join(__dirname, '..', '..', 'Inky', 'resources', 'app.asar.unpacked', 'main-process', 'ink', 'inkjs-compatible', 'inklecate_win.exe');
 const STORIES_DIR = path.join(__dirname, '..', 'public', 'stories');
 
 // Colors for console output
@@ -35,39 +36,63 @@ const colors = {
 };
 
 /**
- * Compile a single .ink file to .json
+ * Compile a single .ink file to .json using inkjs compiler
  */
 async function compileInkFile(inkPath) {
     const jsonPath = inkPath.replace(/\.ink$/, '.json');
     const fileName = path.basename(inkPath);
+    const storyDir = path.dirname(inkPath);
     
     console.log(`${colors.cyan}Compiling${colors.reset} ${fileName}...`);
     
-    return new Promise((resolve, reject) => {
-        const process = spawn(INKLECATE_PATH, ['-o', jsonPath, inkPath]);
+    try {
+        // Read the ink source
+        const inkSource = await readFile(inkPath, 'utf8');
         
-        let stdout = '';
-        let stderr = '';
+        // Create file handler for INCLUDE resolution
+        const fileHandler = new PosixFileHandler(storyDir);
         
-        process.stdout.on('data', (data) => {
-            stdout += data.toString();
-        });
-        
-        process.stderr.on('data', (data) => {
-            stderr += data.toString();
-        });
-        
-        process.on('close', (code) => {
-            if (code === 0) {
-                console.log(`${colors.green}✓${colors.reset} ${fileName} → ${path.basename(jsonPath)}`);
-                resolve();
-            } else {
-                console.error(`${colors.red}✗${colors.reset} Failed to compile ${fileName}`);
-                if (stderr) console.error(stderr);
-                reject(new Error(`Compilation failed with code ${code}`));
+        // Compile with inkjs
+        const compiler = new Compiler(inkSource, {
+            fileHandler: fileHandler,
+            errorHandler: (message, errorType) => {
+                if (errorType === 0) { // Warning
+                    // Warnings are OK, just log them
+                    if (!compiler.warnings) compiler.warnings = [];
+                    compiler.warnings.push(message);
+                } else { // Error
+                    if (!compiler.errors) compiler.errors = [];
+                    compiler.errors.push(message);
+                }
             }
         });
-    });
+        
+        const story = compiler.Compile();
+        
+        // Check for actual errors (not warnings)
+        if (compiler.errors && compiler.errors.length > 0) {
+            const actualErrors = compiler.errors.filter(err => !err.startsWith('WARNING:'));
+            if (actualErrors.length > 0) {
+                console.error(`${colors.red}✗${colors.reset} Failed to compile ${fileName}`);
+                actualErrors.forEach(err => console.error(`  ${err}`));
+                throw new Error(`Compilation failed with ${actualErrors.length} error(s)`);
+            }
+        }
+        
+        // Write JSON output
+        await writeFile(jsonPath, story.ToJson());
+        
+        console.log(`${colors.green}✓${colors.reset} ${fileName} → ${path.basename(jsonPath)}`);
+        
+        // Optionally log warnings (but don't fail)
+        if (compiler.warnings && compiler.warnings.length > 0) {
+            console.log(`  ${colors.yellow}${compiler.warnings.length} warning(s)${colors.reset}`);
+        }
+    } catch (err) {
+        console.error(`${colors.red}✗${colors.reset} Failed to compile ${fileName}`);
+        console.error(`Error: ${err.message}`);
+        throw err;
+    }
 }
 
 /**
