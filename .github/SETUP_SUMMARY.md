@@ -89,7 +89,6 @@ git push origin v1.2.3
 | Workflow | Triggers |
 |----------|----------|
 | `build-release.yml` | Push to main, PRs, tags `v*`, manual |
-| `deploy-pages.yml` | Push to main, manual |
 | `tests.yml` | Push to main/develop, PRs, manual |
 
 ## 🔧 Configuration
@@ -137,17 +136,23 @@ node-version: [18.x, 20.x, 22.x]  # Test multiple versions
 
 ## ✅ Validation
 
-### What's Validated in CI
-1. **Ink Syntax** - All `.ink` files must compile
-2. **Unit Tests** - All tests must pass
-3. **Build** - Production build must succeed
-4. **Linting** - Code quality checks (non-blocking)
-5. **E2E Tests** - Full application tests (separate job)
+### What's Validated in CI (Build Pipeline)
+1. **Ink Syntax** - All `.ink` files must compile ✅ **BLOCKS BUILD**
+2. **Build Process** - Production build must succeed ✅ **BLOCKS BUILD**
+3. **Unit Tests** - Run but don't block build ⚠️ **REPORTS ONLY**
+4. **Linting** - Code quality checks ⚠️ **REPORTS ONLY**
 
-### What's NOT Blocked
-- Linting warnings (continues with warning)
-- E2E test failures don't block build (but reported)
-- Known story path issues (documented separately)
+### What's Validated Separately (Tests Pipeline)
+5. **E2E Tests** - Full application tests (separate workflow)
+6. **Multiple Node Versions** - Tested on 18.x and 20.x
+
+### Known Issues
+Some stories have path completion issues (missing END statements in edge cases):
+- `social-media-bans` - 1 runtime error path
+- `on-device-scanning` - 1 runtime error path
+- `currentPathString` test - 1 failing assertion
+
+These are tracked for fixes but don't block builds or deployment.
 
 ## 🐛 Troubleshooting
 

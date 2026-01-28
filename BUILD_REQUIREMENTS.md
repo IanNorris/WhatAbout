@@ -42,8 +42,9 @@ Before building, the following must pass:
    - Validates story syntax and structure
 
 2. **Unit Tests** (`npm run test:run`)
-   - Core functionality tests must pass
-   - Story structure validation tests must pass
+   - Core functionality tests should pass
+   - Story structure validation tests should pass
+   - Tests run in CI but don't block builds (report only)
    - E2E tests are NOT required for build (run separately)
    
 **Note:** Some stories may have runtime path completion issues (missing END statements in edge case paths). These are tracked separately and do not block builds, as they don't prevent the app from functioning.

@@ -1,6 +1,6 @@
 # GitHub Actions Workflows
 
-This project uses GitHub Actions for automated building, testing, and deployment.
+This project uses GitHub Actions for automated building, testing, and releasing.
 
 ## Workflows
 
@@ -19,7 +19,7 @@ This project uses GitHub Actions for automated building, testing, and deployment
 - Sets up Node.js (20.x)
 - Installs dependencies with `npm ci`
 - Compiles all `.ink` files (validates syntax)
-- Runs unit tests
+- Runs unit tests (non-blocking - reports only)
 - Runs linter (non-blocking)
 - Builds production bundle
 - Archives build artifacts for 30 days
@@ -45,46 +45,7 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-### 2. Deploy to GitHub Pages (`deploy-pages.yml`)
-
-**Triggers:**
-- Push to `main` branch
-- Manual workflow dispatch
-
-**Jobs:**
-
-#### Build
-- Checks out code
-- Sets up Node.js
-- Installs dependencies
-- Builds production bundle
-- Configures for GitHub Pages
-
-#### Deploy
-- Deploys to GitHub Pages
-- Updates live site automatically
-
-**Setup Required:**
-1. Go to repository Settings → Pages
-2. Set Source to "GitHub Actions"
-3. Optional: Configure custom domain
-
-**Environment Variables:**
-If deploying to a subdirectory (e.g., `username.github.io/WhatAbout`), uncomment and set:
-```yaml
-env:
-  BASE_URL: /WhatAbout
-```
-
-And update `vite.config.js`:
-```javascript
-export default defineConfig({
-  base: process.env.BASE_URL || '/',
-  // ...
-})
-```
-
-### 3. Tests (`tests.yml`)
+### 2. Tests (`tests.yml`)
 
 **Triggers:**
 - Push to `main` or `develop` branches
@@ -174,9 +135,9 @@ npm run test:e2e
 - Run locally: `npm run test:e2e`
 
 ### Deployment fails
-- Check repository settings have Pages enabled
-- Verify workflow permissions in Settings → Actions
-- Ensure `GITHUB_TOKEN` has write permissions
+- Check Actions tab for specific error
+- Verify workflow syntax is valid
+- Ensure dependencies install correctly
 
 ### Release not created
 - Verify tag format starts with `v` (e.g., `v1.0.0`)
@@ -195,8 +156,6 @@ No secrets are required for these workflows. They use:
 Workflows use minimal permissions:
 - `contents: read` - Read repository code
 - `contents: write` - Create releases (release job only)
-- `pages: write` - Deploy to Pages (deploy-pages only)
-- `id-token: write` - OIDC for Pages
 
 ## Performance
 

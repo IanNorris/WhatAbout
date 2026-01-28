@@ -101,7 +101,6 @@ These don't prevent the app from functioning and are tracked separately.
 GitHub Actions workflows are configured for:
 - **Automated builds** on push to main
 - **Release creation** on version tags (`v*`)
-- **GitHub Pages deployment** (optional)
 - **Automated testing** on PRs
 
 See `.github/WORKFLOWS.md` for complete documentation.

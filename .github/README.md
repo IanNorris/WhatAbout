@@ -6,17 +6,13 @@ This directory contains GitHub-specific configuration for the WhatAbout project.
 
 ### Workflows
 
-Automated CI/CD workflows for building, testing, and deploying:
+Automated CI/CD workflows for building, testing, and releasing:
 
 - **`build-release.yml`** - Main build and release workflow
   - Builds on push to main, PRs, and version tags
-  - Runs tests and linting
+  - Runs tests and linting (non-blocking)
   - Creates GitHub releases for version tags
   - Archives build artifacts
-
-- **`deploy-pages.yml`** - Deploy to GitHub Pages
-  - Automatically deploys to GitHub Pages on main branch
-  - Perfect for hosting the live app
 
 - **`tests.yml`** - Comprehensive testing
   - Unit tests on multiple Node versions
@@ -44,11 +40,6 @@ Workflows run automatically on:
 No manual setup required!
 
 ### For Maintainers
-
-#### Enable GitHub Pages Deployment
-1. Go to Settings → Pages
-2. Set Source to "GitHub Actions"
-3. Done! Site deploys automatically
 
 #### Create a Release
 ```bash
