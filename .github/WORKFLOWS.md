@@ -71,7 +71,7 @@ git push origin v1.0.0
 - Blocks on linting errors
 
 **CI Status Checks:**
-All jobs must pass for pull requests to be mergeable.
+Tests run and report results but don't block builds or PRs. This allows development to continue while tests are being fixed.
 
 ## Artifacts
 
