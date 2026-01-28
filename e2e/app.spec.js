@@ -49,7 +49,7 @@ test.describe('WhatAbout App E2E Tests', () => {
           clicked = true;
           break;
         }
-      } catch (err) {
+      } catch {
         // Try next selector
       }
     }
@@ -110,7 +110,7 @@ test.describe('WhatAbout App E2E Tests', () => {
           await expect(page).toHaveURL(/^\/$|#\/$/);
           return;
         }
-      } catch (err) {
+      } catch {
         // Try next selector
       }
     }

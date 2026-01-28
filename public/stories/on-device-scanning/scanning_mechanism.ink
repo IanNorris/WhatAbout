@@ -15,7 +15,7 @@ Both happen automatically, on your device, without your consent for each message
 *   [What happens when something's flagged?]
     -> Reporting_Mechanism
 
-+   [I understand the basics. What can I do?]
+*   [I understand the basics. What can I do?]
     -> Conclusion.Take_Action
 
 = Who_Controls_It

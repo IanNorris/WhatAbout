@@ -7,7 +7,7 @@ describe('Real Story Navigation Integration Tests', () => {
 
   beforeAll(async () => {
     // Mock fetch to load real story list
-    global.fetch = async (url) => {
+    globalThis.fetch = async (url) => {
       if (url.includes('stories.txt')) {
         // Use test fixture stories instead of real ones to avoid dependency on file system
         const storiesTxt = `id: demo
@@ -24,8 +24,8 @@ release: true`;
       // Try to load from actual file system for story content
       try {
         const fs = await import('fs');
-        const path = await import('path');
-        const response = await import('url');
+        const pathModule = await import('path');
+        const { fileURLToPath } = await import('url');
         
         // Convert URL to file path
         const urlObj = new URL(url, 'file:///');
