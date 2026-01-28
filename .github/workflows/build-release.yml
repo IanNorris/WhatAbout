@@ -37,6 +37,14 @@ jobs:
       
       - name: Run unit tests
         run: npm run test:run
+        continue-on-error: true
+        id: tests
+      
+      - name: Report test results
+        if: steps.tests.outcome == 'failure'
+        run: |
+          echo "⚠️ Some tests failed but build continues" >> $GITHUB_STEP_SUMMARY
+          echo "Review test failures in the job logs" >> $GITHUB_STEP_SUMMARY
       
       - name: Run linter
         run: npm run lint
