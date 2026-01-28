@@ -96,11 +96,30 @@ These don't prevent the app from functioning and are tracked separately.
 4. **Test before deploying** - Unit tests catch most issues quickly
 5. **Validate stories compile** - `npm run compile-ink` before pushing
 
+## 🤖 CI/CD
+
+GitHub Actions workflows are configured for:
+- **Automated builds** on push to main
+- **Release creation** on version tags (`v*`)
+- **GitHub Pages deployment** (optional)
+- **Automated testing** on PRs
+
+See `.github/WORKFLOWS.md` for complete documentation.
+
+### Quick Release Process
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+# GitHub Actions automatically builds and creates release
+```
+
 ## 📚 Documentation Index
 
 - `BUILD_REQUIREMENTS.md` - Full build process and requirements
 - `PROJECT_GUIDE.md` - Project structure and development guide
 - `RUNTIME_COMPILATION.md` - Runtime ink loading details
+- `DEPLOYMENT.md` - Deployment workflow summary
+- `.github/WORKFLOWS.md` - GitHub Actions CI/CD setup
 - `public/stories/README.md` - Story authoring guide
 - `tools/IMAGE_STYLE_GUIDE.md` - Visual style requirements
 - `TESTING.md` - Testing strategy and details
