@@ -1,6 +1,6 @@
 === Ban_VPNs ===
 I get it. If VPNs are the problem, why not get rid of them?
-But let's look at the legitimate uses of VPNs first. # diagram: vpn_uses.png
+But let's look at the legitimate uses of VPNs first. # diagram: vpn_uses.jpg
 
 Security for remote workers accessing company systems.
 Protecting privacy on public Wi-Fi at cafes and airports.
@@ -13,7 +13,7 @@ And arguably more importantly... can we actually detect a VPN?
 
 *   [Surely technology can tell?]
     
-    Think of the internet like a series of pipes. # diagram: pipes_metaphor.png
+    Think of the internet like a series of pipes. # diagram: pipes_metaphor.jpg
     Normal traffic is like a clear glass pipe. You can see the water (data) and where it's going.
     Encrypted traffic (like HTTPS, which is most of the web now) is like an opaque pipe. You know where the pipe goes, but you can't see the water.
     
@@ -39,7 +39,7 @@ And arguably more importantly... can we actually detect a VPN?
 *   [This seems impossible.] -> The_Real_Problem
 
 === China_Example ===
-China's Great Firewall is often cited as proof that VPN blocking works. # diagram: great_firewall.png
+China's Great Firewall is often cited as proof that VPN blocking works. # diagram: great_firewall.jpg
 But here's what actually happens:
 
 The government plays Whac-A-Mole with VPN servers. They block known VPN IP addresses.
@@ -68,7 +68,7 @@ Cutting off encrypted connections to the outside world would be economic suicide
     -> The_Real_Problem
 
 === Approved_VPNs ===
-"We'll only allow corporate or government-approved VPNs!" # diagram: two_tier_internet.png
+"We'll only allow corporate or government-approved VPNs!" # diagram: two_tier_internet.jpg
 
 This creates a two-tier internet:
 Businesses and the wealthy get secure, private connections.

@@ -1,5 +1,5 @@
 === Holistic_Thinking ===
-The real solution requires thinking bigger than just "ban" or "allow." # diagram: holistic_approach.png
+The real solution requires thinking bigger than just "ban" or "allow." # diagram: holistic_approach.jpg
 
 We need a multi-layered approach across three areas:
 
@@ -27,7 +27,7 @@ Banning one doesn't prepare them for either.
     -> The_Real_Problem
 
 === Preparation_Not_Prevention ===
-Here's the fundamental shift in thinking: # diagram: preparation_vs_prevention.png
+Here's the fundamental shift in thinking: # diagram: preparation_vs_prevention.jpg
 
 Prevention: "Keep children away from all harm until they're adults."
 Preparation: "Teach children to navigate challenges with increasing independence."

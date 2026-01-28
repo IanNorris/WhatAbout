@@ -1,5 +1,5 @@
 === Force_Apps ===
-"If checking at the ISP level fails, what about App Stores?" # diagram: app_ecosystem.png
+"If checking at the ISP level fails, what about App Stores?" # diagram: app_ecosystem.jpg
 
 Apple and Google control what apps most people use. They could enforce age verification for every app.
 
@@ -23,7 +23,7 @@ Third: The web itself.
     -> Where_We_Started
 
 === The_Web_Bypass ===
-Browsers don't go through app stores. # diagram: app_bypass.png
+Browsers don't go through app stores. # diagram: app_bypass.jpg
 
 Safari, Chrome, Firefox—installed by default or downloaded directly. Once you have a browser, you have access to the entire web. Any website, any content.
 
@@ -45,7 +45,7 @@ That's not a bug—it's the fundamental architecture of the internet. The web wa
     -> The_Real_Problem
 
 === Real_World_Impact ===
-We're already seeing this play out: # diagram: user_migration.png
+We're already seeing this play out: # diagram: user_migration.jpg
 • Compliant sites hemorrhaged users
 • Non-compliant sites experienced massive growth
 • One adult site estimated it had 3,000 clones
@@ -59,7 +59,7 @@ Users seek the path of least friction. Intrusive checks on compliant sites? Traf
     -> Counterproductive_Reality
 
 === Gaming_Impact ===
-This applies to gaming too. # diagram: gaming_impact.png
+This applies to gaming too. # diagram: gaming_impact.jpg
 
 95% of studios develop at least one live-service title, with multiplayer communication core to the experience. Yet platforms like Xbox mandate age-verification for online communication.
 

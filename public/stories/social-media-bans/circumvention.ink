@@ -1,5 +1,5 @@
 === Circumvention_Reality ===
-In Australia, about 1 in 3 parents are planning to help their children dodge the ban. # diagram: circumvention_reality.png
+In Australia, about 1 in 3 parents are planning to help their children dodge the ban. # diagram: circumvention_reality.jpg
 
 The law says these platforms are too dangerous. But parents—who see their kids' social needs—are actively helping them bypass it.
 
@@ -11,7 +11,7 @@ Other kids are stealing IDs, using sibling photos. These aren't "bad kids"—the
     -> Lying_About_Age
 
 === Parent_Motivation ===
-Parents see what policymakers miss. # diagram: social_isolation.png
+Parents see what policymakers miss. # diagram: social_isolation.jpg
 
 Their child is the only one without access. Excluded from group chats about homework, weekend plans, inside jokes. Can't participate in the sports team chat or drama club planning.
 
@@ -25,7 +25,7 @@ The parent weighs the risks: theoretical harms versus very real social isolation
     -> Lying_About_Age
 
 === Lying_About_Age ===
-To bypass age verification, children lie about their age. # diagram: age_lying_consequences.png
+To bypass age verification, children lie about their age. # diagram: age_lying_consequences.jpg
 
 They say they're 18 or 21 instead of 14. Seems harmless—they get access, problem solved. Except all the safety features turn off.
 
@@ -74,7 +74,7 @@ Want to explore the concerns with digital ID systems?
     -> Hiding_Usage
 
 === Hiding_Usage ===
-Since the child isn't supposed to be on these platforms, they hide it. # diagram: hidden_usage.png
+Since the child isn't supposed to be on these platforms, they hide it. # diagram: hidden_usage.jpg
 
 They delete apps before parents come home. Private browsing. Secret accounts.
 

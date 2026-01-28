@@ -10,7 +10,7 @@ INCLUDE policy_recommendations.ink
 INCLUDE conclusion.ink
 
 Lets talk about...
-We should adopt digital ID for convenience and fraud prevention. # diagram: digital_wallet.png
+We should adopt digital ID for convenience and fraud prevention. # diagram: digital_wallet.jpg
 
 On the surface it makes sense. One app for everything—government services, banking, age verification. No more fumbling for cards or passports. Just tap your phone and you're verified.
 

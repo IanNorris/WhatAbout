@@ -1,5 +1,5 @@
 === Marginalized_Groups ===
-Social media bans don't affect everyone equally. # diagram: marginalized_isolation.png
+Social media bans don't affect everyone equally. # diagram: marginalized_isolation.jpg
 
 For some young people, online spaces provide something they can't find anywhere else:
 • LGBTQ+ teenagers in conservative areas

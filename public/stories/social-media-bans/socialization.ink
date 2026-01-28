@@ -1,5 +1,5 @@
 === Social_Crisis ===
-Let's zoom out. # diagram: social_spaces_squeeze.png
+Let's zoom out. # diagram: social_spaces_squeeze.jpg
 
 Between 2010 and 2019, youth service spending in England fell by 72%. Nearly a third of London's youth clubs closed.
 

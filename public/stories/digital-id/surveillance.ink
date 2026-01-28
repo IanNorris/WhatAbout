@@ -1,5 +1,5 @@
 === Surveillance_Concerns ===
-Digital ID and the Online Safety Act together create a blueprint for mass surveillance. # diagram: surveillance_blueprint.png
+Digital ID and the Online Safety Act together create a blueprint for mass surveillance. # diagram: surveillance_blueprint.jpg
 
 Even if this government implements it in good faith, the infrastructure persists. A future government could use it to track online and offline activity.
 
@@ -12,7 +12,7 @@ Protests. Medical appointments. Religious services. Union meetings. Your phone b
     -> What_Digital_ID_Enables
 
 === What_Digital_ID_Enables ===
-Three layers of data collection combine into complete surveillance. # diagram: surveillance_layers.png
+Three layers of data collection combine into complete surveillance. # diagram: surveillance_layers.jpg
 
 Your location is tracked in real-time via the app. Protests, medical appointments, religious services, union meetings—all logged.
 
@@ -30,7 +30,7 @@ Once this infrastructure exists, the temptation to use it grows with every crisi
     -> Privacy_Rights
 
 = On_Device_Scanning_Crosslink
-The UK has proposed requiring phones to scan messages and photos before they're encrypted and sent. # diagram: scanning_detection.png
+The UK has proposed requiring phones to scan messages and photos before they're encrypted and sent. # diagram: scanning_detection.jpg
 
 Combined with digital ID, this creates complete surveillance:
 • Your identity is verified and trackable (digital ID)
@@ -46,7 +46,7 @@ Every layer of digital communication becomes monitored.
     -> Privacy_Rights
 
 === Privacy_Rights ===
-The right to privacy is protected under the European Convention on Human Rights, Article 8. # diagram: echr_article_8.png
+The right to privacy is protected under the European Convention on Human Rights, Article 8. # diagram: echr_article_8.jpg
 
 Digital ID systems fundamentally undermine this right. You cannot exercise privacy when your location is tracked in real-time, your browsing is tied to your identity, your face can be identified by any camera, and your digital identity is required for basic services.
 

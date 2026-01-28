@@ -11,7 +11,7 @@ INCLUDE scope_creep.ink
 INCLUDE conclusion.ink
 
 Let's talk about...
-On-device scanning for your messages. # diagram: phone_scanning.png
+On-device scanning for your messages. # diagram: phone_scanning.jpg
 
 The UK wants to require smartphones to scan your messages and photos *before* they're encrypted. The goal sounds good: detect child abuse material (CSAM).
 

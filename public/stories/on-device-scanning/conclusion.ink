@@ -1,7 +1,7 @@
 === Conclusion ===
 
 = Take_Action
-Protecting children is important. But on-device scanning is being presented as the *only* choice. # diagram: false_choice.png
+Protecting children is important. But on-device scanning is being presented as the *only* choice. # diagram: false_choice.jpg
 
 That's false.
 
@@ -18,7 +18,7 @@ We don't have to choose between privacy and safety.
     -> What_You_Can_Do
 
 = Better_Alternatives
-Better ways exist to protect children: # diagram: better_alternatives.png
+Better ways exist to protect children: # diagram: better_alternatives.jpg
 
 __For parents:__
 • Voluntary parental controls that parents configure
@@ -44,7 +44,7 @@ None require scanning everyone's messages all the time.
     -> Done_For_Now
 
 = What_You_Can_Do
-If you're concerned about on-device scanning: # diagram: take_action_steps.png
+If you're concerned about on-device scanning: # diagram: take_action_steps.jpg
 
 __Contact your MP:__
 • Express concerns about breaking encryption

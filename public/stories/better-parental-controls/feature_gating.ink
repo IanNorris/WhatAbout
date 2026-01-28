@@ -1,5 +1,5 @@
 === Feature_Gating ===
-Here's an idea that tech companies could implement: app-specific parental controls. # diagram: feature_gating.png
+Here's an idea that tech companies could implement: app-specific parental controls. # diagram: feature_gating.jpg
 
 Instead of blocking entire platforms, let parents control which features children can access.
 

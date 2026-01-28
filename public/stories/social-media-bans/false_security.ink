@@ -1,5 +1,5 @@
 === False_Sense_Of_Security ===
-Here's one of the most dangerous consequences: # diagram: false_security.png
+Here's one of the most dangerous consequences: # diagram: false_security.jpg
 
 Parents think the ban means their children are safe. "Social media is banned, so my 14-year-old can't access it. Problem solved."
 

@@ -1,5 +1,32 @@
 # Image Style Guide for What About
 
+## Image Dimensions
+
+**Standard size: 618 × 337 pixels**
+
+All images should be resized to this exact dimension for consistency across the app. This matches the rendered size in the interface.
+
+### Optimizing Images
+
+Use the provided optimization script to batch-process images. The script:
+- Resizes to 618×337px
+- Generates both PNG and JPEG (85% quality) versions
+- Keeps whichever format is smaller
+- Automatically updates .ink file references
+
+```bash
+# Optimize all images in public/assets/
+node tools/resize-images.js
+
+# Optimize images in a specific folder
+node tools/resize-images.js age-verification
+
+# Preview changes without modifying files
+node tools/resize-images.js --dry-run
+```
+
+The script uses high-quality resizing with a dark background fill to match the app theme.
+
 ## Core Principles
 - **Clear visual metaphors** that people immediately understand
 - **Diagram-style** illustrations where possible

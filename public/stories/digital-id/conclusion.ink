@@ -1,5 +1,5 @@
 === The_Choice ===
-We face a fundamental choice: # diagram: fork_in_road.png
+We face a fundamental choice: # diagram: fork_in_road.jpg
 
 Build a surveillance state in pursuit of perfect security and convenience.
 OR
@@ -18,7 +18,7 @@ This is insulting to security professionals who understand that these systems ma
     -> What_You_Can_Do
 
 === Better_Child_Protection ===
-Surveillance infrastructure puts everyone at greater risk—including children. # diagram: child_safety.png
+Surveillance infrastructure puts everyone at greater risk—including children. # diagram: child_safety.jpg
 
 Actual solutions that work: parental controls, ISP filters, on-device restrictions, digital literacy education.
 
@@ -31,7 +31,7 @@ For comprehensive approaches to online safety, see the story on parental control
     -> What_You_Can_Do
 
 === What_You_Can_Do ===
-If you agree that digital ID poses unacceptable risks: # diagram: take_action.png
+If you agree that digital ID poses unacceptable risks: # diagram: take_action.jpg
 
 REFUSE to participate. Don't use optional systems. Don't age-verify unless necessary. Use privacy-preserving alternatives.
 

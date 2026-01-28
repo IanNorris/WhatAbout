@@ -4,7 +4,7 @@ EXTERNAL exit()
 
 INCLUDE more.ink
 
-Welcome to the What About platform! # diagram: demo_mascot.png
+Welcome to the What About platform! # diagram: demo_mascot.jpg
 
 This demo shows how the system works.
 
@@ -20,7 +20,7 @@ Stories are written in Ink, a narrative scripting language that lets you create 
 
 === features ===
 
-The platform has several key features: # diagram: features_diagram.png
+The platform has several key features: # diagram: features_diagram.jpg
 
 __Client-side compilation__ means .ink files load and compile in your browser - no build step needed!
 

@@ -15,7 +15,7 @@ INCLUDE holistic.ink
 INCLUDE conclusion.ink
 
 Lets talk about...
-We should ban social media for under 16s. # diagram: happy_social_media.png
+We should ban social media for under 16s. # diagram: happy_social_media.jpg
 
 Social media harms young people. Rising anxiety, depression, addictive algorithms. Cyberbullying, predators, explicit content.
 
@@ -30,7 +30,7 @@ Countries like Australia are implementing these bans. If kids can't vote or driv
     -> The_VPN_Problem
 
 === The_VPN_Problem ===
-Anyone can use a VPN to bypass the ban. # diagram: vpn_bypass.png
+Anyone can use a VPN to bypass the ban. # diagram: vpn_bypass.jpg
 
 UK bans social media for under 16s, but US doesn't? Use a VPN. Suddenly you're in New York, not London. Age gate vanishes.
 

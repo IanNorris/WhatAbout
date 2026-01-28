@@ -1,5 +1,5 @@
 === Policy_Solutions ===
-Responsible digital identity policy is actually straightforward: # diagram: policy_framework.png
+Responsible digital identity policy is actually straightforward: # diagram: policy_framework.jpg
 
 SCRAP digital ID in all forms. No smartphone-based ID, no Citizen Card, no biometric backing.
 REPEAL the Companies House identification mandate. Use offline, in-person verification.
@@ -15,7 +15,7 @@ We can maintain online government services without building surveillance infrast
     -> Better_Approaches
 
 === Regulation_Wont_Work ===
-If digital ID or age verification must exist, regulation should match the risk. But regulation doesn't solve the fundamental problem. # diagram: regulatory_framework.png
+If digital ID or age verification must exist, regulation should match the risk. But regulation doesn't solve the fundamental problem. # diagram: regulatory_framework.jpg
 
 Even with proportional fines, banned data reuse, digital watermarking, regular audits, and criminal liability for executives—you're treating the symptom, not the cause.
 
@@ -26,7 +26,7 @@ The real solution is to avoid building these systems in the first place.
     -> Better_Approaches
 
 === Better_Approaches ===
-Instead of surveillance infrastructure, we can: # diagram: alternative_approaches.png
+Instead of surveillance infrastructure, we can: # diagram: alternative_approaches.jpg
 
 MANDATE algorithmic transparency. Clear options to disable algorithmic content, disable infinite scrolling, user control over experience.
 

@@ -1,5 +1,5 @@
 === Legitimate_Uses ===
-VPNs are essential for far more than just bypassing age restrictions. # diagram: vpn_uses.png
+VPNs are essential for far more than just bypassing age restrictions. # diagram: vpn_uses.jpg
 
 Security for remote workers accessing company systems.
 Protecting privacy on public Wi-Fi.

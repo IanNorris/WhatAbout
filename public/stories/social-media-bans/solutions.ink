@@ -1,5 +1,5 @@
 === Better_Solutions ===
-Let's talk about what actually works. # diagram: parental_controls.png
+Let's talk about what actually works. # diagram: parental_controls.jpg
 
 On-device parental controls already exist. Parents can require app approval, filter content, set time limits, lock devices during school hours, and receive usage reports.
 
@@ -25,7 +25,7 @@ Parental controls let families make these decisions themselves.
     -> Parent_Education
 
 === Feature_Gating ===
-Here's an even better idea: app-specific feature controls for parents. # diagram: feature_gating.png
+Here's an even better idea: app-specific feature controls for parents. # diagram: feature_gating.jpg
 
 For WhatsApp: limit messaging to approved contacts, get copied on group chats, require approval to join new groups.
 
@@ -49,7 +49,7 @@ Companies prioritize engagement over safety. Requiring robust parental feature c
     -> Parent_Education
 
 === On_Device_Scanning_Crosslink ===
-Some propose automatically scanning messages and images on phones before they're sent. # diagram: alternative_scanning.png
+Some propose automatically scanning messages and images on phones before they're sent. # diagram: alternative_scanning.jpg
 
 The idea: detect "harmful content" automatically without needing age verification at websites.
 
@@ -62,7 +62,7 @@ But this breaks end-to-end encryption, creates mass surveillance infrastructure,
     -> Feature_Gating
 
 === Parent_Education ===
-Parental controls only work if parents know about them and use them. # diagram: parent_education.png
+Parental controls only work if parents know about them and use them. # diagram: parent_education.jpg
 
 We need comprehensive parent education programs covering:
 • How to enable parental controls (step-by-step for each device)
@@ -87,7 +87,7 @@ And these aren't one-time conversations. As children grow and technology changes
     -> Infrastructure_Comparison
 
 === Ongoing_Support ===
-Education can't be a one-time thing. # diagram: education_cycle.png
+Education can't be a one-time thing. # diagram: education_cycle.jpg
 
 Parents need regular newsletters about new apps and risks, refresher courses on updated features, community support forums, and age-appropriate guidance.
 
@@ -116,7 +116,7 @@ Parent education infrastructure is simpler, more effective, and doesn't create s
     -> Irresponsible_Parents
 
 === Why_This_Works ===
-On-device controls and parent education address the real goal: keeping children safe. # diagram: local_vs_central_control.png
+On-device controls and parent education address the real goal: keeping children safe. # diagram: local_vs_central_control.jpg
 
 More effective because:
 • Controls work regardless of website or app

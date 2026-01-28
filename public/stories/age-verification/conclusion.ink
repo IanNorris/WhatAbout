@@ -1,5 +1,5 @@
 === The_Real_Problem ===
-Here's the uncomfortable truth: # diagram: whack_a_mole.png
+Here's the uncomfortable truth: # diagram: whack_a_mole.jpg
 
 We're trying to solve a social problem—how we raise and protect children—with a technical solution.
 

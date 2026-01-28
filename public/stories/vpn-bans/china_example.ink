@@ -1,5 +1,5 @@
 === China_Example ===
-China's Great Firewall is often cited as proof that VPN blocking works. # diagram: great_firewall.png
+China's Great Firewall is often cited as proof that VPN blocking works. # diagram: great_firewall.jpg
 
 Here's what actually happens:
 
@@ -23,7 +23,7 @@ The UK has none of China's resources or control. If China can't do it, no democr
     -> Technical_Reality
 
 === Technical_Reality ===
-You cannot eliminate VPNs without breaking the internet itself. # diagram: vpn_bypass.png
+You cannot eliminate VPNs without breaking the internet itself. # diagram: vpn_bypass.jpg
 
 Any VPN ban will:
 • Harm legitimate users (workers, journalists, activists)

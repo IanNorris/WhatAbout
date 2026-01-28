@@ -1,5 +1,5 @@
 === The_Alternative ===
-VPN bans don't work. So what's the solution? # diagram: parental_controls.png
+VPN bans don't work. So what's the solution? # diagram: parental_controls.jpg
 
 Instead of trying to block with technology people can bypass, use tools that work regardless:
 • On-device parental controls
@@ -15,7 +15,7 @@ These work at the point of access—the device itself. They don't depend on bloc
     -> Better_Solutions
 
 === Better_Solutions ===
-Better approaches focus on what we can actually control. # diagram: holistic_approach.png
+Better approaches focus on what we can actually control. # diagram: holistic_approach.jpg
 
 __Device-level protections:__
 • Parental controls that work on any network

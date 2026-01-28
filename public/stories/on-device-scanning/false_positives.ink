@@ -1,7 +1,7 @@
 === False_Positives ===
 
 = Innocent_Content
-AI isn't perfect. With billions of messages scanned, even a tiny error rate causes huge problems. # diagram: false_positive_scale.png
+AI isn't perfect. With billions of messages scanned, even a tiny error rate causes huge problems. # diagram: false_positive_scale.jpg
 
 If the system achieves 99.9% accuracy on WhatsApp's 100 billion daily messages, that's __100 million innocent messages flagged every day__.
 
@@ -19,7 +19,7 @@ These could be:
     -> The_Chilling_Effect
 
 = Real_World_Examples
-This is already happening. # diagram: google_photos_incident.png
+This is already happening. # diagram: google_photos_incident.jpg
 
 A father took photos of his toddler's groin to send to a doctor for telehealth. Google Photos' CSAM detection flagged it.
 
@@ -38,7 +38,7 @@ His only crime? Following his doctor's instructions.
     -> No_Due_Process
 
 = The_Chilling_Effect
-When people know they're being watched, they change their behavior. # diagram: chilling_effect.png
+When people know they're being watched, they change their behavior. # diagram: chilling_effect.jpg
 
 You might avoid discussing sensitive medical issues, sharing art that could be misinterpreted, or sending health information to your teenager.
 
@@ -54,7 +54,7 @@ You don't have to be doing anything wrong—just imagining the consequences of f
     -> Conclusion.Take_Action
 
 = No_Due_Process
-The scanning happens before you even send the message. # diagram: no_warrant.png
+The scanning happens before you even send the message. # diagram: no_warrant.jpg
 
 No warrant. No judge reviewing probable cause. No chance to challenge the accusation.
 

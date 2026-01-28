@@ -1,7 +1,7 @@
 === E2E_Encryption ===
 
 = Breaking_E2E
-End-to-end encryption means only you and the recipient can read your messages. # diagram: e2e_broken.png
+End-to-end encryption means only you and the recipient can read your messages. # diagram: e2e_broken.jpg
 
 Not the app. Not the phone company. Not the government.
 

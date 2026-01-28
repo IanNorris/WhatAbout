@@ -1,5 +1,5 @@
 === Approved_VPNs ===
-"We'll only allow approved government and corporate VPNs!" # diagram: two_tier_internet.png
+"We'll only allow approved government and corporate VPNs!" # diagram: two_tier_internet.jpg
 
 This creates a two-tier internet. The wealthy get secure connections. Regular people get surveillance.
 

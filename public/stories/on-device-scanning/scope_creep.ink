@@ -1,7 +1,7 @@
 === Scope_Creep ===
 
 = Starts_With_CSAM
-Every surveillance system starts with a justification nobody argues with. # diagram: scope_creep_stages.png
+Every surveillance system starts with a justification nobody argues with. # diagram: scope_creep_stages.jpg
 
 "We're only using this for child abusers."
 "We're only targeting terrorists."
@@ -16,7 +16,7 @@ Then the scope expands.
     -> Already_Expanding
 
 = Historical_Examples
-We've seen this pattern: # diagram: mission_creep_examples.png
+We've seen this pattern: # diagram: mission_creep_examples.jpg
 
 __Post-9/11 surveillance:__
 Started as stopping terrorists. Became mass surveillance of all citizens (revealed by Snowden).
@@ -36,7 +36,7 @@ The pattern: build infrastructure for a noble cause, expand it to less serious c
     -> Who_Decides
 
 = Already_Expanding
-The proposals are already expanding beyond CSAM. # diagram: expanding_definitions.png
+The proposals are already expanding beyond CSAM. # diagram: expanding_definitions.jpg
 
 The UK legislation includes vague language about:
 • "Harmful content" (undefined)
@@ -57,7 +57,7 @@ No new legislation. No public debate. Just a quiet expansion.
     -> Who_Decides
 
 = Who_Decides
-Who decides what's "harmful"? # diagram: government_control.png
+Who decides what's "harmful"? # diagram: government_control.jpg
 
 Today it's CSAM (which everyone agrees on).
 
@@ -78,7 +78,7 @@ The scanning system follows instructions. It doesn't care what it scans for.
     -> The_Ratchet_Effect
 
 = International_Precedent
-We know this isn't hypothetical. It's already happening. # diagram: global_surveillance.png
+We know this isn't hypothetical. It's already happening. # diagram: global_surveillance.jpg
 
 __China__ scans messages for:
 • References to Tiananmen Square
@@ -103,7 +103,7 @@ Once you build the infrastructure, authoritarian governments use it for politica
     -> Conclusion.Take_Action
 
 = The_Ratchet_Effect
-Surveillance infrastructure only moves in one direction. # diagram: ratchet_effect.png
+Surveillance infrastructure only moves in one direction. # diagram: ratchet_effect.jpg
 
 Once you build the ability to scan everyone's messages:
 • Future governments will expand it

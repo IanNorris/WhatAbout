@@ -1,5 +1,5 @@
 === Why_It_Works ===
-Let's compare the two approaches: # diagram: local_vs_central_control.png
+Let's compare the two approaches: # diagram: local_vs_central_control.jpg
 
 Surveillance Approach (Age Verification / Bans):
 • Requires identifying everyone online
@@ -29,7 +29,7 @@ Which approach actually achieves the goal of protecting children?
     -> Better_For_Everyone
 
 === Better_For_Everyone ===
-This approach works better for everyone: # diagram: preparation_vs_prevention.png
+This approach works better for everyone: # diagram: preparation_vs_prevention.jpg
 
 For children:
 • Gradual learning rather than sudden exposure at 16/18

@@ -1,5 +1,5 @@
 === Physical_vs_Digital ===
-Many identity checks happen once or twice a year. # diagram: infrequent_checks.png
+Many identity checks happen once or twice a year. # diagram: infrequent_checks.jpg
 
 Opening a bank account. Renting a property. Applying for a passport. These are occasional events, not daily occurrences.
 
@@ -13,7 +13,7 @@ I'd much rather briefly show my passport to a human being than assume the risks 
 
 
 === Why_Physical_Is_Better ===
-When you show physical ID to a person: # diagram: human_verification.png
+When you show physical ID to a person: # diagram: human_verification.jpg
 
 They see it once. They don't record it. They can't track you later. They can't sell your data. The interaction ends when you leave.
 

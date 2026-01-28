@@ -1,5 +1,5 @@
 === Parent_Education ===
-Parental controls only work if parents know about them and use them. # diagram: parent_education.png
+Parental controls only work if parents know about them and use them. # diagram: parent_education.jpg
 
 We need comprehensive parent education programs:
 
@@ -30,7 +30,7 @@ Understanding the "why":
     -> Ongoing_Support
 
 === Ongoing_Support ===
-Education can't be a one-time thing. # diagram: education_cycle.png
+Education can't be a one-time thing. # diagram: education_cycle.jpg
 
 Parents need:
 

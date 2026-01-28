@@ -1,5 +1,5 @@
 === Security_Risks ===
-Digital ID systems require persistent access to sensitive data about the entire population. # diagram: persistent_access.png
+Digital ID systems require persistent access to sensitive data about the entire population. # diagram: persistent_access.jpg
 
 Even with perfect design, compromise ripples through all connected services. Your bank, your government, your employer—all compromised.
 
@@ -12,7 +12,7 @@ For a national identity system, undetected access is wildly attractive.
     -> One_Login_Breach
 
 === One_Login_Breach ===
-GOV.UK One Login—the gateway to all UK government services—was breached by red-team security testers. # diagram: one_login_breach.png
+GOV.UK One Login—the gateway to all UK government services—was breached by red-team security testers. # diagram: one_login_breach.jpg
 
 They got in without being detected.
 
@@ -28,7 +28,7 @@ This wasn't an isolated incident either:
     -> Why_We_Cant_Fix_It
 
 === Why_We_Cant_Fix_It ===
-Modern technology is built on layers of vulnerability. # diagram: tech_stack.png
+Modern technology is built on layers of vulnerability. # diagram: tech_stack.jpg
 
 Zero-click flaws allow remote device control. 40% of Android devices no longer receive updates. AI-generated code is wildly insecure. Supply chains are compromised.
 

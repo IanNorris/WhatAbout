@@ -1,7 +1,7 @@
 === Nudity_Filter ===
 
 = Age_Verification_Requirement
-The UK wants a "nudity filter" that blurs images containing nudity before they're displayed. # diagram: nudity_filter_av.png
+The UK wants a "nudity filter" that blurs images containing nudity before they're displayed. # diagram: nudity_filter_av.jpg
 
 To disable it, you must __prove your age__ to a third party.
 
@@ -47,7 +47,7 @@ To see these innocent images, you need to age verify. Which means uploading your
     -> Cannot_Age_Verify
 
 = The_Surveillance_Connection
-Connect the dots: # diagram: scanning_plus_av.png
+Connect the dots: # diagram: scanning_plus_av.jpg
 
 1. Your phone scans all your messages (on-device scanning)
 2. Images with nudity are flagged and blurred
@@ -64,7 +64,7 @@ This creates a system where everyone is scanned, everyone is identified, and eve
     -> Age_Verification_Crosslink
 
 = Cannot_Age_Verify
-Some people __cannot__ age verify, even if they want to: # diagram: locked_out.png
+Some people __cannot__ age verify, even if they want to: # diagram: locked_out.jpg
 
 • No government-issued photo ID
 • Privacy-conscious people refusing biometric scanning
@@ -114,7 +114,7 @@ Interested in exploring this?
     -> Cannot_Age_Verify
 
 = Parental_Controls_Crosslink
-There's a better way to protect children—without scanning everyone. # diagram: better_way.png
+There's a better way to protect children—without scanning everyone. # diagram: better_way.jpg
 
 __Voluntary, parent-controlled__ filtering:
 • Parents choose to enable it

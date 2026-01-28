@@ -1,5 +1,5 @@
 === Device_Controls ===
-On-device parental controls already exist on phones, tablets, and computers. # diagram: parental_controls.png
+On-device parental controls already exist on phones, tablets, and computers. # diagram: parental_controls.jpg
 
 Most people don't realize how powerful these tools are.
 
@@ -20,7 +20,7 @@ The controls are on the device itself. It doesn't matter which website the child
 *   [But that doesn't stop kids from accessing specific platforms.]
     That's actually a feature, not a bug.
     
-    Different families have different needs and values. # diagram: family_diversity.png
+    Different families have different needs and values. # diagram: family_diversity.jpg
     
     Some parents want strict filtering until age 18.
     Some prefer gradual exposure with conversation and guidance.

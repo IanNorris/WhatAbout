@@ -1,5 +1,5 @@
 === AI_Verification ===
-"AI can estimate age from your face!" # diagram: face_scanning.png
+"AI can estimate age from your face!" # diagram: face_scanning.jpg
 
 Some systems claim 95% accuracy. But let's think about that 5% error rate with real numbers.
 
@@ -9,7 +9,7 @@ Some systems claim 95% accuracy. But let's think about that 5% error rate with r
     -> Privacy_Concerns
 
 === Error_Rate_Reality ===
-If 100 million people use a site, 5 million get wrongly categorized. # diagram: ai_error_scale.png
+If 100 million people use a site, 5 million get wrongly categorized. # diagram: ai_error_scale.jpg
 
 That's millions of adults locked out, or millions of kids getting through. And that's the *claimed* accuracy under ideal conditions—good lighting, clear photos, facing the camera.
 
@@ -33,7 +33,7 @@ Which brings us to the real concern.
     -> The_Real_Problem
 
 === Privacy_Concerns ===
-To verify your age with AI, you need to: # diagram: data_collection.png
+To verify your age with AI, you need to: # diagram: data_collection.jpg
 1. Upload a photo of your face
 2. Provide it to every website you visit
 3. Trust each website to store it securely
@@ -45,7 +45,7 @@ To verify your age with AI, you need to: # diagram: data_collection.png
     -> Scale_Of_Problem
 
 === Scale_Of_Problem ===
-Visit 50 different websites requiring age verification: # diagram: fifty_copies.png
+Visit 50 different websites requiring age verification: # diagram: fifty_copies.jpg
 • 50 companies now have your facial biometric data
 • 50 different security systems that need to protect it
 • 50 different legal jurisdictions with varying privacy laws
@@ -68,7 +68,7 @@ Detect "harmful content" before it reaches children—filtering or blurring auto
     -> Third_Party_Verification
 
 === Third_Party_Verification ===
-"One company verifies everyone, then issues tokens!" # diagram: honeypot_database.png
+"One company verifies everyone, then issues tokens!" # diagram: honeypot_database.jpg
 
 Now you've created the world's most valuable database:
 • Real names and faces
@@ -84,7 +84,7 @@ This is called a "honeypot"—a single target so valuable that every hacker on e
     -> Security_Reality
 
 === Blackmail_Scenarios ===
-Imagine: # diagram: blackmail_power.png
+Imagine: # diagram: blackmail_power.jpg
 
 Public figures, politicians, religious leaders—all their private browsing exposed. Job candidates having their internet history reviewed. Insurance companies denying coverage based on browsing patterns. Authoritarian regimes identifying dissidents.
 
@@ -117,7 +117,7 @@ Government-run ID systems have their own serious concerns about surveillance and
     -> Data_Breach_Risk
 
 === Data_Breach_Risk ===
-Recent breaches: # diagram: breach_timeline.png
+Recent breaches: # diagram: breach_timeline.jpg
 • 2017: Equifax leaked 147 million Social Security numbers
 • 2013: Yahoo leaked 3 billion accounts
 • 2021: Facebook leaked 533 million phone numbers

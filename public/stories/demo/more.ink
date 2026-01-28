@@ -1,7 +1,7 @@
 
 === adding_images ===
 
-Adding images is simple! # diagram: features_diagram.png
+Adding images is simple! # diagram: features_diagram.jpg
 
 Just add a diagram tag to any paragraph in your Ink file.
 

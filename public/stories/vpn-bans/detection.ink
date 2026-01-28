@@ -1,5 +1,5 @@
 === Can_We_Detect ===
-Here's the technical core of the problem. # diagram: pipes_metaphor.png
+Here's the technical core of the problem. # diagram: pipes_metaphor.jpg
 
 Normal traffic = transparent. Encrypted traffic (HTTPS) = opaque but visible. VPN = encrypted tunnel hiding everything inside.
 

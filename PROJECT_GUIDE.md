@@ -43,6 +43,7 @@ WhatAbout/
 
 ### For Image Generation
 - **`tools/generate-image.js`** - Script with OpenRouter API access
+- **`tools/resize-images.js`** - Batch resize images to standard 618x337px
 - **`tools/IMAGE_STYLE_GUIDE.md`** - Required reading before generating images
 - **`.env`** - Contains OPENROUTER_API_KEY (in repo root, gitignored)
 

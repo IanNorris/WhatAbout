@@ -1,5 +1,5 @@
 === The_Real_Problem ===
-Let's step back and look at what's really happening. # diagram: intent_vs_impact.png
+Let's step back and look at what's really happening. # diagram: intent_vs_impact.jpg
 
 The intent is genuinely good: protect children from harm, reduce cyberbullying, combat mental health issues, give space to develop without algorithmic manipulation.
 
@@ -58,7 +58,7 @@ We invest in solutions that actually address the goals:
     -> Surveillance_Cost
 
 === Family_Autonomy ===
-One-size-fits-all policies ignore the reality of diverse families. # diagram: family_diversity.png
+One-size-fits-all policies ignore the reality of diverse families. # diagram: family_diversity.jpg
 
 A conservative religious family might want strict filtering until 18. A tech-savvy family might prefer open access with discussion. A family with a disabled child might rely on online communities. A rural family might need online connection.
 
@@ -82,7 +82,7 @@ Evidence suggests bans create obstacles for everyone while determined parents by
     -> Final_Thoughts
 
 === Surveillance_Cost ===
-There's another critical issue: # diagram: surveillance_infrastructure.png
+There's another critical issue: # diagram: surveillance_infrastructure.jpg
 
 Social media bans require age verification. Age verification requires proving who you are and how old you are.
 
@@ -134,7 +134,7 @@ We build infrastructure for authoritarian control—even if that's not the inten
     -> Final_Thoughts
 
 === Final_Thoughts ===
-Here's what it comes down to: # diagram: core_question.png
+Here's what it comes down to: # diagram: core_question.jpg
 
 We have a genuine problem: children need protection and guidance in digital spaces.
 

@@ -1,7 +1,7 @@
 === Scanning_Mechanism ===
 
 = What_Gets_Scanned
-The proposal scans both images and text messages before encryption. # diagram: scanning_layers.png
+The proposal scans both images and text messages before encryption. # diagram: scanning_layers.jpg
 
 • Images: AI analyzes photos for matches against known illegal content databases or flags "suspicious" images.
 
@@ -19,7 +19,7 @@ Both happen automatically, on your device, without your consent for each message
     -> Conclusion.Take_Action
 
 = Who_Controls_It
-The scanning software runs on iOS or Android, so Apple and Google implement it. # diagram: control_chain.png
+The scanning software runs on iOS or Android, so Apple and Google implement it. # diagram: control_chain.jpg
 
 But they're doing it because the UK government mandates it.
 
@@ -34,7 +34,7 @@ Critical question: who sees the results?
     -> Reporting_Mechanism
 
 = Reporting_Mechanism
-When the system flags something, it reports automatically. # diagram: reporting_flow.png
+When the system flags something, it reports automatically. # diagram: reporting_flow.jpg
 
 The flagged content goes to the platform (Apple/Google), which may forward it to law enforcement.
 
@@ -53,7 +53,7 @@ You likely won't know you've been flagged. No warrant. No judicial oversight. Ju
     -> Nudity_Filter.Age_Verification_Requirement
     
 = Voluntary_vs_Mandatory
-There's a big difference between optional parental controls and mandatory scanning. # diagram: voluntary_vs_mandatory.png
+There's a big difference between optional parental controls and mandatory scanning. # diagram: voluntary_vs_mandatory.jpg
 
 __Voluntary controls:__
 • Parents choose to enable them
