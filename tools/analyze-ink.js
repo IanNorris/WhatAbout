@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+/* eslint-disable no-undef */
 
 /**
  * Ink Story Dead End Analyzer

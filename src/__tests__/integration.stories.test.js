@@ -24,9 +24,6 @@ release: true`;
       // Try to load from actual file system for story content
       try {
         const fs = await import('fs');
-        const pathModule = await import('path');
-        const { fileURLToPath } = await import('url');
-        
         // Convert URL to file path
         const urlObj = new URL(url, 'file:///');
         const filePath = urlObj.pathname;
@@ -39,7 +36,7 @@ release: true`;
           json: async () => JSON.parse(content),
           text: async () => content,
         };
-      } catch (err) {
+      } catch {
         return { ok: false };
       }
     };

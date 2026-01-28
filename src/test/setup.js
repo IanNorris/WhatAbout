@@ -8,7 +8,7 @@ afterEach(() => {
 });
 
 // Mock fetch globally for tests
-global.fetch = vi.fn();
+globalThis.fetch = vi.fn();
 
 // Reset mocks after each test
 afterEach(() => {

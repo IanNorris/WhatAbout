@@ -71,7 +71,7 @@ describe('State JSON Tracking Test', () => {
     // Go to Section B.Part2
     story.ChooseChoiceIndex(0); // "Continue"
     while (story.canContinue) story.Continue();
-    const state7 = captureState('7. At Section B.Part2');
+    const _state7 = captureState('7. At Section B.Part2');
 
     console.log('\n=== ANALYSIS ===\n');
 

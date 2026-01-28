@@ -32,12 +32,12 @@ import { Story } from 'inkjs';
  */
 function generateStateHash(story) {
   try {
-    const state = story.state.ToJson();
+    const _state = story.state.ToJson();
     // Use a simple hash based on current path and variables
     const pathHash = story.state.currentPathString || '';
     const varsHash = JSON.stringify(story.state.variablesState?.$jsonToken || {});
     return `${pathHash}|${varsHash.slice(0, 100)}`; // Limit vars hash length
-  } catch (err) {
+  } catch {
     // Fallback to path string only
     return story.state.currentPathString || 'unknown';
   }
@@ -143,11 +143,11 @@ export async function discoverAllPaths(compiledStoryJson, options = {}) {
               visitedKnots.add(knotMatch[1]);
             }
           }
-        } catch (err) {
+        } catch {
           // Ignore
         }
       }
-    } catch (err) {
+    } catch {
       // Story had a runtime error (e.g., ran out of content)
       paths.push({
         choices: choiceHistory,
@@ -156,7 +156,7 @@ export async function discoverAllPaths(compiledStoryJson, options = {}) {
         endReason: 'error',
         content: trackContent ? [...contentHistory, ...newContent] : [],
         knots: Array.from(visitedKnots),
-        error: err.message || String(err),
+        error: 'Story error during exploration',
       });
       pathsAborted++;
       return;

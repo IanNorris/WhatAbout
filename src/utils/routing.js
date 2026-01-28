@@ -14,7 +14,7 @@ export function parseHash() {
   }
   
   // Match /#/story/{story-id}
-  const storyMatch = hash.match(/^\/story\/([^\/]+)$/);
+  const storyMatch = hash.match(/^\/story\/([^/]+)$/);
   if (storyMatch) {
     return {
       type: 'story',
