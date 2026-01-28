@@ -191,4 +191,21 @@ Users can return to the parent story via the menu's "Exit to [Parent]" option.
 
 ---
 
+## 📚 Documentation
+
+### Getting Started
+- **[USER_GUIDE.md](USER_GUIDE.md)** - Complete user onboarding guide
+- **[AGENT_REFERENCE.md](AGENT_REFERENCE.md)** - Quick reference for AI assistants and developers
+
+### Detailed Documentation
+- **[STORY_AUTHORING.md](STORY_AUTHORING.md)** - Story writing guide and common pitfalls
+- **[TESTING.md](TESTING.md)** - Testing framework and validation
+- **[BUILD_REQUIREMENTS.md](BUILD_REQUIREMENTS.md)** - Build process and requirements
+- **[tools/IMAGE_STYLE_GUIDE.md](tools/IMAGE_STYLE_GUIDE.md)** - Visual style guide for images
+- **[public/stories/README.md](public/stories/README.md)** - Complete Ink syntax reference
+- **[.github/WORKFLOWS.md](.github/WORKFLOWS.md)** - CI/CD documentation
+- **[.github/copilot-instructions.md](.github/copilot-instructions.md)** - GitHub Copilot context
+
+---
+
 Built with React + Vite
