@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * Test utilities and helpers for unit tests
  */
@@ -51,7 +52,7 @@ export function wait(ms = 0) {
 export function createMockInkStory(options = {}) {
   const {
     text = 'Test story content',
-    choices = [],
+    _choices = [],
     knots = {},
   } = options;
 

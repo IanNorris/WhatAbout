@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-empty */
 
 /**
  * Image Optimizer for What About Project

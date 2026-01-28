@@ -1,5 +1,5 @@
-import { describe, it, expect, beforeAll } from 'vitest';
-import { discoverAllPaths, validateKnotReachability } from '../test/pathDiscovery';
+import { describe, it, expect } from 'vitest';
+import { discoverAllPaths } from '../test/pathDiscovery';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';

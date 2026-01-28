@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Story } from 'inkjs/engine/Story';
 import fs from 'fs';
 

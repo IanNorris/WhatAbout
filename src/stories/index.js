@@ -183,7 +183,7 @@ export async function loadInkStory(inkPath) {
                 }
                 return jsonData;
             }
-        } catch (e) {
+        } catch {
             // No pre-compiled version or it's invalid, will compile at runtime
         }
         

@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 
 // Clear module cache before each test to avoid caching issues
 beforeEach(async () => {
@@ -32,7 +32,7 @@ file: demo.json
 release: false
 `;
 
-      global.fetch = vi.fn(() =>
+      globalThis.fetch = vi.fn(() =>
         Promise.resolve({
           ok: true,
           text: () => Promise.resolve(storiesTxt),
@@ -76,7 +76,7 @@ file: main.json
 release: false
 `;
 
-      global.fetch = vi.fn(() =>
+      globalThis.fetch = vi.fn(() =>
         Promise.resolve({
           ok: true,
           text: () => Promise.resolve(storiesTxt),
@@ -101,7 +101,7 @@ file: main.json
 release: false
 `;
 
-      global.fetch = vi.fn(() =>
+      globalThis.fetch = vi.fn(() =>
         Promise.resolve({
           ok: true,
           text: () => Promise.resolve(storiesTxt),
@@ -125,7 +125,7 @@ release: false
     });
 
     it('should handle fetch errors gracefully', async () => {
-      global.fetch = vi.fn(() =>
+      globalThis.fetch = vi.fn(() =>
         Promise.reject(new Error('Network error'))
       );
 
@@ -152,7 +152,7 @@ release: true
         })
       );
       
-      global.fetch = mockFetch;
+      globalThis.fetch = mockFetch;
 
       // Reset modules to clear cache
       vi.resetModules();
@@ -173,7 +173,7 @@ release: true
         root: [['Test content']],
       };
 
-      global.fetch = vi.fn((url) => {
+      globalThis.fetch = vi.fn((url) => {
         if (url.endsWith('.json')) {
           return Promise.resolve({
             ok: true,
@@ -186,13 +186,13 @@ release: true
       const result = await loadInkStory('/stories/test/main.ink');
 
       expect(result).toEqual(compiledStory);
-      expect(global.fetch).toHaveBeenCalledWith('/stories/test/main.json');
+      expect(globalThis.fetch).toHaveBeenCalledWith('/stories/test/main.json');
     });
 
     it('should compile ink source at runtime if no JSON available', async () => {
       const inkSource = 'Hello world!';
 
-      global.fetch = vi.fn((url) => {
+      globalThis.fetch = vi.fn((url) => {
         if (url.endsWith('.json')) {
           return Promise.resolve({ ok: false });
         }
@@ -227,7 +227,7 @@ Included content
 -> END
 `;
 
-      global.fetch = vi.fn((url) => {
+      globalThis.fetch = vi.fn((url) => {
         if (url.endsWith('main.json')) {
           return Promise.resolve({ ok: false });
         }
@@ -254,7 +254,7 @@ Included content
     });
 
     it('should handle missing files gracefully', async () => {
-      global.fetch = vi.fn(() =>
+      globalThis.fetch = vi.fn(() =>
         Promise.resolve({ ok: false, statusText: 'Not Found' })
       );
 
@@ -269,7 +269,7 @@ Missing end marker and has errors
 * Invalid choice
 `;
 
-      global.fetch = vi.fn((url) => {
+      globalThis.fetch = vi.fn((url) => {
         if (url.endsWith('.json')) {
           return Promise.resolve({ ok: false });
         }
@@ -298,7 +298,7 @@ Content
 -> END
 `;
 
-      global.fetch = vi.fn((url) => {
+      globalThis.fetch = vi.fn((url) => {
         if (url.endsWith('main.json')) {
           return Promise.resolve({ ok: false });
         }

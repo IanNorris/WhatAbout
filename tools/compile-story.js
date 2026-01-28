@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { Compiler } from 'inkjs/compiler/Compiler';
 import { PosixFileHandler } from 'inkjs/compiler/FileHandler/PosixFileHandler';
 import fs from 'fs';
