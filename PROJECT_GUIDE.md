@@ -52,6 +52,7 @@ WhatAbout/
 - **`tools/compile-ink.js`** - Pre-compile for production (optional)
 - **`BUILD_REQUIREMENTS.md`** - ⭐ **CRITICAL**: Build process and requirements
 - **`RUNTIME_COMPILATION.md`** - Runtime ink compilation details
+- **`.github/WORKFLOWS.md`** - GitHub Actions CI/CD documentation
 
 ## 🎨 Working with Images
 
