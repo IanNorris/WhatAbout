@@ -1,3 +1,4 @@
+EXTERNAL navigateTo(story_id)
 VAR topic_title = "VPN Bans"
 
 INCLUDE legitimate_uses.ink

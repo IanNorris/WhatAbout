@@ -50,6 +50,8 @@ WhatAbout/
 ### For Development
 - **`tools/analyze-ink.js`** - Find dead ends in stories
 - **`tools/compile-ink.js`** - Pre-compile for production (optional)
+- **`BUILD_REQUIREMENTS.md`** - ⭐ **CRITICAL**: Build process and requirements
+- **`RUNTIME_COMPILATION.md`** - Runtime ink compilation details
 
 ## 🎨 Working with Images
 
@@ -194,15 +196,35 @@ npm run analyze-ink public/stories/your-story/main.ink
 
 ## 🚀 Production Deployment
 
+### CRITICAL: Runtime Ink Compilation Required
+
+**The application MUST support loading `.ink` files directly in production.** See `BUILD_REQUIREMENTS.md` for details.
+
+- ✅ DO include `.ink` files in production build
+- ✅ DO keep inkjs in production dependencies
+- ✅ DO include both `.ink` and `.json` files
+- ❌ DO NOT remove runtime compilation capability
+- ❌ DO NOT assume only `.json` files are needed
+
+### Build Process
+
 ```bash
-npm run build            # Creates dist/ folder
-# Deploy dist/ folder to hosting
+npm run build
 ```
 
-**Optional:** Pre-compile stories for faster load times:
+This automatically:
+1. Compiles all `.ink` files to `.json` (optimization + validation)
+2. Builds production bundle with Vite
+
+**Build will fail if:**
+- Any `.ink` file has syntax/compilation errors  
+- Vite build fails
+
+**Recommended before deployment:**
 ```bash
-npm run compile-ink      # Before build
-npm run build
+npm run test:run    # Run unit tests
+npm run test:e2e    # Run E2E tests (optional, slower)
+npm run lint        # Check code quality
 ```
 
 ## 🤖 For AI Assistants
