@@ -139,6 +139,11 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                         <img src={imagePath} alt="Diagram" style={{ maxWidth: '100%', borderRadius: '10px' }} />
                     </div>
                 );
+                
+                // Also add the paragraph's text if it has any (diagram and text can be on same paragraph)
+                if (p.text && p.text.trim()) {
+                    textBatch.push(p.text);
+                }
             } else {
                 // Add text to batch
                 textBatch.push(p.text);

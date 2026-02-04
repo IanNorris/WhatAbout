@@ -8,6 +8,7 @@ INCLUDE surveillance.ink
 INCLUDE physical_alternative.ink
 INCLUDE policy_recommendations.ink
 INCLUDE conclusion.ink
+INCLUDE unique_identifier.ink
 
 Lets talk about...
 We should adopt digital ID for convenience and fraud prevention. # diagram: digital_wallet.jpg
@@ -22,4 +23,7 @@ The government says it reduces fraud. Tech companies promise a seamless experien
 *   [Seems like a good idea to me.]
     That's what most people think. Until you see what gets built.
     -> Security_Risks
+*   [What about the Children's Wellbeing Bill?]
+    There's a related concern happening right now.
+    -> Childrens_Identifier
 
