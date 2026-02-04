@@ -1,14 +1,12 @@
 === Surveillance_Concerns ===
-Digital ID and the Online Safety Act together create a blueprint for mass surveillance. # diagram: surveillance_blueprint.jpg
+Digital ID combined with online verification requirements creates infrastructure that could enable tracking. # diagram: surveillance_blueprint.jpg
 
-Even if this government implements it in good faith, the infrastructure persists. A future government could use it to track online and offline activity.
+Even if implemented in good faith, the infrastructure persists across governments. Future administrations could expand its use.
 
-Simply having a digital ID app installed enables silent, real-time location tracking.
+Apps that verify identity could potentially log when and where verification occurs.
 
-Protests. Medical appointments. Religious services. Union meetings. Your phone becomes a tracking beacon.
-
-*   [That sounds dystopian.]
-    It's already being built. The framework exists right now.
+*   [That sounds concerning.]
+    The framework is being built now.
     -> What_Digital_ID_Enables
 
 === What_Digital_ID_Enables ===
@@ -46,21 +44,14 @@ Every layer of digital communication becomes monitored.
     -> Privacy_Rights
 
 === Privacy_Rights ===
-The right to privacy is protected under the European Convention on Human Rights, Article 8. # diagram: echr_article_8.jpg
+Privacy is protected under the European Convention on Human Rights, Article 8. # diagram: echr_article_8.jpg
 
-Digital ID systems fundamentally undermine this right. You cannot exercise privacy when your location is tracked in real-time, your browsing is tied to your identity, your face can be identified by any camera, and your digital identity is required for basic services.
+Digital ID systems that track location, link browsing to identity, and require biometric data raise questions about this right.
 
-Privacy isn't about hiding wrongdoing. It's about the fundamental right to live without constant surveillance.
+Privacy enables people to engage in lawful activities without scrutiny. This includes seeking medical care, accessing information, and participating in civic life.
 
-*   [But I have nothing to hide.]
-    That's what people said about phone records before mass surveillance was revealed.
-    That's what people said about social media before Cambridge Analytica.
-    That's what people said about location data before it was sold to the highest bidder.
-    
-    This infrastructure will outlast this government. And power corrupts.
-    -> Physical_vs_Digital
 *   [What about legitimate uses?]
     There are legitimate uses for identity verification.
-    But there's a better way that doesn't require building a surveillance state.
+    But alternatives exist that don't require this infrastructure.
     -> Physical_vs_Digital
 

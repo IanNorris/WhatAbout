@@ -11,11 +11,9 @@ Every technical solution creates new problems. VPN bans break privacy. AI verifi
     -> The_Answer
 
 === Deeper_Issue ===
-We're asking technology to replace parenting, education, and community.
+Technical solutions are being asked to solve problems that require parenting, education, and community support.
 
-We want a perfect technical lock because the social solutions are hard. They require time, attention, difficult conversations, and accepting that we can't control everything.
-
-It's like trying to childproof the entire world instead of teaching your child how to navigate it safely.
+Perfect technical locks are appealing because social solutions require time, attention, and accepting that we can't control everything.
 
 *   [So what's the answer?]
     -> The_Answer

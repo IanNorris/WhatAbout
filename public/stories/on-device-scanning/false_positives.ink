@@ -1,16 +1,13 @@
 === False_Positives ===
 
 = Innocent_Content
-AI isn't perfect. With billions of messages scanned, even a tiny error rate causes huge problems. # diagram: false_positive_scale.jpg
+AI systems produce errors. At scale, even high accuracy rates generate large numbers of false positives. # diagram: false_positive_scale.jpg
 
-If the system achieves 99.9% accuracy on WhatsApp's 100 billion daily messages, that's __100 million innocent messages flagged every day__.
-
-These could be:
-• Parents sharing bath-time photos with doctors
+These could include:
 • Medical images sent to physicians
 • Classical art or photography
-• Couples sharing legal intimate photos
-• Screenshots or memes matching patterns
+• Legal intimate images between adults
+• Screenshots matching flagged patterns
 
 *   [Is this already happening?]
     -> Real_World_Examples

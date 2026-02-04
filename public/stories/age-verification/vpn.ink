@@ -13,25 +13,13 @@ And arguably more importantly... can we actually detect a VPN?
 
 *   [Surely technology can tell?]
     
-    Think of the internet like a series of pipes. # diagram: pipes_metaphor.jpg
-    Normal traffic is like a clear glass pipe. You can see the water (data) and where it's going.
-    Encrypted traffic (like HTTPS, which is most of the web now) is like an opaque pipe. You know where the pipe goes, but you can't see the water.
+    VPN traffic uses the same encryption as banks, hospitals, and government systems. # diagram: pipes_metaphor.jpg
     
-    A VPN is like putting a pipe *inside* another pipe.
-    The ISP (Internet Service Provider) only sees the outside pipe—they see you connecting to a VPN server.
-    They have no idea what connections are inside or where they lead.
+    ISPs see you connecting to a server, but can't see what's inside the encrypted connection.
     
-    Here's the technical reality:
-    VPN traffic is just encrypted data packets flowing to a server.
-    The same encryption protocols used by VPNs are also used by banks, hospitals, and government agencies.
-    If you could break VPN encryption, you'd also break online banking, medical records, and national security communications.
+    Breaking VPN encryption would also break online banking and secure communications.
     
-    The patterns *might* look slightly different—VPNs tend to have persistent connections with steady traffic.
-    But sophisticated VPN protocols can mimic normal HTTPS traffic perfectly.
-    And self-hosted VPNs (which anyone can set up on a cloud server for $5/month) are indistinguishable from any other secure web service.
-    
-    If you ban the outer pipes, you break the secure tunnels used by banks, governments, and businesses.
-    If you try to ban specific VPN companies, they just move or change their IP addresses.
+    Self-hosted VPNs (set up on any cloud server) are indistinguishable from normal secure web traffic. Banning specific VPN companies fails—they change IP addresses.
 
 -
 *   [What about China? They block VPNs.] -> China_Example
@@ -62,9 +50,8 @@ China's economy depends on foreign investment, manufacturing exports, and intern
 Cutting off encrypted connections to the outside world would be economic suicide.
 
 *   [So even China can't fully stop it?]
-    Exactly. They make it harder and drive people to shadier solutions.
-    They've spent billions of dollars and two decades building the most sophisticated censorship system in human history.
-    But they can't eliminate the fundamental problem without breaking the internet itself.
+    Exactly. They make it harder and drive people to less secure workarounds.
+    Despite extensive resources, they can't eliminate VPNs without breaking international business connectivity.
     -> The_Real_Problem
 
 === Approved_VPNs ===
@@ -74,19 +61,12 @@ This creates a two-tier internet:
 Businesses and the wealthy get secure, private connections.
 Regular citizens are forced to expose their browsing to government surveillance.
 
-Think about what "approved" means in practice:
-• The government can see where the VPN connects
-• They can demand logs of who uses it and when
-• They can revoke approval at any time
-• They create a list of "trusted" VPNs that must cooperate with authorities
+In practice, "approved" means:
+• Government can see VPN connections and demand user logs
+• Approval can be revoked at any time
+• Providers must cooperate with authorities
 
-This transforms a security tool into a surveillance tool.
-
-It's like saying: "Curtains are now illegal unless you're rich enough to apply for a curtain license."
-And oh, by the way, the government gets to peek through approved curtains whenever they want.
-
-Who gets approval? Corporations, certainly. Government contractors. Maybe large hospitals and universities.
-But freelance journalists? Political activists? Ordinary citizens who value privacy? Probably not.
+This transforms a security tool into a surveillance tool, accessible mainly to corporations and institutions.
 
 *   [That doesn't seem fair.]
     It's not. And it doesn't solve the original problem.

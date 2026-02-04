@@ -1,17 +1,17 @@
 === Policy_Solutions ===
-Responsible digital identity policy is actually straightforward: # diagram: policy_framework.jpg
+Alternatives to digital ID for identity verification: # diagram: policy_framework.jpg
 
-SCRAP digital ID in all forms. No smartphone-based ID, no Citizen Card, no biometric backing.
-REPEAL the Companies House identification mandate. Use offline, in-person verification.
-PAUSE Online Safety Act age verification enforcement. Work with experts to explore evidence-based alternatives.
+In-person verification for high-stakes interactions (banking, property, employment).
 
-We can maintain online government services without building surveillance infrastructure.
+Existing offline methods work for most identity checks without requiring new infrastructure.
+
+Age verification enforcement could be paused while evidence-based alternatives are explored.
 
 *   [What if we need better security for verification systems?]
-    Security regulation is a band-aid. The real solution is to not build these systems.
+    Security regulation addresses symptoms, not root causes.
     -> Regulation_Wont_Work
 *   [What are the actual alternatives that work?]
-    Many. Evidence-based approaches that protect both children and privacy.
+    Approaches that protect both safety and privacy.
     -> Better_Approaches
 
 === Regulation_Wont_Work ===

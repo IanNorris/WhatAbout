@@ -58,23 +58,19 @@ For society:
 === Final_Thoughts ===
 The question isn't whether we should protect children online. Of course we should.
 
-The question is: How do we do it effectively without creating worse problems?
+The question is: How do we do it effectively without creating other problems?
 
 Age verification and blanket bans:
 • Sound simple
 • Create surveillance infrastructure
-• Can be easily bypassed
-• Don't actually protect children
-• Endanger everyone's privacy
+• Can be bypassed
+• Have unintended consequences
 
 Parental controls and education:
 • Require more effort
 • Empower families directly
-• Cannot be bypassed
-• Actually protect children
-• Preserve everyone's privacy
-
-The harder path is often the right path.
+• Cannot be bypassed with VPNs
+• Build ongoing skills
 
 *   [How can I help make this happen?]
     If you're a parent: Learn about parental controls and use them. Have ongoing conversations with your children.
@@ -83,10 +79,8 @@ The harder path is often the right path.
     
     If you're a technologist: Build better parental control tools. Make safety the default.
     
-    If you're anyone: Advocate for empowerment over surveillance. Support privacy-preserving solutions.
-    
     -> END
 
 *   [I understand now.]
-    The path forward is clear: empower families, not surveillance.
+    The path forward involves empowering families with effective tools.
     -> END

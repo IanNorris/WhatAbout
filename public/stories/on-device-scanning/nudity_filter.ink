@@ -31,14 +31,12 @@ Either way, your privacy gets compromised.
     -> The_Surveillance_Connection
 
 = Why_This_Matters
-This isn't about blocking porn. AI "nudity detection" is notoriously broad. It flags:
-• Classical art (Venus de Milo, Sistine Chapel)
+AI "nudity detection" flags a broad range of content. Systems have been documented flagging:
 • Medical images and diagrams
 • Breastfeeding photos
 • Beach or swimming photos
-• Educational anatomy content
 
-To see these innocent images, you need to age verify. Which means uploading your ID.
+To view flagged images, users must age verify—which means providing identity documents.
 
 *   [What happens when you connect all of this?]
     -> The_Surveillance_Connection

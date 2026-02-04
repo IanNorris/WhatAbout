@@ -84,9 +84,9 @@ This is called a "honeypot"—a single target so valuable that every hacker on e
     -> Security_Reality
 
 === Blackmail_Scenarios ===
-Imagine: # diagram: blackmail_power.jpg
+This data could be misused for: # diagram: blackmail_power.jpg
 
-Public figures, politicians, religious leaders—all their private browsing exposed. Job candidates having their internet history reviewed. Insurance companies denying coverage based on browsing patterns. Authoritarian regimes identifying dissidents.
+Targeting public figures or employees. Screening job candidates. Insurance or credit decisions based on browsing patterns.
 
 *   [Can't it be secured though?]
     -> Security_Reality
@@ -145,11 +145,11 @@ This data is permanent. Once leaked, it's out there forever. Facial recognition 
     -> The_Real_Problem
 
 === Catastrophic_Impact ===
-Think about the implications:
+Leaked data creates lasting consequences:
 
-Divorce proceedings using browsing history as evidence. College admissions rejections. Jobs lost over legal but embarrassing website visits. Political campaigns destroyed.
+Browsing history used in legal proceedings. Employment or admission decisions based on online activity. Permanent records that cannot be undone.
 
-You've created a surveillance system that starts with good intentions but becomes a tool for control and blackmail. The data is simply too valuable and too dangerous to exist.
+This infrastructure, however well-intentioned, creates data too valuable and too dangerous to exist securely.
 
 *   [What's the alternative?]
     -> The_Real_Problem

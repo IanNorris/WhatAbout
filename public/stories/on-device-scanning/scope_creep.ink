@@ -57,19 +57,11 @@ No new legislation. No public debate. Just a quiet expansion.
     -> Who_Decides
 
 = Who_Decides
-Who decides what's "harmful"? # diagram: government_control.jpg
+Definitions of "harmful" can change over time. # diagram: government_control.jpg
 
-Today it's CSAM (which everyone agrees on).
+Today's targets may be universally agreed upon. But scanning infrastructure, once built, can be updated to target new categories without legislation—just model updates.
 
-Tomorrow it could be:
-• Political dissent ("misinformation")
-• LGBTQ+ content (banned in some countries)
-• Religious or atheistic content (depends who's in power)
-• Criticism of the government ("extremism")
-• Union organizing or protest coordination
-• Abortion information
-
-The scanning system follows instructions. It doesn't care what it scans for.
+The concern is that definitions expand based on political priorities.
 
 *   [Is this already happening elsewhere?]
     -> International_Precedent
@@ -78,23 +70,11 @@ The scanning system follows instructions. It doesn't care what it scans for.
     -> The_Ratchet_Effect
 
 = International_Precedent
-We know this isn't hypothetical. It's already happening. # diagram: global_surveillance.jpg
+Scanning infrastructure is already used for content control in various countries. # diagram: global_surveillance.jpg
 
-__China__ scans messages for:
-• References to Tiananmen Square
-• Criticism of the government
-• LGBTQ+ discussions
+Once the technical capability exists, governments can expand its scope. What constitutes "harmful" varies by jurisdiction and can change with political leadership.
 
-__Russia__ scans for:
-• Anti-war content
-• Opposition to the government
-• "LGBTQ propaganda"
-
-__Saudi Arabia__ scans for:
-• Atheism
-• Criticism of Islam
-
-Once you build the infrastructure, authoritarian governments use it for political control. Even democracies—governments change. What seems reasonable today gets weaponized tomorrow.
+The infrastructure outlasts any single policy decision.
 
 *   [So we can never scale this back?]
     -> The_Ratchet_Effect

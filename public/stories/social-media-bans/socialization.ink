@@ -1,11 +1,11 @@
 === Social_Crisis ===
-Let's zoom out. # diagram: social_spaces_squeeze.jpg
+Context matters. # diagram: social_spaces_squeeze.jpg
 
-Between 2010 and 2019, youth service spending in England fell by 72%. Nearly a third of London's youth clubs closed.
+Youth service spending in England has decreased significantly in recent years. Many youth clubs have closed.
 
-At the same time, outdoor play declined—"stranger danger" fears, increased traffic, reduced green spaces, parents working longer hours.
+Outdoor play has also declined due to various factors.
 
-Children have fewer places to socialize in person. And now we're discussing cutting off their online socialization too.
+With fewer places to socialize in person, online spaces have become more important for youth connection. Cutting off online access without providing alternatives raises questions about where young people will connect.
 
 *   [Where are children supposed to connect?]
     -> No_Alternatives_Provided

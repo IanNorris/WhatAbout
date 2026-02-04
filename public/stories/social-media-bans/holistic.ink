@@ -52,9 +52,9 @@ The same approach works for digital spaces: heavily supervised at 7-10, supervis
     -> Algorithm_Control
 
 === Danger_Comparison ===
-Is it? Cars kill tens of thousands every year. But we've learned to teach children road safety.
+Both carry risks, but we've developed approaches for other hazards.
 
-Social media has real risks. But banning until 16 then giving unlimited access doesn't prepare anyone. It just delays exposure while preventing the gradual learning that builds resilience.
+Banning until 16 then providing unlimited access doesn't build the gradual skills that come from supervised exposure over time.
 
 *   [What about the addictive algorithms?]
     -> Algorithm_Control

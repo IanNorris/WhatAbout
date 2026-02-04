@@ -1,18 +1,14 @@
 === The_Choice ===
-We face a fundamental choice: # diagram: fork_in_road.jpg
+There's a fundamental trade-off: # diagram: fork_in_road.jpg
 
-Build a surveillance state in pursuit of perfect security and convenience.
+Convenience and security through centralized verification.
 OR
-Accept some inconvenience and some risk in exchange for privacy and freedom.
+Some inconvenience in exchange for privacy and reduced surveillance risk.
 
-Perfect security is impossible. Perfect convenience always costs. And once surveillance infrastructure exists, it will be used.
-
-Technology Secretary Peter Kyle says: "If you want to overturn the Online Safety Act you are on the side of predators."
-
-This is insulting to security professionals who understand that these systems make everyone less safe.
+Perfect security through technology is difficult to achieve. Surveillance infrastructure, once built, tends to persist and expand.
 
 *   [But what about protecting children?]
-    Protecting children is critical. But building surveillance infrastructure doesn't protect them.
+    Protecting children is critical. Effective approaches exist that don't require mass surveillance.
     -> Better_Child_Protection
 *   [What can I do?]
     -> What_You_Can_Do
