@@ -1,13 +1,12 @@
 === Holistic_Thinking ===
-The real solution requires thinking bigger than just "ban" or "allow." # diagram: holistic_approach.jpg
+# diagram: holistic_approach.jpg
+The real solution requires thinking bigger than just "ban" or "allow."
 
-We need a multi-layered approach across three areas:
+Physical: Reinvest in youth services, fund community centers, create safe public spaces.
 
-Physical infrastructure: Reinvest in youth services (reverse the 72% cuts), fund community centers, create safe public spaces.
+Digital: Require parental controls, give parents options to limit features, hold companies accountable for harmful design.
 
-Digital infrastructure: Require robust parental controls, mandate feature-gating options, hold companies accountable for harmful algorithmic design.
-
-Education infrastructure: Digital literacy in schools, parent education programs with ongoing support, teaching critical thinking.
+Education: Digital literacy in schools, parent education programs, teaching critical thinking.
 
 *   [Why do we need both physical and digital?]
     -> Need_Both_Worlds
@@ -62,9 +61,9 @@ Banning until 16 then providing unlimited access doesn't build the gradual skill
     -> The_Real_Problem
 
 === Algorithm_Control ===
-That's where feature-gating comes in.
+That's where feature controls come in.
 
-Disable "the algorithm" for young users—show only followed accounts chronologically. Limit watch time. Disable autoplay.
+Disable "the algorithm" for young users—show only followed accounts chronologically. Limit screen time. Disable autoplay.
 
 As they demonstrate healthy usage, gradually enable more features. This teaches moderation rather than abstinence-then-binge.
 

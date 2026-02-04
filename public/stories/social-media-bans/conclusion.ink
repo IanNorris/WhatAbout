@@ -96,8 +96,6 @@ That means uploading ID documents, face scans, biometric data. Central databases
 === Database_Risks ===
 These databases are irresistible targets for:
 • Cybercriminals seeking identity documents
-• Nation-states conducting espionage
-• Authoritarian governments tracking dissidents
 • Stalkers and abusers finding victims
 • Data brokers selling your information
 
@@ -183,8 +181,6 @@ That's how we actually protect children.
 If you're a parent: Learn about parental controls. Have ongoing conversations about online safety.
 
 If you're a policymaker: Invest in youth services, parent education, and platform accountability rather than surveillance.
-
-If you're a technologist: Build better parental control tools and feature-gating options.
 
 If you're anyone: Speak up against surveillance solutions and support privacy-preserving alternatives.
 

@@ -10,18 +10,19 @@ Apps that verify identity could potentially log when and where verification occu
     -> What_Digital_ID_Enables
 
 === What_Digital_ID_Enables ===
-Three layers of data collection combine into complete surveillance.[10] # diagram: surveillance_layers.jpg
+# diagram: surveillance_layers.jpg
+Three layers of data combine into complete tracking.[10]
 
-Your location can be tracked in real-time via the app. Protests, medical appointments, religious services, union meetings—all potentially logged.
+Your location can be tracked via the app—protests, medical appointments, religious services.
 
 Your browsing history can be tied to your real identity. The Investigatory Powers Act already allows access to "internet connection records."
 
-Biometric data from digital ID and age verification enables facial recognition.[12] Age-verification companies are already collecting more data than they claim.[11]
+Face scans from digital ID and age verification enable facial recognition.[12] Age-verification companies are already collecting more data than they claim.[11]
 
 Once this infrastructure exists, the temptation to use it grows with every crisis.
 
 *   [Is on-device message scanning part of this?]
-    Yes. There's another layer to this surveillance.
+    Yes. There's another layer to this.
     -> On_Device_Scanning_Crosslink
 *   [What about privacy rights?]
     Those get erased by these systems.
