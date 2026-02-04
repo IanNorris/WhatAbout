@@ -293,13 +293,13 @@ When you scan millions of people, even a 1% error rate means tens of thousands o
 
 You have options:
 
-• **Subject Access Request**: Ask any company using facial recognition what data they hold on you
+• Subject Access Request — Ask any company using facial recognition what data they hold on you
 
-• **Respond to consultations**: The Home Office consultation on facial recognition law closes February 2026 [1]
+• Respond to consultations — The Home Office consultation on facial recognition law closes February 2026 [1]
 
-• **Support legal challenges**: Big Brother Watch is backing court cases against police and retail facial recognition [1]
+• Support legal challenges — Big Brother Watch is backing court cases against police and retail facial recognition [1]
 
-• **Contact your MP**: Ask what safeguards they support
+• Contact your MP — Ask what safeguards they support
 
 + [Tell me more about age verification concerns]
     ~ navigateTo("age-verification")
