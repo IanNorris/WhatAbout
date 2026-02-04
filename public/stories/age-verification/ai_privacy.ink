@@ -68,15 +68,15 @@ Detect "harmful content" before it reaches children—filtering or blurring auto
     -> Third_Party_Verification
 
 === Third_Party_Verification ===
-"One company verifies everyone, then issues tokens!" # diagram: honeypot_database.jpg
+# diagram: honeypot_database.jpg
+"One company verifies everyone, then issues tokens!"
 
 Now you've created the world's most valuable database:
 • Real names and faces
 • Complete list of adult websites each person visits
 • Timestamps and IP addresses
-• Device fingerprints
 
-This is called a "honeypot"—a single target so valuable that every hacker on earth will attack it.
+This is a "honeypot"—a single target so valuable that hackers worldwide will attack it.
 
 *   [What's the blackmail potential?]
     -> Blackmail_Scenarios
@@ -84,9 +84,8 @@ This is called a "honeypot"—a single target so valuable that every hacker on e
     -> Security_Reality
 
 === Blackmail_Scenarios ===
-This data could be misused for: # diagram: blackmail_power.jpg
-
-Targeting public figures or employees. Screening job candidates. Insurance or credit decisions based on browsing patterns.
+# diagram: blackmail_power.jpg
+This data could be used to target public figures, screen job candidates, or influence insurance decisions.
 
 *   [Can't it be secured though?]
     -> Security_Reality
@@ -132,13 +131,9 @@ Age-verification systems are already being compromised. British citizens have ha
     -> The_Real_Problem
 
 === Leak_Contents ===
-A leak would include:
-• Your face and real name
-• Every adult website you visited
-• When you visited them
-• What you searched for
+A leak would include your face, real name, every adult website you visited, and when.
 
-This data is permanent. Once leaked, it's out there forever. Facial recognition means anyone can identify you. Your browsing history can be used to manipulate, embarrass, or control you.
+This data is permanent. Once leaked, it's out there forever. Your browsing history can be used to manipulate, embarrass, or control you.
 
 *   [That would be catastrophic.]
     -> Catastrophic_Impact
@@ -146,9 +141,7 @@ This data is permanent. Once leaked, it's out there forever. Facial recognition 
     -> The_Real_Problem
 
 === Catastrophic_Impact ===
-Leaked data creates lasting consequences:
-
-Browsing history used in legal proceedings. Employment or admission decisions based on online activity. Permanent records that cannot be undone.
+Browsing history could be used in legal proceedings, employment decisions, or to harm reputations permanently.
 
 This infrastructure, however well-intentioned, creates data too valuable and too dangerous to exist securely.
 

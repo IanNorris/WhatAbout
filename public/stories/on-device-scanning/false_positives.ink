@@ -18,7 +18,7 @@ These could include:
 = Real_World_Examples
 This is already happening. # diagram: google_photos_incident.jpg
 
-A father took photos of his toddler's groin to send to a doctor for telehealth. Google Photos' CSAM detection flagged it.
+A father took photos of his toddler's groin to send to a doctor during a video consultation. Google Photos' detection system flagged it.
 
 Result:
 • His account was disabled

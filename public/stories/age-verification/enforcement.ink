@@ -59,13 +59,12 @@ Users seek the path of least friction. Intrusive checks on compliant sites? Traf
     -> Counterproductive_Reality
 
 === Gaming_Impact ===
-This applies to gaming too.[6] # diagram: gaming_impact.jpg
+# diagram: gaming_impact.jpg
+Games and social apps now require age verification to chat with friends.[8]
 
-95% of studios develop at least one live-service title, with multiplayer communication core to the experience.[7] Platforms like Xbox now mandate age-verification for online communication.[8]
+When Roblox launched AI age verification in 2026, it was chaos:[9] verified accounts for children sold online for $4, kids with marker-drawn stubble rated 21+, and chat usage dropped from 85% to 36%.
 
-Roblox's AI age verification launched in 2026 to immediate chaos:[9] verified accounts for 9-year-olds sold on eBay for $4, kids with marker-drawn stubble rated 21+, and chat usage dropped from 85% to 36%.
-
-Studios block communication for non-verified users rather than risk fines. Those who cannot age-verify are left with a much smaller online world.
+Those who can't or won't age-verify lose access to online communication.
 
 *   [This seems counterproductive.]
     -> Counterproductive_Reality
