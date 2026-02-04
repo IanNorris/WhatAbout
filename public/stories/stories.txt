@@ -53,6 +53,12 @@ description: Empowering families with tools that work better than surveillance.
 file: main.ink
 release: true
 
+id: facial-recognition
+title: Facial Recognition
+description: How facial recognition is spreading across the UK—and why accuracy matters.
+file: main.ink
+release: true
+
 id: crosslink-demo
 title: Cross-Link Test
 description: Test story for cross-linking feature

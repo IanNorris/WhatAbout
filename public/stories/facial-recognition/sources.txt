@@ -1,0 +1,25 @@
+# Sources for Facial Recognition Story
+
+[1]: Big Brother Watch - Stop Facial Recognition Campaign
+url: https://bigbrotherwatch.org.uk/campaigns/stop-facial-recognition/
+
+[2]: Facewatch UK Retail Alerts 2025
+url: https://www.talkingretail.com/news/industry-news/live-facial-recognition-in-uk-shops-triggered-record-repeat-offender-alerts-in-2025-08-01-2026/
+
+[3]: Big Brother Watch - Wrongful Shoplifter Accusation
+url: https://bigbrotherwatch.org.uk/press-releases/my-mum-is-scared-to-go-shopping-alone-after-facial-recognition-wrongly-branded-her-a-shoplifter/
+
+[4]: Facewatch Under Scrutiny - Retail Biometrics
+url: https://www.bioenabletech.com/news/retail-biometrics-spark-debate-facewatch-under-scrutiny
+
+[5]: Cardiff Man Wrongly Accused by Facial Recognition
+url: https://reclaimthenet.org/cardiff-man-misidentified-theft-facial-recognition-facewatch-bm
+
+[6]: Liberty Investigates - Police Biased Facial Recognition
+url: https://libertyinvestigates.org.uk/articles/police-forces-biased-facial-recognition-technology/
+
+[7]: NIST Face Analysis Technology Evaluation 2024
+url: https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8525.pdf
+
+[8]: Wired - Roblox AI Age Verification Problems
+url: https://www.wired.com/story/robloxs-ai-powered-age-verification-is-a-complete-mess/
