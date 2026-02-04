@@ -102,6 +102,10 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                 // Batch all text together and parse as full markdown (supports lists, etc.)
                 let combinedText = textBatch.join('\n');
                 
+                // Convert bullet point lines (• or -) to markdown list format
+                // This ensures they render as proper lists with tight spacing
+                combinedText = combinedText.replace(/^[•]\s*/gm, '- ');
+                
                 // Convert [n] references to clickable links if we have source data
                 if (Object.keys(sourcesData).length > 0) {
                     combinedText = combinedText.replace(/\[(\d+)\]/g, (match, num) => {
@@ -168,10 +172,9 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
         
         return (
             <div className={styles.sourcesContainer}>
-                <span className={styles.sourcesLabel}>Sources:</span>
-                {validSources.map((source, idx) => (
-                    <span key={source.num}>
-                        {idx > 0 && ' · '}
+                <div className={styles.sourcesLabel}>Sources:</div>
+                {validSources.map((source) => (
+                    <div key={source.num} className={styles.sourceItem}>
                         <a 
                             href={source.url} 
                             target="_blank" 
@@ -180,7 +183,7 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                         >
                             [{source.num}] {source.title}
                         </a>
-                    </span>
+                    </div>
                 ))}
             </div>
         );

@@ -121,6 +121,36 @@
     animation: fadeIn 0.5s ease-out;
 }
 
+.textBlock p {
+    margin-bottom: 1.1rem;
+}
+
+.textBlock p:last-child {
+    margin-bottom: 0;
+}
+
+/* Distinct break for paragraph groups (blank lines in Ink become <br> pairs) */
+.textBlock br + br {
+    display: block;
+    content: "";
+    margin-bottom: 1rem;
+}
+
+.textBlock ul,
+.textBlock ol {
+    margin-bottom: 1.2rem;
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.textBlock li {
+    margin-bottom: 0.3rem;
+}
+
+.textBlock li:last-child {
+    margin-bottom: 0;
+}
+
 .choicesContainer {
     display: flex;
     flex-direction: column;
@@ -201,7 +231,11 @@
 
 .sourcesLabel {
     font-weight: 600;
-    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sourceItem {
+    margin-bottom: 0.3rem;
 }
 
 .sourceLink {
