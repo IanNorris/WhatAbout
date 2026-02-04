@@ -175,6 +175,8 @@ That's how we actually protect children.
 *   [What can I do?]
     -> Action_Steps
 *   [I'm done here.]
+    Thanks for exploring this topic.
+    ~ exit()
     -> END
 
 === Action_Steps ===
@@ -186,4 +188,5 @@ If you're anyone: Speak up against surveillance solutions and support privacy-pr
 
 The future of children's safety—and everyone's privacy—depends on choosing empowerment over control.
 
+~ exit()
 -> END

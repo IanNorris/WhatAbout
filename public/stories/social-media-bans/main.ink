@@ -1,4 +1,5 @@
 EXTERNAL navigateTo(story_id)
+EXTERNAL exit()
 
 VAR topic_title = "Social Media Bans"
 

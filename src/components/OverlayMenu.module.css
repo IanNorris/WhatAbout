@@ -38,6 +38,11 @@
     transform: scale(1.1);
 }
 
+.primaryButton {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
 .closeOverlayButton {
     position: absolute;
     top: 30px;

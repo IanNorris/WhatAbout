@@ -99,7 +99,7 @@ async function compileInkFile(inkPath) {
 
 /**
  * Find all entry point .ink files (files in story folders, but skip component files)
- * Component files are identified by starting with ===
+ * Entry points are main.ink or demo.ink files only
  */
 async function findInkFiles() {
     const { readdir, readFile } = await import('fs/promises');
@@ -115,18 +115,10 @@ async function findInkFiles() {
                 // Scan story subdirectories
                 await scanDirectory(fullPath, depth + 1);
             } else if (entry.isFile() && entry.name.endsWith('.ink') && depth === 1) {
-                // Check if this is an entry point file (not a component)
-                try {
-                    const content = await readFile(fullPath, 'utf8');
-                    const firstLine = content.trim().split('\n')[0].trim();
-                    
-                    // Skip files that start with === (component files meant to be INCLUDEd)
-                    if (!firstLine.startsWith('===')) {
-                        allFiles.push(fullPath);
-                    }
-                } catch (err) {
-                    // If we can't read it, skip it
-                    console.error(`Could not read ${fullPath}:`, err.message);
+                // Only compile entry point files (main.ink or demo.ink)
+                const isEntryPoint = entry.name === 'main.ink' || entry.name === 'demo.ink';
+                if (isEntryPoint) {
+                    allFiles.push(fullPath);
                 }
             }
         }

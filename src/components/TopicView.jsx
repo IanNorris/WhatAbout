@@ -52,14 +52,19 @@ const parseSources = (text) => {
 };
 
 const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedState, onClose, onHome, onNavigateToStory }) => {
+    console.log('TopicView render:', { storyId, storyTitle, parentStoryTitle });
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [sourcesData, setSourcesData] = useState({});
-    const { pages, currentChoices, makeChoice, resetStory, currentKnot, availableKnots, navigateToKnot } = useInkStory(
+    
+    // Smart exit: go to parent story if one exists, otherwise go to hub
+    const handleExit = parentStoryTitle ? onClose : onHome;
+    
+    const { pages, currentChoices, makeChoice, replayFromPage, resetStory, currentKnot, availableKnots, navigateToKnot } = useInkStory(
         storyContent,
         storyId,
         storyTitle,
         savedState,
-        onHome,
+        handleExit,
         (storyState, newStory) => {
             setIsMenuOpen(false); // Close menu when navigating
             onNavigateToStory(storyState, newStory);
@@ -195,6 +200,13 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                 &times;
             </button>
 
+            {/* Show "Back to Parent" banner when viewing a child story */}
+            {parentStoryTitle && (
+                <button className={styles.parentBanner} onClick={onClose}>
+                    ← Back to "{parentStoryTitle}"
+                </button>
+            )}
+
             <OverlayMenu
                 visible={isMenuOpen}
                 onClose={() => setIsMenuOpen(false)}
@@ -245,15 +257,20 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                                 <div className={styles.choicesContainer}>
                                     {page.choices.map((choiceText, idx) => {
                                         const isSelected = page.selectedChoiceIndex === idx;
-                                        const isDisabled = page.selectedChoiceIndex !== null && !isSelected;
+                                        const isOtherChoice = page.selectedChoiceIndex !== null && !isSelected;
                                         
                                         return (
                                             <button
                                                 key={idx}
                                                 className={`${styles.choiceButton} ${
                                                     isSelected ? styles.chosenButton : ''
-                                                } ${isDisabled ? styles.disabledButton : ''}`}
-                                                disabled={isDisabled}
+                                                } ${isOtherChoice ? styles.otherChoiceButton : ''}`}
+                                                onClick={() => {
+                                                    if (isOtherChoice && page.savedState) {
+                                                        replayFromPage(pageIdx, idx);
+                                                    }
+                                                }}
+                                                title={isOtherChoice ? "Click to explore this path instead" : ""}
                                             >
                                                 {choiceText}
                                             </button>
