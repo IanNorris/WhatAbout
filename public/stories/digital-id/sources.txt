@@ -44,3 +44,12 @@ url: https://www.bbc.co.uk/news/articles/cj4wy21dwkwo
 
 [13]: IT Brief: Concerns over UK digital ID checks for company directors
 url: https://itbrief.co.uk/story/concerns-grow-over-uk-digital-id-checks-for-company-directors
+
+[14]: Liberty: Briefing on Single Unique Identifier clause in Children's Wellbeing Bill
+url: https://www.libertyhumanrights.org.uk/wp-content/uploads/2021/11/Liberty-Briefing-on-SUI-Clause-in-CWS-Bill.pdf
+
+[15]: Guardian: Hackers threaten to publish nursery children's data (Kido breach)
+url: https://www.theguardian.com/technology/2025/sep/26/kido-nursery-hackers-radiant-threaten-publish-children-profiles
+
+[16]: Defend Digital Me: NHS number to be mandated as national ID in Children's Bill
+url: https://defenddigitalme.org/2025/06/14/nhs-number-to-be-national-id-mandated-in-childrens-wellbeing-and-schools-bill/

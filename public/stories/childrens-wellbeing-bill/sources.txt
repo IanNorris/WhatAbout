@@ -1,0 +1,11 @@
+# Sources for Children's Wellbeing and Schools Bill
+#
+# Format:
+#   [number]: title
+#   url: full URL
+
+[1]: Liberty: Briefing on Single Unique Identifier clause
+url: https://www.libertyhumanrights.org.uk/wp-content/uploads/2021/11/Liberty-Briefing-on-SUI-Clause-in-CWS-Bill.pdf
+
+[2]: Guardian: Hackers threaten to publish nursery children's data
+url: https://www.theguardian.com/technology/2025/sep/26/kido-nursery-hackers-radiant-threaten-publish-children-profiles
