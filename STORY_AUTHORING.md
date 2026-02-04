@@ -228,10 +228,56 @@ Before committing a new story:
   - End with explicit `-> DONE` or `-> END`, OR
   - Auto-continue to another section
 - [ ] All referenced images exist in `public/assets/your-story/`
+- [ ] Diagram tags are on their own line (see below)
+- [ ] Source references use `[n]` format with matching `sources.txt`
 - [ ] Run syntax validation: `npm run test:run -- src/__tests__/story-syntax.test.js`
 - [ ] Run image validation: `npm run test:run -- src/__tests__/story-images.test.js`
 - [ ] Run path discovery test
 - [ ] Check test output for runtime errors
+
+## Diagrams and Tags
+
+Use `# diagram: filename.jpg` to display images. **Tags must be on their own line** at the start of a section.
+
+**Correct:**
+```ink
+=== My_Section ===
+# diagram: my_image.jpg
+This is the text content that follows the image.
+```
+
+**Incorrect** (text before tag on same line gets dropped):
+```ink
+=== My_Section ===
+This text will be lost.[1] # diagram: my_image.jpg
+```
+
+If you need both a source reference and a diagram, put the diagram tag first:
+```ink
+=== My_Section ===
+# diagram: my_image.jpg
+This is the text with a source reference.[1]
+```
+
+## Source Citations
+
+Add source references inline using `[n]` notation (e.g., `[1]`, `[2]`).
+
+Create a `sources.txt` file in your story folder:
+```
+# Sources for My Story
+
+[1]: Title of first source
+url: https://example.com/source-one
+
+[2]: Title of second source  
+url: https://example.com/source-two
+```
+
+The renderer will:
+- Convert `[n]` to clickable superscript links
+- Show source title on hover
+- Display a "Sources:" section after choices
 
 ## Common Ink Syntax Reminders
 
@@ -240,7 +286,7 @@ Before committing a new story:
 - `-> knot` = Navigate to knot
 - `-> END` = End story
 - `-> DONE` = End current flow
-- `#` = Tag/comment (not shown to user)
+- `#` = Tag (e.g., `# diagram: image.jpg`)
 
 ## Getting Help
 

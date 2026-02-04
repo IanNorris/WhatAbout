@@ -12,27 +12,26 @@ For a national identity system, undetected access is wildly attractive.
     -> One_Login_Breach
 
 === One_Login_Breach ===
-GOV.UK One Login—the gateway to all UK government services—was breached by red-team security testers. # diagram: one_login_breach.jpg
+# diagram: one_login_breach.jpg
+GOV.UK One Login—the gateway to UK government services—has raised security concerns from whistleblowers within the project.[1]
 
-They got in without being detected.
+Red-team security testers gained access without being detected.
 
-If friendly security experts can breach it, what can hostile nation-states do?
+Civil servants working on the project have expressed "extreme concern" about security vulnerabilities, with one fearing it could lead to "the worst data breach in UK government history."
 
-This wasn't an isolated incident either:
-• The National Cyber Security Centre reports four nationally significant cyber attacks every week
-• Over half of UK businesses reported attacks in 2024
-• The JLR attack is ongoing
+The National Cyber Security Centre reports multiple nationally significant cyber attacks weekly. Over half of UK businesses reported attacks in 2024.
 
 *   [So we should fix the security vulnerabilities.]
     You can't patch fundamental design flaws.
     -> Why_We_Cant_Fix_It
 
 === Why_We_Cant_Fix_It ===
-Modern technology is built on layers of vulnerability. # diagram: tech_stack.jpg
+# diagram: tech_stack.jpg
+Modern technology is built on layers of vulnerability.[2]
 
-Zero-click flaws allow remote device control. 40% of Android devices no longer receive updates. AI-generated code is wildly insecure. Supply chains are compromised.
+Zero-click flaws allow remote device control. 40% of Android devices no longer receive updates. AI-generated code introduces new vulnerabilities. Supply chains are compromised.
 
-Age-verification systems—far simpler than national digital ID—are already being compromised. Cybercrime groups stole 2.1 million identity photos. This is happening now.
+Age-verification systems are already being compromised. In 2025, cybercrime groups stole 2.1 million identity verification photos from Discord.
 
 Every major company with billions in revenue and dedicated security teams has been breached: Equifax, Target, Yahoo, Facebook, LinkedIn, Adobe.
 

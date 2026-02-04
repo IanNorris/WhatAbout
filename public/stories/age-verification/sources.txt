@@ -1,0 +1,10 @@
+# Sources for Age Verification
+#
+# Format:
+#   [number]: title
+#   url: full URL
+#
+# Use a blank line to separate sources.
+
+[1]: TechReviewer: Discord's 2.1M photo leak
+url: https://www.techreviewer.com/gaming-news/2025-10-08-discords-21m-photo-leak-shakes-user-trust/

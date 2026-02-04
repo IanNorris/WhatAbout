@@ -11,8 +11,49 @@ marked.use({
     gfm: true,
 });
 
+// Parse sources.txt format into a lookup object
+const parseSources = (text) => {
+    const sources = {};
+    if (!text) return sources;
+    
+    const lines = text.split('\n');
+    let currentNum = null;
+    let currentTitle = null;
+    
+    for (const line of lines) {
+        const trimmed = line.trim();
+        
+        // Skip comments and empty lines
+        if (trimmed.startsWith('#') || trimmed === '') {
+            continue;
+        }
+        
+        // Check for [number]: title format
+        const numMatch = trimmed.match(/^\[(\d+)\]:\s*(.+)$/);
+        if (numMatch) {
+            currentNum = numMatch[1];
+            currentTitle = numMatch[2];
+            continue;
+        }
+        
+        // Check for url: format
+        const urlMatch = trimmed.match(/^url:\s*(.+)$/);
+        if (urlMatch && currentNum && currentTitle) {
+            sources[currentNum] = {
+                title: currentTitle,
+                url: urlMatch[1]
+            };
+            currentNum = null;
+            currentTitle = null;
+        }
+    }
+    
+    return sources;
+};
+
 const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedState, onClose, onHome, onNavigateToStory }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [sourcesData, setSourcesData] = useState({});
     const { pages, currentChoices, makeChoice, resetStory, currentKnot, availableKnots, navigateToKnot } = useInkStory(
         storyContent,
         storyId,
@@ -26,9 +67,30 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
     );
     const currentPageRef = useRef(null);
 
+    // Load sources.txt for this story
+    useEffect(() => {
+        fetch(`/stories/${storyId}/sources.txt`)
+            .then(res => res.ok ? res.text() : '')
+            .then(text => setSourcesData(parseSources(text)))
+            .catch(() => setSourcesData({}));
+    }, [storyId]);
+
     useEffect(() => {
         currentPageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, [pages]);
+
+    // Extract source references [1], [2] etc from text
+    const extractSourceRefs = (paragraphs) => {
+        const refs = new Set();
+        paragraphs.forEach(p => {
+            const matches = p.text?.match(/\[(\d+)\]/g) || [];
+            matches.forEach(m => {
+                const num = m.match(/\d+/)[0];
+                refs.add(num);
+            });
+        });
+        return Array.from(refs).sort((a, b) => parseInt(a) - parseInt(b));
+    };
 
     const renderParagraphs = (paragraphs) => {
         const elements = [];
@@ -38,7 +100,19 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
         const flushTextBatch = (currentIndex) => {
             if (textBatch.length > 0) {
                 // Batch all text together and parse as full markdown (supports lists, etc.)
-                const combinedText = textBatch.join('\n');
+                let combinedText = textBatch.join('\n');
+                
+                // Convert [n] references to clickable links if we have source data
+                if (Object.keys(sourcesData).length > 0) {
+                    combinedText = combinedText.replace(/\[(\d+)\]/g, (match, num) => {
+                        const source = sourcesData[num];
+                        if (source) {
+                            return `<a href="${source.url}" target="_blank" rel="noopener noreferrer" class="inline-source-ref" title="${source.title}">[${num}]</a>`;
+                        }
+                        return match;
+                    });
+                }
+                
                 const htmlContent = marked.parse(combinedText);
                 
                 elements.push(
@@ -77,6 +151,36 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
         return elements;
     };
 
+    const renderSources = (refNumbers) => {
+        if (refNumbers.length === 0 || Object.keys(sourcesData).length === 0) return null;
+        
+        // Get sources that exist in sourcesData
+        const validSources = refNumbers
+            .filter(num => sourcesData[num])
+            .map(num => ({ num, ...sourcesData[num] }));
+        
+        if (validSources.length === 0) return null;
+        
+        return (
+            <div className={styles.sourcesContainer}>
+                <span className={styles.sourcesLabel}>Sources:</span>
+                {validSources.map((source, idx) => (
+                    <span key={source.num}>
+                        {idx > 0 && ' · '}
+                        <a 
+                            href={source.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className={styles.sourceLink}
+                        >
+                            [{source.num}] {source.title}
+                        </a>
+                    </span>
+                ))}
+            </div>
+        );
+    };
+
     return (
         <div className={styles.container}>
             <button className={styles.closeButton} onClick={() => setIsMenuOpen(true)} aria-label="Open Menu">
@@ -105,13 +209,14 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                 onNavigateToKnot={navigateToKnot}
             />
 
-            <div className={styles.scrollContainer}>
+            <div className={styles.scrollContainer} key={Object.keys(sourcesData).length > 0 ? 'loaded' : 'loading'}>
                 {pages.length > 0 && <div className={styles.historyHint} />}
                 
                 {pages.map((page, pageIdx) => {
                     const isCurrentPage = pageIdx === pages.length - 1;
                     const previousPage = pageIdx > 0 ? pages[pageIdx - 1] : null;
                     const showChoiceTitle = previousPage?.selectedChoiceText;
+                    const pageSourceRefs = extractSourceRefs(page.paragraphs);
                     
                     return (
                         <div
@@ -163,6 +268,9 @@ const TopicView = ({ storyContent, storyId, storyTitle, parentStoryTitle, savedS
                                     ))}
                                 </div>
                             )}
+                            
+                            {/* Show sources after choices */}
+                            {renderSources(pageSourceRefs)}
                         </div>
                     );
                 })}

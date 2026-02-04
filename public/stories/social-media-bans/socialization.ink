@@ -1,9 +1,9 @@
 === Social_Crisis ===
 Context matters. # diagram: social_spaces_squeeze.jpg
 
-Youth service spending in England has decreased significantly in recent years. Many youth clubs have closed.
+Between 2010 and 2019, youth service spending in England fell by around 72%, with nearly a third of London's youth clubs closing. For every £1 saved from closures, nearly £3 was lost to education and crime costs.[1]
 
-Outdoor play has also declined due to various factors.
+Outdoor play has also declined due to various factors—safety concerns, increased traffic, reduced green spaces, parents working longer hours.
 
 With fewer places to socialize in person, online spaces have become more important for youth connection. Cutting off online access without providing alternatives raises questions about where young people will connect.
 
