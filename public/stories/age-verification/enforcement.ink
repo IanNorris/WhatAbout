@@ -45,13 +45,13 @@ That's not a bug—it's the fundamental architecture of the internet. The web wa
     -> The_Real_Problem
 
 === Real_World_Impact ===
-We're already seeing this play out: # diagram: user_migration.jpg
+We're already seeing this play out:[5] # diagram: user_migration.jpg
 • Compliant sites hemorrhaged users
 • Non-compliant sites experienced massive growth
 • One adult site estimated it had 3,000 clones
-• Only 37% of users say they're likely to complete age-verification
+• Only 37% of users say they're likely to complete age-verification[4]
 
-Users seek the path of least friction. Intrusive checks on compliant sites? Traffic flows to non-compliant alternatives.
+Users seek the path of least friction. Intrusive checks on compliant sites? Traffic flows to non-compliant alternatives.[3]
 
 *   [What about gaming?]
     -> Gaming_Impact
@@ -59,9 +59,11 @@ Users seek the path of least friction. Intrusive checks on compliant sites? Traf
     -> Counterproductive_Reality
 
 === Gaming_Impact ===
-This applies to gaming too. # diagram: gaming_impact.jpg
+This applies to gaming too.[6] # diagram: gaming_impact.jpg
 
-95% of studios develop at least one live-service title, with multiplayer communication core to the experience. Yet platforms like Xbox mandate age-verification for online communication.
+95% of studios develop at least one live-service title, with multiplayer communication core to the experience.[7] Platforms like Xbox now mandate age-verification for online communication.[8]
+
+Roblox's AI age verification launched in 2026 to immediate chaos:[9] verified accounts for 9-year-olds sold on eBay for $4, kids with marker-drawn stubble rated 21+, and chat usage dropped from 85% to 36%.
 
 Studios block communication for non-verified users rather than risk fines. Those who cannot age-verify are left with a much smaller online world.
 

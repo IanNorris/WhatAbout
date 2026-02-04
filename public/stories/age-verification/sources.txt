@@ -8,3 +8,27 @@
 
 [1]: TechReviewer: Discord's 2.1M photo leak
 url: https://www.techreviewer.com/gaming-news/2025-10-08-discords-21m-photo-leak-shakes-user-trust/
+
+[2]: Guardian: Discord data breach - proof of age ID leaked
+url: https://www.theguardian.com/games/2025/oct/07/discord-data-breach-proof-of-age-id-leaked
+
+[3]: Open Rights Group: Age verification has failed
+url: https://www.openrightsgroup.org/blog/the-great-british-firewall-age-verification-has-failed/
+
+[4]: Ipsos: Only 37% of users likely to complete age verification
+url: https://www.ipsos.com/en-uk/britons-back-online-safety-acts-age-checks-are-sceptical-effectiveness-and-unwilling-share-id
+
+[5]: TechDirt: Compliant sites lost users, non-compliant sites grew
+url: https://www.techdirt.com/2025/09/08/uk-age-verification-data-confirms-what-critics-always-predicted-mass-migration-to-sketchier-sites/
+
+[6]: Games Industry: OSA causing studios to rethink features
+url: https://www.gamesindustry.biz/the-online-safety-act-is-causing-some-studios-to-rethink-in-game-features-says-law-firm
+
+[7]: Games Industry: 95% of studios develop live service games
+url: https://www.gamesindustry.biz/report-95-of-studios-are-working-on-or-aim-to-release-a-live-service-game
+
+[8]: Xbox UK age verification requirements
+url: https://support.xbox.com/en-GB/help/family-online-safety/online-safety/UK-age-verification
+
+[9]: WIRED: Roblox's AI age verification is a complete mess
+url: https://www.wired.com/story/robloxs-ai-powered-age-verification-is-a-complete-mess/

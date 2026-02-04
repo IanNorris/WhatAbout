@@ -11,3 +11,36 @@ url: https://uk.news.yahoo.com/whistleblowers-raise-extreme-concern-security-072
 
 [2]: TechReviewer: Discord's 2.1M photo leak
 url: https://www.techreviewer.com/gaming-news/2025-10-08-discords-21m-photo-leak-shakes-user-trust/
+
+[3]: NCSC: UK experiencing four nationally significant cyber attacks weekly
+url: https://www.ncsc.gov.uk/news/uk-experiencing-four-nationally-significant-cyber-attacks-weekly
+
+[4]: Hansard: GOV.UK One Login breach disclosed in Mandatory Digital ID debate
+url: https://hansard.parliament.uk/commons/2025-10-21/debates/7ACB6A4E-1A1C-4B1F-8197-E0A4AFA18C7F/MandatoryDigitalID
+
+[5]: Gov.uk: Cyber Security Breaches Survey 2024 - over half of UK businesses attacked
+url: https://www.gov.uk/government/statistics/cyber-security-breaches-survey-2024/cyber-security-breaches-survey-2024
+
+[6]: Guardian: JLR hack cost UK economy £1.9bn
+url: https://www.theguardian.com/business/2025/oct/22/jaguar-land-rover-hack-has-cost-uk-economy-19bn-most-costly-cyber-attack-britain
+
+[7]: Android zero-click flaw allows remote device control
+url: https://www.esecurityplanet.com/threats/android-zero-click-flaw-lets-hackers-take-over-devices/
+
+[8]: Which?: Over 1 billion Android devices at risk - 40% don't receive updates
+url: https://www.which.co.uk/news/article/more-than-one-billion-android-devices-at-risk-of-malware-threats-aXtug2P0ET0d
+
+[9]: Dark Reading: AI-generated code is wildly insecure
+url: https://www.darkreading.com/application-security/llms-ai-generated-code-wildly-insecure
+
+[10]: Big Brother Watch: Checkpoint Britain - mass surveillance concerns
+url: https://bigbrotherwatch.org.uk/wp-content/uploads/2025/09/Checkpoint-Britain.pdf
+
+[11]: Age verification companies collecting more data than claimed
+url: https://www.biometricupdate.com/202509/intermediary-age-assurance-provider-collecting-user-data-on-specific-urls-more
+
+[12]: BBC: Facial recognition and biometric data concerns
+url: https://www.bbc.co.uk/news/articles/cj4wy21dwkwo
+
+[13]: IT Brief: Concerns over UK digital ID checks for company directors
+url: https://itbrief.co.uk/story/concerns-grow-over-uk-digital-id-checks-for-company-directors

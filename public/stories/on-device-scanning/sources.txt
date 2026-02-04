@@ -8,3 +8,6 @@
 
 [1]: TechReviewer: Discord's 2.1M photo leak
 url: https://www.techreviewer.com/gaming-news/2025-10-08-discords-21m-photo-leak-shakes-user-trust/
+
+[2]: BBC: Apple's legal challenge over Investigatory Powers Act
+url: https://www.bbc.co.uk/news/articles/cgj54eq4vejo
