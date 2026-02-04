@@ -4,6 +4,9 @@ import styles from './OverlayMenu.module.css';
 const OverlayMenu = ({ visible, onClose, onHome, onBack, parentStoryTitle, currentStoryTitle, onRestart }) => {
     if (!visible) return null;
 
+    // If there's a parent story, make "Exit to parent" the primary option
+    const hasParent = onBack && parentStoryTitle;
+
     return (
         <div className={styles.overlayContainer}>
             <button className={styles.closeOverlayButton} onClick={onClose} aria-label="Close Menu">
@@ -11,18 +14,18 @@ const OverlayMenu = ({ visible, onClose, onHome, onBack, parentStoryTitle, curre
             </button>
 
             <ul className={styles.menuList}>
-                <li className={styles.menuItem}>
-                    <button className={styles.menuButton} onClick={onHome}>
-                        Back to Hub
-                    </button>
-                </li>
-                {onBack && parentStoryTitle && (
+                {hasParent && (
                     <li className={styles.menuItem}>
-                        <button className={styles.menuButton} onClick={onBack}>
-                            Exit to "{parentStoryTitle}"
+                        <button className={`${styles.menuButton} ${styles.primaryButton}`} onClick={onBack}>
+                            ← Back to "{parentStoryTitle}"
                         </button>
                     </li>
                 )}
+                <li className={styles.menuItem}>
+                    <button className={styles.menuButton} onClick={onHome}>
+                        {hasParent ? 'Back to Hub' : '← Back to Hub'}
+                    </button>
+                </li>
                 <li className={styles.menuItem}>
                     <button className={styles.menuButton} onClick={onRestart}>
                         Restart {currentStoryTitle ? `"${currentStoryTitle}"` : 'Topic'}
@@ -31,7 +34,6 @@ const OverlayMenu = ({ visible, onClose, onHome, onBack, parentStoryTitle, curre
                 <li className={styles.menuItem}>
                     <button className={styles.menuButton} onClick={() => {
                         navigator.clipboard.writeText(window.location.href);
-                        // In a real app we might show a toast, but alert is fine for now
                         alert("Link copied to clipboard!");
                     }}>
                         Share This Thought

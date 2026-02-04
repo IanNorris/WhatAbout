@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Layout from './components/Layout';
 import Hub from './components/Hub';
 import TopicView from './components/TopicView';
@@ -12,6 +12,9 @@ const App = () => {
   const [error, setError] = useState(null);
   const currentStackItem = navStack[navStack.length - 1];
   const currentView = currentStackItem.view;
+  
+  // Track navigations we initiated to avoid hashchange re-triggering them
+  const pendingNavigationRef = useRef(null);
 
   // Initialize from URL on mount
   useEffect(() => {
@@ -65,6 +68,12 @@ const App = () => {
         // Navigate back to hub
         setNavStack([{ view: 'hub' }]);
       } else if (route.type === 'story') {
+        // Check if this is a navigation we initiated (not browser back/forward)
+        if (pendingNavigationRef.current === route.storyId) {
+          pendingNavigationRef.current = null;
+          return; // We already handled this navigation
+        }
+        
         // Check if we're already on this story
         if (currentStackItem.view === 'topic' && currentStackItem.story?.id === route.storyId) {
           return; // Already on this story
@@ -103,6 +112,9 @@ const App = () => {
   }, [currentStackItem]);
 
   const navigateToTopic = (story, savedState = null) => {
+    // Mark this as a pending navigation so hashchange handler ignores it
+    pendingNavigationRef.current = story.id;
+    
     // Update URL
     navigateToStory(story.id);
     
@@ -111,15 +123,19 @@ const App = () => {
       ? currentStackItem.story.title 
       : null;
     
+    const effectiveParentTitle = story.parentStoryTitle || currentParentTitle;
+    console.log('navigateToTopic:', { storyId: story.id, storyParentTitle: story.parentStoryTitle, currentParentTitle, effectiveParentTitle });
+    
     setNavStack(prev => [...prev, { 
       view: 'topic', 
       story,
-      parentStoryTitle: story.parentStoryTitle || currentParentTitle,
+      parentStoryTitle: effectiveParentTitle,
       storyState: savedState // Store any saved state
     }]);
   };
 
   const saveStateAndNavigate = (storyState, newStory) => {
+    console.log('saveStateAndNavigate called:', { newStory, parentStoryTitle: newStory.parentStoryTitle });
     // Save current story's state
     setNavStack(prev => {
       const newStack = [...prev];
@@ -144,6 +160,8 @@ const App = () => {
       if (newTop.view === 'hub') {
         navigateToHub();
       } else if (newTop.view === 'topic') {
+        // Mark as pending so hashchange doesn't reload the story
+        pendingNavigationRef.current = newTop.story.id;
         navigateToStory(newTop.story.id);
       }
       

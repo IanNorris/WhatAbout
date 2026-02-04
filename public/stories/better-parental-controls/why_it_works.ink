@@ -75,12 +75,12 @@ Parental controls and education:
 *   [How can I help make this happen?]
     If you're a parent: Learn about parental controls and use them. Have ongoing conversations with your children.
     
-    If you're a policymaker: Invest in parent education programs. Require platforms to offer robust parental feature controls.
+    If you're a policymaker: Invest in parent education programs. Require platforms to offer robust parental controls.
     
     If you're a technologist: Build better parental control tools. Make safety the default.
     
-    -> END
+    ~ exit()
 
 *   [I understand now.]
     The path forward involves empowering families with effective tools.
-    -> END
+    ~ exit()

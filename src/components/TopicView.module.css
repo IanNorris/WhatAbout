@@ -62,6 +62,30 @@
     color: var(--color-text-main);
 }
 
+.parentBanner {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 80px;
+    background: rgba(26, 35, 50, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    z-index: 100;
+    transition: background 0.2s, transform 0.2s;
+    text-align: left;
+}
+
+.parentBanner:hover {
+    background: rgba(40, 55, 75, 0.95);
+    transform: translateX(-2px);
+}
+
 .pageCard {
     max-width: 700px;
     width: 100%;
@@ -196,6 +220,20 @@
 .disabledButton:hover {
     transform: none;
     box-shadow: none;
+}
+
+.otherChoiceButton {
+    opacity: 0.5;
+    background: transparent;
+    border-color: rgba(123, 163, 255, 0.3);
+    cursor: pointer;
+}
+
+.otherChoiceButton:hover {
+    opacity: 0.9;
+    background: rgba(123, 163, 255, 0.15);
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
 }
 
 .choiceTitle {

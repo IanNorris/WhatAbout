@@ -27,4 +27,10 @@ We can provide resources: parental controls, education programs, open conversati
 
 But we can't—and shouldn't—build a surveillance state trying to eliminate all risk. The cure would be worse than the disease.
 
--> END
+*   [Tell me about better parental controls.]
+    ~ navigateTo("better-parental-controls")
+    -> END
+
+*   [I've seen enough.]
+    ~ exit()
+    -> END

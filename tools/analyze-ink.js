@@ -96,8 +96,20 @@ function analyzeStory(storyJson) {
         let hasEnd = false;
         let hasDivert = false;
         let hasText = false;
+        let hasExitCall = false;
         let hasNestedArrays = false;
         let choiceBranches = null;
+        
+        // Helper to check if content contains navigateTo or exit calls
+        const checkForExitCalls = (contentToCheck) => {
+            const str = JSON.stringify(contentToCheck);
+            return str.includes('navigateTo') || str.includes('"x()":"exit"');
+        };
+        
+        // Quick check: if the path content mentions exit/navigateTo, it's a valid exit
+        if (checkForExitCalls(content)) {
+            hasExitCall = true;
+        }
         
         for (let i = 0; i < content.length; i++) {
             const item = content[i];
@@ -130,7 +142,9 @@ function analyzeStory(storyJson) {
         
         // A dead end is text without forward progress
         // Don't flag if there are nested arrays (they likely contain the continuation)
-        if (hasText && !hasChoices && !hasEnd && !hasDivert && !hasNestedArrays) {
+        // Skip path "0" which is just initial content before -> Start divert
+        // Also skip if there's an exit() or navigateTo() call
+        if (hasText && !hasChoices && !hasEnd && !hasDivert && !hasExitCall && !hasNestedArrays && pathName !== '0') {
             deadEnds.push({
                 path: pathName,
                 reason: 'Content ends without choices, END, or divert'
@@ -151,6 +165,17 @@ function analyzeStory(storyJson) {
                 let hasExitCall = false;
                 let hasNestedChoices = false;
                 
+                // Helper to check if content contains navigateTo or exit calls
+                const checkForExitCalls = (content) => {
+                    const str = JSON.stringify(content);
+                    return str.includes('navigateTo') || str.includes('"x()":"exit"');
+                };
+                
+                // Quick check: if the branch content mentions navigateTo, it's a valid exit
+                if (checkForExitCalls(branchContent)) {
+                    hasExitCall = true;
+                }
+                
                 for (const item of branchContent) {
                     if (typeof item === 'string') {
                         // Check for END command (lowercase "end" string)
@@ -169,11 +194,15 @@ function analyzeStory(storyJson) {
                         }
                         // Check for divert
                         if (item['->'] !== undefined) {
-                            // Check if it's an exit() call (intentional exit)
-                            if (typeof item['->'] === 'string' && item['->'].includes('exit')) {
+                            // Check if it's an exit() or navigateTo() call (intentional exit)
+                            if (typeof item['->'] === 'string' && (item['->'].includes('exit') || item['->'].includes('navigateTo'))) {
                                 hasExitCall = true;
                             }
                             hasDivert = true;
+                        }
+                        // Check for function calls - ev, str, and /str pattern with navigateTo
+                        if (item.f === 'navigateTo' || (item.x && item.x.includes && item.x.includes('navigateTo'))) {
+                            hasExitCall = true;
                         }
                         // Check for nested choices
                         if (item['*'] !== undefined || item['+'] !== undefined) {

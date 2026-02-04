@@ -17,12 +17,6 @@ description: Digital ID. Age verification. Facial recognition. What happens when
 file: main.ink
 release: true
 
-id: facial-recognition
-title: Facial Recognition
-description: How facial recognition is spreading across the UK—and why accuracy matters.
-file: main.ink
-release: true
-
 id: childrens-wellbeing-bill
 title: Children's Wellbeing Bill
 description: What's in the Children's Wellbeing and Schools Bill? An overview of key provisions.

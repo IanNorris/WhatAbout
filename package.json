@@ -12,6 +12,7 @@
     "compile-ink": "node tools/compile-ink.js",
     "compile-ink:watch": "node tools/compile-ink.js --watch",
     "analyze-ink": "node tools/analyze-ink.js",
+    "test-stories": "node tools/test-stories.js",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
