@@ -25,9 +25,9 @@ The parent isn't monitoring anymore. Why would they? The law "handled it." But t
 === Security_Theater ===
 Exactly. The appearance of protection without the substance.
 
-We've seen this with the Online Safety Act and adult content. Age verification pushed people to less regulated sites—darker corners of the internet where there's even less oversight.
+We're already seeing this with adult content age verification. Nearly half of users report still accessing content with no age checks—they've simply moved to sites that don't comply.[5][3]
 
-The ban doesn't make harmful content disappear. It just pushes people to more harmful places to find it.
+The ban doesn't make harmful content disappear. It just pushes people to less regulated places to find it.
 
 *   [Where do banned kids actually go?]
     -> Unregulated_Alternatives

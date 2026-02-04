@@ -36,11 +36,11 @@ The question isn't "Is social media harmful?" It's "Is a complete ban better tha
     -> Next_Steps_Choice
 
 === Research_Details ===
-Research on youth device bans has found:
+Research on youth social media restrictions has found:[2][3]
 • Bans may reduce some harms while also restricting positive experiences
+• Positive experiences include social support and connections, particularly for those with limited local options
 • Young people may migrate to less-regulated platforms
 • Parents may reduce monitoring when bans exist
-• Social connection impacts vary by individual circumstances
 
 *   [This creates false security?]
     -> False_Sense_Of_Security

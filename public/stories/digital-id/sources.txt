@@ -1,0 +1,13 @@
+# Sources for Digital ID
+#
+# Format:
+#   [number]: title
+#   url: full URL
+#
+# Use a blank line to separate sources.
+
+[1]: Whistleblowers raise extreme concern over GOV.UK One Login security
+url: https://uk.news.yahoo.com/whistleblowers-raise-extreme-concern-security-072634262.html
+
+[2]: TechReviewer: Discord's 2.1M photo leak
+url: https://www.techreviewer.com/gaming-news/2025-10-08-discords-21m-photo-leak-shakes-user-trust/

@@ -1,9 +1,10 @@
 === Circumvention_Reality ===
-In Australia, about 1 in 3 parents are planning to help their children dodge the ban. # diagram: circumvention_reality.jpg
+# diagram: circumvention_reality.jpg
+In Australia, about 1 in 3 parents are planning to help their children bypass the ban.[4]
 
-The law says these platforms are too dangerous. But parents—who see their kids' social needs—are actively helping them bypass it.
+The law says these platforms are too dangerous.But parents—who see their kids' social needs—are actively helping them bypass it.
 
-Other kids are stealing IDs, using sibling photos. These aren't "bad kids"—they're socially isolated teens trying to connect with friends.
+Other kids are using creative workarounds, including using photos of pets or AI-generated faces to pass verification. These aren't "bad kids"—they're socially isolated teens trying to connect with friends.
 
 *   [Why would parents help them bypass it?]
     -> Parent_Motivation

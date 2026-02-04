@@ -109,12 +109,12 @@ These systems will be breached. Not "if," but "when."
     -> Normalization_Concern
 
 === Breach_Examples ===
-We've already seen this play out:
-• 2.1 million age verification photos stolen from Discord
-• Multiple breaches of "secure" identity verification systems
+Age verification data is already being compromised:[6]
+• 2.1 million age verification photos stolen from Discord in 2025
+• Multiple breaches of identity verification systems
 • Age verification data being sold to third parties
 
-The question: are we willing to create this surveillance infrastructure—with all its risks—for a ban children can bypass with a VPN?
+The question: are we willing to create this surveillance infrastructure—with all its risks—for a ban that can be bypassed?
 
 *   [Tell me about the privacy normalization.]
     -> Normalization_Concern

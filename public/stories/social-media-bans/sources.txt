@@ -1,0 +1,25 @@
+# Sources for Social Media Bans
+#
+# Format:
+#   [number]: title
+#   url: full URL
+#
+# Use a blank line to separate sources.
+
+[1]: IFS: Effects of youth clubs on education and crime
+url: https://ifs.org.uk/publications/effects-youth-clubs-education-and-crime
+
+[2]: ScienceDirect: Social media bans research
+url: https://www.sciencedirect.com/science/article/pii/S258975002500024X
+
+[3]: TechDirt: Migration to unregulated sites
+url: https://www.techdirt.com/2025/09/08/uk-age-verification-data-confirms-what-critics-always-predicted-mass-migration-to-sketchier-sites/
+
+[4]: Australian social media ban bypass methods
+url: https://www.myprivacy.blog/australian-kids-bypass-social-media-ban-with-dog-photos-and-ai-generated-faces/
+
+[5]: Sky News: Age verification bypass rates
+url: https://news.sky.com/story/nearly-half-of-porn-users-are-still-seeing-porn-with-no-age-checks-says-survey-13491347
+
+[6]: TechReviewer: Discord's 2.1M photo leak
+url: https://www.techreviewer.com/gaming-news/2025-10-08-discords-21m-photo-leak-shakes-user-trust/
