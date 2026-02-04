@@ -1,0 +1,109 @@
+# Sources for The Big Picture
+
+[1]: China's Social Credit System Explained
+url: https://www.wired.co.uk/article/china-social-credit-system-explained
+
+[2]: Investigatory Powers Act and Internet Connection Records
+url: https://www.openrightsgroup.org/explainers/investigatory-powers-act/
+
+[3]: Big Brother Watch - Stop Facial Recognition Campaign
+url: https://bigbrotherwatch.org.uk/campaigns/stop-facial-recognition/
+
+[4]: Online Safety Act - Scanning Powers
+url: https://www.openrightsgroup.org/blog/online-safety-act-a-dangerous-step-towards-state-surveillance/
+
+[5]: TechDirt - UK Age Verification Data Shows Migration to Non-Compliant Sites
+url: https://www.techdirt.com/2025/09/08/uk-age-verification-data-confirms-what-critics-always-predicted-mass-migration-to-sketchier-sites/
+
+[6]: Big Brother Watch - Wrongful Shoplifter Accusation
+url: https://bigbrotherwatch.org.uk/press-releases/my-mum-is-scared-to-go-shopping-alone-after-facial-recognition-wrongly-branded-her-a-shoplifter/
+
+[7]: New York Times - Google Flagged Father's Medical Photos as Abuse
+url: https://www.nytimes.com/2022/08/21/technology/google-surveillance-toddler-photo.html
+
+[8]: Hong Kong National Security Law and Retroactive Prosecution
+url: https://www.hrw.org/news/2020/07/01/hong-kong-national-security-law-threatens-fundamental-rights
+
+[9]: Wired - Roblox AI Age Verification Problems
+url: https://www.wired.com/story/robloxs-ai-powered-age-verification-is-a-complete-mess/
+
+[10]: Hash Collision Attacks on Client-Side Scanning
+url: https://arxiv.org/abs/2108.13873
+
+[11]: Big Brother Watch - Checkpoint Britain Report
+url: https://bigbrotherwatch.org.uk/wp-content/uploads/2025/09/Checkpoint-Britain.pdf
+
+[12]: Liberty Investigates - Police Biased Facial Recognition
+url: https://libertyinvestigates.org.uk/articles/police-forces-biased-facial-recognition-technology/
+
+[13]: NIST Face Analysis Technology Evaluation 2024
+url: https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8525.pdf
+
+[14]: RIPA Misuse by Local Councils
+url: https://www.theguardian.com/world/2016/dec/25/british-councils-used-investigatory-powers-for-dog-fouling
+
+[15]: EU Chat Control Proposal
+url: https://www.patrick-breyer.de/en/chat-control-2-0-eu-governments-agree-on-mass-surveillance-of-private-messages/
+
+[16]: Chilling Effects of Surveillance on Internet Use
+url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2769645
+
+[17]: Edward Snowden and NSA Mass Surveillance
+url: https://www.theguardian.com/us-news/the-nsa-files
+
+[18]: Undercover Police Inquiry - UK
+url: https://www.ucpi.org.uk/
+
+[19]: Australia Police Used COVID Contact Tracing Data
+url: https://www.theguardian.com/australia-news/2022/jun/14/western-australia-police-access-covid-app-data
+
+[20]: EU AI Act - Facial Recognition Restrictions
+url: https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law
+
+[21]: GOV.UK One Login Red Team Breach
+url: https://hansard.parliament.uk/commons/2025-10-21/debates/7ACB6A4E-1A1C-4B1F-8197-E0A4AFA18C7F/MandatoryDigitalID
+
+[22]: Tony Blair Institute - Digital ID Is the Disruption the UK Desperately Needs
+url: https://institute.global/insights/tech-and-digitalisation/tony-blair-digital-id-is-the-disruption-the-uk-desperately-needs
+
+[23]: Politico - Tony Blair admits UK will need persuading on digital ID
+url: https://www.politico.eu/article/former-pm-tony-blair-admits-uk-will-need-lpersuading-to-embrace-digital-id/
+
+[24]: UK to force digital ID - Blair Institute claims 62% support
+url: https://sociable.co/government-and-policy/uk-force-digital-id-blair-institute-brits-favor-digital-identity/
+
+[25]: The National - Petition against Tony Blair's digital ID scheme
+url: https://www.thenational.scot/politics/25558249.can-end-scheme-resurrect-tony-blairs-digital-id-card-dream/
+
+[26]: Daily Sceptic - Tech Giant and ID Card Contract
+url: https://dailysceptic.org/2025/09/28/is-the-tech-giant-who-gave-blair-257-million-in-line-for-huge-id-card-contract/
+
+[27]: European Conservative - Tony Blair and Larry Ellison Lobbying
+url: https://europeanconservative.com/articles/news-corner/tony-blair-larry-ellison-lobbying-corruption-national-id-cards-uk/
+
+[28]: Factually - Who profits from UK Digital ID Scheme
+url: https://factually.co/fact-checks/politics/uk-digital-id-scheme-beneficiaries-1a0f4c
+
+[29]: Known Traveller Digital Identity Initiative
+url: https://ktdi.org/
+
+[30]: ID2020 Digital Identity Alliance
+url: https://id2020.org/
+
+[31]: World Economic Forum - Reimagining Digital ID Report
+url: https://www.weforum.org/publications/reimagining-digital-id/
+
+[32]: Bank of England - The Digital Pound
+url: https://www.bankofengland.co.uk/the-digital-pound
+
+[33]: Digital Pound Consultation Response Summary
+url: https://www.iif.com/portals/0/Files/content/32370132_2024-02-29_digital_pound_consultation_response_-_briefing_note.pdf
+
+[34]: UK Finance - Digital Pound Analysis
+url: https://www.ukfinance.org.uk/news-and-insight/blog/where-are-we-now-understanding-bank-englands-latest-digital-pound-analysis
+
+[35]: China Digital Yuan Adoption
+url: https://sociable.co/government-and-policy/china-digital-yuan-cbdc-cash-democratizing-banking-wef/
+
+[36]: CBDC Surveillance and Programmable Money
+url: https://stateofsurveillance.org/articles/government/cbdc-surveillance-control/

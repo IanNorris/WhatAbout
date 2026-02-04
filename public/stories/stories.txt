@@ -11,6 +11,18 @@
 #   file: filename.ink (relative to stories/{id}/ folder)
 #   release: true/false (false = dev only, true = include in production)
 
+id: big-picture
+title: The Big Picture
+description: Digital ID. Age verification. Facial recognition. What happens when you combine them all?
+file: main.ink
+release: true
+
+id: facial-recognition
+title: Facial Recognition
+description: How facial recognition is spreading across the UK—and why accuracy matters.
+file: main.ink
+release: true
+
 id: childrens-wellbeing-bill
 title: Children's Wellbeing Bill
 description: What's in the Children's Wellbeing and Schools Bill? An overview of key provisions.

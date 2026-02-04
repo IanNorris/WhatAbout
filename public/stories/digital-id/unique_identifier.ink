@@ -20,7 +20,7 @@ Clause 4 inserts new sections into the Children Act 2004.[14]
 
 Key provisions:
 
-The Secretary of State specifies the identifier via **regulations**—not primary legislation. Parliament doesn't get a full vote.
+The Secretary of State specifies the identifier via regulations—not primary legislation. Parliament doesn't get a full vote.
 
 "Designated persons" must include the identifier when processing children's data. Who counts as designated? Also set by regulations.
 
