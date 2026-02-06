@@ -16,6 +16,15 @@ const App = () => {
   // Track navigations we initiated to avoid hashchange re-triggering them
   const pendingNavigationRef = useRef(null);
 
+  // Update document title based on current view
+  useEffect(() => {
+    if (currentView === 'hub') {
+      document.title = 'Think of the kids...';
+    } else if (currentView === 'topic' && currentStackItem.story?.title) {
+      document.title = `${currentStackItem.story.title} - Think of the kids...`;
+    }
+  }, [currentView, currentStackItem.story?.title]);
+
   // Initialize from URL on mount
   useEffect(() => {
     const initializeFromURL = async () => {
