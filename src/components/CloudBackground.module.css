@@ -6,10 +6,10 @@
     height: 100%;
     z-index: -1;
     overflow: hidden;
-    background: #0a0e1a;
+    background: linear-gradient(135deg, #0a0e1a 0%, #0f1525 50%, #0a0e1a 100%);
 }
 
-/* Subtle grid pattern - surveillance grid */
+/* Simple vignette via pseudo-element - no animation */
 .container::before {
     content: '';
     position: absolute;
@@ -17,33 +17,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(99, 102, 241, 0.04) 1px, transparent 1px);
-    background-size: 50px 50px;
-    animation: gridPulse 6s ease-in-out infinite;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.5) 100%);
+    pointer-events: none;
 }
 
-/* Scanning line effect - very subtle */
-.container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        rgba(255, 255, 255, 0.08) 20%,
-        rgba(255, 255, 255, 0.15) 50%,
-        rgba(255, 255, 255, 0.08) 80%,
-        transparent 100%
-    );
-    box-shadow: 0 0 30px 4px rgba(255, 255, 255, 0.03);
-    animation: scanLine 8s linear infinite;
-}
-
-/* REC indicator - pixelated font */
+/* REC indicator */
 .recIndicator {
     position: fixed;
     top: 16px;
@@ -57,8 +35,6 @@
     color: rgba(255, 60, 60, 0.9);
     letter-spacing: 3px;
     z-index: 1;
-    text-shadow: 0 0 10px rgba(255, 60, 60, 0.5);
-    image-rendering: pixelated;
 }
 
 .recDot {
@@ -67,10 +43,9 @@
     background: #ff3c3c;
     border-radius: 50%;
     animation: recBlink 1.5s ease-in-out infinite;
-    box-shadow: 0 0 8px 2px rgba(255, 60, 60, 0.6);
 }
 
-/* Timestamp in corner - pixelated font */
+/* Timestamp in corner */
 .timestamp {
     position: fixed;
     bottom: 16px;
@@ -80,7 +55,6 @@
     color: rgba(255, 255, 255, 0.3);
     letter-spacing: 2px;
     z-index: 1;
-    image-rendering: pixelated;
 }
 
 /* Camera ID label */
@@ -95,78 +69,12 @@
     z-index: 1;
 }
 
-/* Vignette effect - darkens edges like camera lens */
-.vignette {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.5) 100%);
-    pointer-events: none;
-}
-
-/* TV static noise texture overlay */
-.noise {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.06;
-    pointer-events: none;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAOhklEQVR4nO1dbVczNwy8//+f2qZJmxcgEEIgECC8t33a3f3a2ratGUm2k+zunnvO7cfz5M3yaDSSbGf3P/7+KzunU/rfr8fp3/vb/fR+//telebt9P/6c/37PE1Pz/4+/7lP0+8/LtO/d8cL+x7c+zjND87X9Pb2djqfz+X9+3g8ppubm+nt7W169+5d+v79e3t//e8y/fl9z9b+epvunnzf/4tren5+np6fn8t53d3cpC9fvkz/+vnT9Hd+HJKLJj98/fo1vX//Pr2+vpbzSC1Pz5fpy++X6c+/92vn0H7b8fj/5+f+mK+Hw/RwOEznV69K8pCEtCSvpPaQz0/P03G+l/P2yePxuCT5Pnmdvn77nm7vF+w/vE5PRweWv5dre3hYri2/tvwcPuzrMn28Opbzujst6cbHMx/Ox8fH8rcPh8P053ZXy7OhXBN/bP673FWEY7DJXQ6/Hl+nc3k5T4+v59rxkK+B15N/L/dyF98v0+/DKd3dHRz+8i/59/z4+rrc6+PHj+W8Hx8fF0Hkv/Xp5TWd754dqvxa0t3x0eLH8aHc+zw9OZ/S7fX1MsIFbSFfn5Zvs/Nx+vX+aXnfcTpPj/e7lhefLtPd3d1i5/bhPn27v0u/v96V8zicTtOPu5uSH/dPjxbMfUlv+fOPx/v0+HCf7u8P6f7lmO7uzuW/80v+b/5tf+/uTmkBJdPzy6s0O0K6yxe2IPRL/t6P+3Sq/s8v+TH/rbt8LLe7h3S+T/+9vktJEHk6H59S+u14m45/HtLtaV8dz+n+cJ8O0666xfT49JTu0s/18TSnH/laPt7f3y8C0KfbO/v89HB3X87n9v6h5F0pG+5y3h/P5VrvDqf0cHf3d9me89NyLke+5ofLIV1f36TH+4e/0pdyLqfjqRRHkM0uG6+8Pp/PKV/o4fAqvZzP6fXV0ZH+bz7e3t6mhzf3afry/D2d0t3hqZzrqTx3+nHcLef08fZU8jT/nX8fl/O5u8/p4e6+5O3d7X3JI7u+h4d0+t9Denh4SNdPD+X/h9NT+e/ycpfO+X/HL+n+bp8e751M6e7+dXp4OC6OpUP69HTK/37S7e26zs8PSaD//3g6Ledy2p3T/cOh/E6/8zmdTqeyfPn6/PBQrjWnw3JNd+lxOZenx5dlmfN9vLs9LGl+PKe74zk9Pp7Sw/1TuYbHh0M67e5KG97f+3V4fDyl43FfzimXr/fLL5fF1/JZHJbp8XhOf26/l98/3h5Luc+/H+4eLJj78+FpwfXp9LhcC/e0PB7T8bgv13JI9+WeHg5PKZ/b7e19ye9zurd7d14e8708P50XOz+dd+X+cn97PDyVa8zl1iFdy/Vyr3ePT+V/p92xXOvtw96WPaen81M6Hu/Kub29+0vG8/V4fEq3f/5c7jVfz+F4Wq71/u5uyZPzfnp4+JPO5doeH+9LW93dP5T7z+W/h8c7e/c/ybPzKR3uh1Lm3t7e+rnd3Nyku7u76e729u+1Pz4ul0Xa5XNP6fbPcbq9PS7Xl6/38e5h+ft4m5b/53y5vTstafmb+/R43C3XdNjfp8PhUO77/v6+5NOT/XJM+ffl4S6d9/fp8Hhs/39MfO+P5Zruyvkci/1u7+/SYT8t/3+4S6fTqeT5ITt4vtbjaZfu7h/Swz1K/8PhNt3e3qZ7u/YnW+bj8lnOy3m9vfWlnNPd7aGcx+3t/uLv++X/+XoW++7KNd3e3d7blqfT7mJfp4fHdN49Lo7tD+m0u7MlH56x523J69N5n07H/XLdx/xzfl/n3KHdLd9/Pj0ty3A67svvJw/+2y9l6clvOo7zeb+k+fyPT4/p0Zb19u60LF9+t3S3d2l/e7f8dsiO8PaU7u19ORJPt8dyX+f9qdzfcfk+l2Xcpsfjfcnj237/i5Tlz4d8rEP5O/+b73W/5MujXdvd/n65t1JG7w4p7Q/L/d3eumh0d7+cf8nH3d3iI3b/tg63izf35Vq4L67/bsmnw/6w8Pf+/v7v7+Td/d1F/jF+eyzB5J/3S/7v/f08PS3TsiwcYynnlI/lcCj/u9jj4Vzu++72fjnn/HuGtPn/h3tLz3bn5Z5sWU635TwXWxz2C94XfN/dlmV6fNjbse/S4fay3Mcpf35Ip/t9Oj7cp7vjQ3lP/n+m+37xr/xxTPt7y+f9fvF5h/d/e3tfri9fH8c8HO7T0R3VqeSfLeP+7j7tdveWj3bfx/v7JU8Oph+c7++/Y2j39ylk7W6P6f52X36/P9pv+bxv7Rxu034B/bLcWiDPP9w9Lud3d+c4upR8enqyQJfPL+XRLj1YJub8/+/7j3l+vyvLy7Ie0+3uaJhfHstynS7t/X/v98ty7R7ScX8q98AyLvmUvOPz8t7FzreH++V+Du+P6fBuWa7zdvnM5eeQju/25To+Ph7S07I8i93/kB4e9+n4YMdx+e9wLNd+2D1YmnlRFj+eCrT/bOdy+PjJ6d3T03m5/9u7u3I+u30q95LPJcv67ni34PkpHZblTvv9fTqc9ukfh0dH/PHpsBwHfEvLNaXTPu33+3K/x6dT+e3x8X7570/6b3ou/+f7OOzPZZnzb/b//0l3F9jFNu/3t8vnudzLw8Ny/vb7qfz+dLTf7pf/L/Zz+XxZ8mC/XI/XW07p+LRb0k7H83Itu7sTv+dp9/T3+/O13N+e0s7u5dFtjPTp4eH070D+9HRf8lkQF17PiI7HL4n8dHtb8i5fC9fB7/mx8EuWPaZd8YFT+kfYfLdb8rXcdz6/vM6/H8v5L5/7fb4//7Y7pUNSj/uHdDxPf8/3kHbnabnGBfvJMXx8Or47lxT4dD4e/n5v+Vs+nPLnYS9fyp/y5+nykI7v/t/pdXru/m+xwdxCPZ7v7g+Wzrd3yyrl4+62/HZ3++Tv9NzhkO8F/6f9Y9ofz4tjuHXdl9/u92lv32n/7pT20305n0M+HvYPJ/bJNR5PC5YXv+pPpf2Y9ofH5bqW6zjs/5Z5/K+/l3S3/2y5dD6lu7+JgvvP+D59KMs6Pjym/SF6vLtLd3/Ptdj9vl/Jzb/n89R8yf/K+f/z/v/gDnbvT+VcDufjkufJQTu5n0z7a/+03FO6//v5/HBcyuybT7u04/5Paf/puLyd/h7Xnvp7iWmHdz/nfXb5+77g7r68/X/Y2S/p8O7xb8ruR3n1P/3xP5/+ePj89PFp5/IcD+n4LqPpcfkvlzmd0u3xdknHw/2FR+k+LZg9/H1+X7eH0pYX+z3sku1zu3/4d+/+vWW5hvR0/p/p+O5Q/n847P9eb+Lv/ydnPqXTk1/Dw+3t0m1KBb79dv5gv6dzOjye/6Yd09Pt7vRBv+33f/9+3j/tDuXa79O+lJvp8f6UnC/L/Z/u7v+h/e5vlmPanU7pePx7/OOh3P+/fP57vrv7f8dvTwu+T+X39FT//1w+T/f2+/Fc/v8k/0v+Xv75P/5OP5f/pe/+hYcWuBfbXuBgurvf07t/sA7+H+5LPu33+X7+/qRzy7NyP/+47p/Pd+fdfkF69w72L5zyOd0fDuWEOd/TIT0d937tf+93SjvbJsv27f+D/fz+47vUP++W/xfcpmV5ku+/2CddIvn44uG+/HY8HH/+/+H+LiF5Of9//g9E6/8P9+ky7f+dXD6Tvv5zLnONP/79/g4AaNodyu+XP/F4X8LN/vv3WIe/xzTn9u90c3t83t3bsiX/9vxg/33K+Xv+t63DuzP/2z+X/xdO7f7HNqXz7fHvbQJrAzXdH9I++c1a2i33np7+2CftS8j+eNr/O+b8tSd74PHevvv8Eb/D5pxruf97j4d/+Obu/j7t9/uL81/+b4N1LnZKP5cfl2W9v/2a/27/f/7z7yyJ3d7+zrNdqddgn0tLX/7e/4dl/e/udun8t+z2d7xzOt0v0+64L/f9/z7f/f26wPN9Ob/ldQn/fvn/Ptn6T7f3t/btH4pjDu17SqfHu3S7v0+7x3v7B5Rvc/98TO8Pp8fFiHe7U7rP/0+7Yzo/+DLf7Q8l/X/v/fP//e/+p/Ox/H/57Nf+3C4vB/5O0+6UDofDP/+57O+fkvvT7v7f0fz/Z/kXd1j+P+X/pfv07/n+uM/p8O5fyYPb0+00XT693V/sj+X+y//v7P9LsPv/3/8fdklE53R/cJjtbs8F4y/Hx3L/u1u7vrt/+f/cAb9Lp/vpb9rv/2X38u8u7Tb/n+u5S/t0XM/lfjunp7u7dHtb7Hf/+D/x3/8/Lvf4dHcs+H/8+//nJa2Oy/V+vnsq53J7e2//0v/Pv/N+/w/L5+3xePmvf+dyb7s7l3z/LtPu8X653/0uH/8+v3+u/9J6+p8Xx3K4x375+i/57/f7clzO8//z/v+fzn/Kn/S/9/t/SN4B2B33abcrk/TP/+Xy7/dP+x0/+/+2h/+z5f97l++Wv8f09PBuSdu/u+/S49Ptcv9P/5b9ny5h9O7u+J/u9ulsv/+9zuf7/5//0/8f9n/u/C+u9L/+/ymd/+3/7P93h/vF5s+P/0s+fDyfj+m0x75P/0v7f+93t09pWm5j/+8+Pc7/j3Z43d3dLc7zzv7B/99y5/1+/+/dkfLdu7t0v5zrbtk+/T/5t/N//vM/2H7Jf9u/u/O/+3v+fy6/f/8/++/w/pCOh1Na7u0f6X7bH+/Ktd/vpue7czrYub87bvex+/tLP+z+bv+v+Tx/v/ux/+c9Py39n/70f7Kez3/hJNP+Pu1s24f747Kt7d/r8pDO98f0lO6W7W63T7dy3P8/+E/pe0qH3Sm9++dYxvv0f+f+3D3sLJjYH0s+3KXTwf7hPu0f9un+YMe+P5fz2S/nt/+T/t7G/h+n3f0/+v3/e3n8v/Pp/Jxe3d4u57D8n4/H/x/ufP+P/8/lsP9D+ef/f7r8++nHf7i/2/v0z/F5/ofl/b/Tvvz/t/+2+y//P6f7/f6i5OXc7/4ef17O8Pb29P8H9lv+A/sANT0AAAAASUVORK5CYII=");
-    background-repeat: repeat;
-    animation: noiseFlicker 0.15s steps(2) infinite;
-}
-
-/* Horizontal scan lines overlay */
-.scanlines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.08) 0px,
-        rgba(0, 0, 0, 0.08) 1px,
-        transparent 1px,
-        transparent 3px
-    );
-    pointer-events: none;
-    opacity: 0.3;
-}
-
-/* Hide JS particles */
+/* Disabled - these were causing performance issues */
+.vignette,
+.noise,
+.scanlines,
 .particle {
     display: none;
-}
-
-@keyframes gridPulse {
-    0%, 100% {
-        opacity: 0.6;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-
-@keyframes scanLine {
-    0% {
-        top: -2px;
-        opacity: 0;
-    }
-    3% {
-        opacity: 1;
-    }
-    97% {
-        opacity: 1;
-    }
-    100% {
-        top: 100%;
-        opacity: 0;
-    }
 }
 
 @keyframes recBlink {
@@ -175,14 +83,5 @@
     }
     50% {
         opacity: 0.3;
-    }
-}
-
-@keyframes noiseFlicker {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-10px, -10px);
     }
 }

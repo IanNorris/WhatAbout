@@ -26,9 +26,6 @@ const CloudBackground = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.vignette}></div>
-            <div className={styles.noise}></div>
-            <div className={styles.scanlines}></div>
             <div className={styles.recIndicator}>
                 <span className={styles.recDot}></span>
                 REC
