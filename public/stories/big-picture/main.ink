@@ -101,9 +101,9 @@ The current government's digital ID push wasn't in Labour's election manifesto. 
 
 # diagram: ../digital-id/tech_stack.jpg
 
-Oracle, the tech giant founded by Larry Ellison, holds over £1 billion in UK government contracts. [26]
+Oracle, the tech giant founded by Larry Ellison, holds over £1 billion in UK government contracts, including a decade-long deal to provide cloud infrastructure across four government departments. [26]
 
-Reports indicate Oracle is positioned as a frontrunner to provide infrastructure for the UK's "One Login" digital ID system.
+Oracle's existing government relationships position it to benefit from further digital transformation projects, including identity systems.
 
 Here's where it gets interesting: Larry Ellison's Ellison Institute has donated or pledged approximately £257 million to the Tony Blair Institute. [27]
 
@@ -204,11 +204,11 @@ Once the infrastructure exists, future governments could change the rules.
 
 China's digital yuan shows what's possible.
 
-Over 260 million wallets have been opened. The currency is used for salaries, transport, and retail. [35]
+Hundreds of millions of wallets have been opened. The currency is used for salaries, transport, and retail. [35]
 
 It's fully programmable. Stimulus payments have been issued that expire if not spent within weeks.
 
-Most concerning: it integrates with China's social credit system. Citizens on blacklists—for unpaid fines, "spreading misinformation," or other infractions—can have their digital wallets frozen or suspended. [36]
+Most concerning: its centralised architecture enables financial control. Bank accounts and payment apps have already been frozen for court judgments, fines, and political infractions — the digital yuan extends this capability to all transactions. [36]
 
 Every transaction is tracked in real time by central authorities.
 
@@ -260,7 +260,7 @@ It was built piece by piece: identity verification, facial recognition in public
 
 Each piece had a stated purpose. Fraud prevention. Public safety. Social harmony.
 
-The result? Citizens can be denied train tickets, loans, or jobs based on their "score." Attending protests, posting criticism, or associating with the wrong people affects that score. [1]
+The result? Citizens can be denied train tickets, loans, or jobs based on government blacklists. Attending protests, posting criticism, or associating with the wrong people can land you on those lists. [1]
 
 The UK isn't China. But we're building the same toolkit.
 
@@ -279,7 +279,7 @@ The UK isn't China. But we're building the same toolkit.
 
 Consider what's already legal in the UK:
 
-The Investigatory Powers Act allows access to your "internet connection records"—a log of every website you visit—without a warrant. [2]
+The Investigatory Powers Act allows access to your "internet connection records"—a log of every website you visit—without a judicial warrant, requiring only internal authorisation. [2]
 
 Police facial recognition databases include 19 million custody images, including "vast numbers of photos of innocent people." [3]
 
@@ -445,7 +445,7 @@ RIPA 2000 was passed for serious crime and terrorism. Councils used it to invest
 
 Facial recognition was trialled for serious crime. Now it's in corner shops flagging suspected shoplifters.
 
-Communications data access was meant for national security. Over 500,000 requests are made annually, mostly for minor matters. [2]
+Communications data access was meant for national security. Hundreds of thousands of requests are now made annually for a range of purposes. [2]
 
 On-device scanning starts with child abuse material. The EU proposal already includes "grooming" detection—analysing the content of your conversations. [15]
 
@@ -589,7 +589,7 @@ The question isn't whether you trust this government. It's whether you trust eve
 
 Awareness is the first step. Action is the next.
 
-• Respond to consultations — The Home Office facial recognition consultation closes February 2026. Your voice matters.
+• Respond to consultations — The Home Office facial recognition consultation closed in February 2026, with a formal response expected. Your voice matters.
 
 • Contact your MP — Ask specific questions about digital ID, scanning powers, and surveillance safeguards.
 

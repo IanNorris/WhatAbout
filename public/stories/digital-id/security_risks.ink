@@ -24,7 +24,7 @@ The National Cyber Security Centre reports four nationally significant cyber att
 
 === Why_We_Cant_Fix_It ===
 # diagram: tech_stack.jpg
-Age-verification systems are already being compromised. In 2025, cybercrime groups stole 2.1 million identity verification photos from Discord.[2]
+Age-verification systems are already being compromised. In 2025, a third-party breach exposed 70,000 identity verification photos from Discord — hackers claimed the figure was 2.1 million.[2]
 
 Every major company with dedicated security teams has been breached: Equifax, Target, Yahoo, Facebook, LinkedIn.
 

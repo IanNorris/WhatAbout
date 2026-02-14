@@ -9,8 +9,8 @@
 [1]: Whistleblowers raise extreme concern over GOV.UK One Login security
 url: https://uk.news.yahoo.com/whistleblowers-raise-extreme-concern-security-072634262.html
 
-[2]: TechReviewer: Discord's 2.1M photo leak
-url: https://www.techreviewer.com/gaming-news/2025-10-08-discords-21m-photo-leak-shakes-user-trust/
+[2]: Discord Official Statement: 70,000 government-issued ID photos exposed in third-party breach
+url: https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service
 
 [3]: NCSC: UK experiencing four nationally significant cyber attacks weekly
 url: https://www.ncsc.gov.uk/news/uk-experiencing-four-nationally-significant-cyber-attacks-weekly

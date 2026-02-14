@@ -121,7 +121,7 @@ Recent breaches:[1]
 • 2017: Equifax leaked 147 million Social Security numbers
 • 2013: Yahoo leaked 3 billion accounts
 • 2021: Facebook leaked 533 million phone numbers
-• 2025: 2.1 million identity verification photos stolen from Discord
+• 2025: 70,000 identity verification photos stolen from Discord via a third-party breach (hackers claimed 2.1 million)[1]
 
 Age-verification systems are already being compromised. British citizens have had their identity documents and face scans stolen—including children's photos, as companies verify ages for 13+ and 16+ platforms.
 

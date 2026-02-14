@@ -108,7 +108,7 @@ These systems will be breached. Not "if," but "when."
 
 === Breach_Examples ===
 Age verification data is already being compromised:[6]
-• 2.1 million age verification photos stolen from Discord in 2025
+• 70,000 age verification photos stolen from Discord in 2025 (hackers claimed 2.1 million)[6]
 • Multiple breaches of identity verification systems
 • Age verification data being sold to third parties
 

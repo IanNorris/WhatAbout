@@ -259,7 +259,7 @@ Police have used live facial recognition for a decade without Parliament passing
 
 For private use, the ICO found Facewatch breached data regulations in 2023—but the company still operates.
 
-A Home Office consultation on facial recognition law is open until February 2026. [1]
+A Home Office consultation on facial recognition law closed in February 2026. [1]
 
 The technology exists in a legal grey zone, expanding faster than regulation can keep up.
 
@@ -295,7 +295,7 @@ You have options:
 
 • Subject Access Request — Ask any company using facial recognition what data they hold on you
 
-• Respond to consultations — The Home Office consultation on facial recognition law closes February 2026 [1]
+• Respond to consultations — The Home Office consultation on facial recognition law closed in February 2026, with a formal response expected within 12 weeks [1]
 
 • Support legal challenges — Big Brother Watch is backing court cases against police and retail facial recognition [1]
 

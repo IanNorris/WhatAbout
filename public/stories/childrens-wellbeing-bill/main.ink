@@ -78,7 +78,7 @@ This typically means uploading ID documents or face scans—creating databases t
 
 === VPN_Intro ===
 # diagram: vpn.jpg
-An amendment by Baroness Barran proposes banning or restricting VPNs to prevent children bypassing age verification.
+Amendments have been proposed to ban or restrict VPNs to prevent children bypassing age verification.
 
 The technical reality: VPNs use the same encryption as banking and government services. You can't block one without breaking the other.
 

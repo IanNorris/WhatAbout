@@ -37,7 +37,7 @@ Exactly. Both the identifier and who can access it are set by ministerial regula
 
 Future governments can add new "designated persons" without a parliamentary vote. The infrastructure expands by default.
 
-This follows a pattern: the Investigatory Powers Act started with serious crime, now councils use it for dog fouling and school catchment fraud.
+This follows a pattern: RIPA 2000 started with serious crime, but councils used it for dog fouling and school catchment fraud.
 
 *   [What identifier will they use?]
     -> NHS_Number

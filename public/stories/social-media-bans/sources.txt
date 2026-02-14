@@ -21,5 +21,5 @@ url: https://www.myprivacy.blog/australian-kids-bypass-social-media-ban-with-dog
 [5]: Sky News: Age verification bypass rates
 url: https://news.sky.com/story/nearly-half-of-porn-users-are-still-seeing-porn-with-no-age-checks-says-survey-13491347
 
-[6]: TechReviewer: Discord's 2.1M photo leak
-url: https://www.techreviewer.com/gaming-news/2025-10-08-discords-21m-photo-leak-shakes-user-trust/
+[6]: Discord Official Statement: 70,000 government-issued ID photos exposed in third-party breach
+url: https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service

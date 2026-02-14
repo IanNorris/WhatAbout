@@ -21,8 +21,8 @@ We've seen this pattern: # diagram: mission_creep_examples.jpg
 __Post-9/11 surveillance:__
 Started as stopping terrorists. Became mass surveillance of all citizens (revealed by Snowden).
 
-__UK's Investigatory Powers Act:__
-Started as catching serious criminals. Councils now use it to spy on dog owners and verify school catchment areas.
+__UK's RIPA surveillance powers:__
+Started as catching serious criminals. Councils used it to spy on dog owners and verify school catchment areas.
 
 __China's social credit system:__
 Started as reducing fraud. Now tracks social media posts and restricts travel.

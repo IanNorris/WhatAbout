@@ -83,7 +83,7 @@ What happens? Locked out of normal communication. All nudity blurred, even legal
 = Age_Verification_Crosslink
 Age verification systems have serious problems of their own.[1]
 
-Uploading identity documents or face scans to third-party companies creates security risks. 2.1 million Discord users' ID verification photos were stolen in 2025—including children's photos.
+Uploading identity documents or face scans to third-party companies creates security risks. Discord confirmed 70,000 users' ID verification photos were stolen in a 2025 breach—including children's photos.[1]
 
 Interested in exploring this separately?
 
