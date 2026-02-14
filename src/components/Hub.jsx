@@ -160,7 +160,7 @@ const Hub = ({ onSelectTopic }) => {
 
             <footer className={styles.footer}>
                 <p>
-                    This site was created by concerned citizens with no ties to any political party or interest group.
+                    This site was created by concerned citizens acting independently of any political party or interest group.
                     Developed with AI assistance but fact-checked by humans. All claims are sourced.
                 </p>
             </footer>
