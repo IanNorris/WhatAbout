@@ -1,6 +1,8 @@
 # What About
 
-An interactive web app that explores complex topics through conversational narratives powered by [Ink](https://github.com/inkle/ink).
+An interactive web app exploring digital rights topics — age verification, facial recognition, on-device scanning, and more — through conversational narratives powered by [Ink](https://github.com/inkle/ink).
+
+Created by [Think Of The Kids](https://github.com/ThinkOfTheKids) — concerned citizens acting independently of any political party or interest group.
 
 ## ✨ Key Features
 
