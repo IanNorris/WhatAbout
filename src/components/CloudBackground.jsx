@@ -25,14 +25,15 @@ const CloudBackground = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
+        <>
+            <div className={styles.container} />
             <div className={styles.recIndicator}>
                 <span className={styles.recDot}></span>
                 REC
             </div>
             <div className={styles.timestamp}>{timestamp}</div>
             <div className={styles.cameraId}>CAM-01</div>
-        </div>
+        </>
     );
 };
 

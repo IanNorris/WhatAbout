@@ -1,11 +1,11 @@
 .piButton {
     position: fixed;
     bottom: 0.75rem;
-    right: 1.25rem;
+    right: 0.75rem;
     width: 0.75rem;
     height: 0.75rem;
 	border: none;
-    background: var(--color-cloud-dark);
+    background: none;
     color: var(--color-accent);
     font-size: 0.75rem;
     font-weight: bold;
