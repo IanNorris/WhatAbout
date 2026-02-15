@@ -39,8 +39,8 @@
 
 .closeButton {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 3.0rem;
+    right: 1.5rem;
     background: rgba(26, 35, 50, 0.9);
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 40px;
