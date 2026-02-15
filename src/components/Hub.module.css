@@ -4,6 +4,7 @@
     height: 100%;
     padding: 2rem;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     overflow-y: auto;
     overflow-x: hidden;
 }
